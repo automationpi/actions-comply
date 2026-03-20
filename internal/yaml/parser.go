@@ -247,7 +247,15 @@ func (p *parser) processJobEnvironment(trimmed string, indent int) {
 }
 
 func (p *parser) processJobSteps(trimmed string, indent int) {
-	if indent <= 4 {
+	// Step list items can appear at indent 4 (compact) or indent 6+ (standard).
+	// At indent 4, a "- " prefix means a step item; anything else is a job key.
+	if indent <= 4 && !strings.HasPrefix(trimmed, "- ") {
+		p.flushStep()
+		p.state = stateJob
+		p.processJob(trimmed, indent)
+		return
+	}
+	if indent < 4 {
 		p.flushStep()
 		p.state = stateJob
 		p.processJob(trimmed, indent)
@@ -273,11 +281,21 @@ func (p *parser) processJobSteps(trimmed string, indent int) {
 }
 
 func (p *parser) processStepFields(trimmed string, indent int) {
-	if indent <= 4 {
+	if indent < 4 {
 		p.flushStep()
 		p.state = stateJob
 		p.processJob(trimmed, indent)
 		return
+	}
+	// At indent 4, non-dash non-step-field lines are job keys
+	if indent == 4 && !strings.HasPrefix(trimmed, "- ") {
+		key, _ := splitKV(trimmed)
+		if isJobKey(key) {
+			p.flushStep()
+			p.state = stateJob
+			p.processJob(trimmed, indent)
+			return
+		}
 	}
 
 	if strings.HasPrefix(trimmed, "- ") {
@@ -291,6 +309,17 @@ func (p *parser) processStepFields(trimmed string, indent int) {
 
 	key, val := splitKV(trimmed)
 	p.applyStepField(key, val)
+}
+
+// isJobKey returns true if the key is a known job-level field.
+func isJobKey(key string) bool {
+	switch key {
+	case "name", "runs-on", "environment", "permissions", "needs", "steps",
+		"if", "strategy", "concurrency", "timeout-minutes", "services",
+		"container", "defaults", "env", "outputs":
+		return true
+	}
+	return false
 }
 
 func (p *parser) applyStepField(key, val string) {

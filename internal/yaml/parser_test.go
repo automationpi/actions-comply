@@ -229,6 +229,39 @@ func TestParseEnvironmentMap(t *testing.T) {
 	}
 }
 
+func TestParseCompactSteps(t *testing.T) {
+	content := readFixture(t, "compact-steps.yml")
+	wf, err := Parse(".github/workflows/compact-steps.yml", content)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	analyze := wf.Jobs["analyze"]
+	if analyze == nil {
+		t.Fatal("expected job 'analyze'")
+	}
+	if analyze.Permissions == nil {
+		t.Fatal("expected job-level permissions")
+	}
+	if analyze.Permissions.Scopes["security-events"] != "write" {
+		t.Errorf("job perms security-events: got %q", analyze.Permissions.Scopes["security-events"])
+	}
+	if len(analyze.Steps) != 4 {
+		t.Fatalf("expected 4 steps, got %d", len(analyze.Steps))
+	}
+	// Verify CodeQL actions are parsed
+	if analyze.Steps[1].Uses != "github/codeql-action/init@b611370bb5703a7efb587f9d136a52ea24c5c38c" {
+		t.Errorf("step 1 uses: got %q", analyze.Steps[1].Uses)
+	}
+	if analyze.Steps[3].Uses != "github/codeql-action/analyze@b611370bb5703a7efb587f9d136a52ea24c5c38c" {
+		t.Errorf("step 3 uses: got %q", analyze.Steps[3].Uses)
+	}
+	// Step with only run: and no name
+	if analyze.Steps[2].Run != "npm ci" {
+		t.Errorf("step 2 run: got %q", analyze.Steps[2].Run)
+	}
+}
+
 func readFixture(t *testing.T, name string) string {
 	t.Helper()
 	data, err := os.ReadFile("../../testdata/workflows/" + name)

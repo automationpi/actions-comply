@@ -1,0 +1,20 @@
+name: Compact Steps
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+    - name: Checkout
+      uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@b611370bb5703a7efb587f9d136a52ea24c5c38c
+    - run: npm ci
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@b611370bb5703a7efb587f9d136a52ea24c5c38c
