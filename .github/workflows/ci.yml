@@ -1,0 +1,103 @@
+name: CI
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+
+      - name: Setup Go
+        uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88eb36e1752db003d
+        with:
+          go-version: '1.23'
+
+      - name: Run tests
+        run: go test -coverprofile=coverage.out ./...
+
+      - name: Check coverage
+        run: |
+          go tool cover -func=coverage.out | tail -1
+          COVERAGE=$(go tool cover -func=coverage.out | tail -1 | awk '{print $3}' | sed 's/%//')
+          echo "Total coverage: ${COVERAGE}%"
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+
+      - name: Setup Go
+        uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88eb36e1752db003d
+        with:
+          go-version: '1.23'
+
+      - name: Vet
+        run: go vet ./...
+
+      - name: Format check
+        run: test -z "$(gofmt -l .)"
+
+  scan:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@b611370bb5703a7efb587f9d136a52ea24c5c38c
+        with:
+          languages: go
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@b611370bb5703a7efb587f9d136a52ea24c5c38c
+
+  self-audit:
+    name: Self Audit
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+
+      - name: Setup Go
+        uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88eb36e1752db003d
+        with:
+          go-version: '1.23'
+
+      - name: Build
+        run: go build -o comply ./cmd/comply
+
+      - name: Self audit
+        run: ./comply audit --workflow-dir .github/workflows --org automationpi --repos actions-comply --fail-on high
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: [test, lint, scan, self-audit]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+
+      - name: Setup Go
+        uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88eb36e1752db003d
+        with:
+          go-version: '1.23'
+
+      - name: Build release binary
+        run: |
+          GOOS=linux GOARCH=amd64 go build -ldflags "-X main.version=$(git describe --tags --always)" -o comply-linux-amd64 ./cmd/comply

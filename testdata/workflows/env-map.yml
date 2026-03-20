@@ -1,0 +1,13 @@
+name: Environment Map
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+    steps:
+      - name: Deploy
+        run: echo deploying

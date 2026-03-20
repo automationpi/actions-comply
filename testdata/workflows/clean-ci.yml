@@ -1,0 +1,31 @@
+name: CI
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+      - name: Run tests
+        run: go test ./...
+
+  scan:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@b611370bb5703a7efb587f9d136a52ea24c5c38c
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@b611370bb5703a7efb587f9d136a52ea24c5c38c

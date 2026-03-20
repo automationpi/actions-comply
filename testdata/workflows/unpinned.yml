@@ -1,0 +1,20 @@
+name: Unpinned Actions
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
+      - name: Release
+        uses: softprops/action-gh-release@latest
