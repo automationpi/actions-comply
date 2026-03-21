@@ -3,213 +3,302 @@ package report
 import (
 	"fmt"
 	"io"
+	"sort"
 	"strings"
-	"time"
-
 	"github.com/automationpi/actions-comply/pkg/models"
 )
 
-// pdfDoc builds a PDF document using raw PDF 1.4 format.
+// ── PDF primitives ──────────────────────────────────────────────────────────
+
 type pdfDoc struct {
 	objects [][]byte
-	pages   []int // object numbers of page objects
+	pages   []int
 }
 
 func (d *pdfDoc) addObj(content string) int {
 	d.objects = append(d.objects, []byte(content))
-	return len(d.objects) // 1-based object numbering
+	return len(d.objects)
 }
 
-// pdfPage accumulates content stream text for a single page.
-type pdfPage struct {
-	buf strings.Builder
-}
+type pdfPage struct{ buf strings.Builder }
 
-// textAt writes black text at an absolute position using Tm (text matrix).
-func (p *pdfPage) textAt(x, y float64, font string, size float64, text string) {
+func (p *pdfPage) text(x, y float64, font string, size float64, text string) {
 	p.buf.WriteString(fmt.Sprintf("BT 0 0 0 rg %s %.0f Tf 1 0 0 1 %.1f %.1f Tm (%s) Tj ET\n",
-		font, size, x, y, pdfEscape(text)))
+		font, size, x, y, pdfEsc(text)))
 }
 
-// textAtColor writes colored text at an absolute position.
-func (p *pdfPage) textAtColor(x, y float64, font string, size float64, r, g, b float64, text string) {
+func (p *pdfPage) textC(x, y float64, font string, size float64, r, g, b float64, text string) {
 	p.buf.WriteString(fmt.Sprintf("BT %.2f %.2f %.2f rg %s %.0f Tf 1 0 0 1 %.1f %.1f Tm (%s) Tj ET\n",
-		r, g, b, font, size, x, y, pdfEscape(text)))
+		r, g, b, font, size, x, y, pdfEsc(text)))
 }
 
-// lineAt draws a horizontal line.
-func (p *pdfPage) lineAt(x1, y, x2 float64, width float64) {
-	p.buf.WriteString(fmt.Sprintf("%.1f w %.1f %.1f m %.1f %.1f l S\n", width, x1, y, x2, y))
-}
-
-// rectFill draws a filled rectangle.
-func (p *pdfPage) rectFill(x, y, w, h float64, r, g, b float64) {
+func (p *pdfPage) rect(x, y, w, h, r, g, b float64) {
 	p.buf.WriteString(fmt.Sprintf("%.2f %.2f %.2f rg %.1f %.1f %.1f %.1f re f\n", r, g, b, x, y, w, h))
 }
 
-// content returns the stream content.
-func (p *pdfPage) content() string {
-	return p.buf.String()
+func (p *pdfPage) rectStroke(x, y, w, h float64, sr, sg, sb float64, lw float64) {
+	p.buf.WriteString(fmt.Sprintf("%.2f %.2f %.2f RG %.1f w %.1f %.1f %.1f %.1f re S\n",
+		sr, sg, sb, lw, x, y, w, h))
 }
 
+func (p *pdfPage) line(x1, y1, x2, y2 float64, r, g, b, w float64) {
+	p.buf.WriteString(fmt.Sprintf("%.2f %.2f %.2f RG %.1f w %.1f %.1f m %.1f %.1f l S\n",
+		r, g, b, w, x1, y1, x2, y2))
+}
+
+func (p *pdfPage) content() string { return p.buf.String() }
+
 const (
-	pageW   = 612.0
-	pageH   = 792.0
-	marginL = 50.0
-	marginR = 50.0
-	marginT = 60.0
-	marginB = 60.0
+	pw = 612.0 // US Letter
+	ph = 792.0
+	ml = 45.0  // margins
+	mr = 45.0
+	mt = 45.0
+	mb = 55.0
 )
 
-// RenderPDF writes a compliance audit report as a PDF.
+var cw = pw - ml - mr // content width
+
+// ── Color palette ───────────────────────────────────────────────────────────
+
+type rgb struct{ r, g, b float64 }
+
+var (
+	colDark     = rgb{0.11, 0.11, 0.16}
+	colWhite    = rgb{1, 1, 1}
+	colGrayBg   = rgb{0.965, 0.965, 0.97}
+	colGrayLine = rgb{0.88, 0.88, 0.88}
+	colGrayText = rgb{0.45, 0.45, 0.45}
+	colRed      = rgb{0.85, 0.18, 0.18}
+	colOrange   = rgb{0.90, 0.35, 0.08}
+	colAmber    = rgb{0.85, 0.60, 0.0}
+	colGreen    = rgb{0.15, 0.62, 0.28}
+	colBlue     = rgb{0.18, 0.42, 0.78}
+
+	colCritBg = rgb{0.95, 0.88, 0.88}
+	colHighBg = rgb{0.98, 0.93, 0.88}
+	colMedBg  = rgb{0.98, 0.96, 0.88}
+	colInfoBg = rgb{0.92, 0.95, 0.98}
+)
+
+func sevColor(s models.Severity) rgb {
+	switch s {
+	case models.SeverityCritical:
+		return colRed
+	case models.SeverityHigh:
+		return colOrange
+	case models.SeverityMedium:
+		return colAmber
+	default:
+		return colGrayText
+	}
+}
+
+func sevBg(s models.Severity) rgb {
+	switch s {
+	case models.SeverityCritical:
+		return colCritBg
+	case models.SeverityHigh:
+		return colHighBg
+	case models.SeverityMedium:
+		return colMedBg
+	default:
+		return colInfoBg
+	}
+}
+
+// ── Main render ─────────────────────────────────────────────────────────────
+
 func RenderPDF(w io.Writer, report *models.AuditReport) error {
 	d := &pdfDoc{}
-
-	// Reserve objects 1-5
 	d.addObj("") // 1: catalog
 	d.addObj("") // 2: pages
 	d.addObj("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>")
 	d.addObj("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>")
 	d.addObj("<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>")
 
-	contentW := pageW - marginL - marginR
 	var allPages []string
 
-	// ==================== Title Page ====================
-	tp := &pdfPage{}
+	// ── Page 1: Cover + Scorecard + Controls + Check Summary ─────────────
+	p1 := &pdfPage{}
 
-	// Header background
-	tp.rectFill(0, pageH-160, pageW, 160, 0.12, 0.12, 0.18)
+	// Dark banner
+	p1.rect(0, ph-130, pw, 130, colDark.r, colDark.g, colDark.b)
+	// Accent line under banner
+	p1.rect(0, ph-133, pw, 3, colBlue.r, colBlue.g, colBlue.b)
 
-	// Title text (white on dark header)
-	tp.textAtColor(marginL, 680, "/F2", 28, 1, 1, 1, "actions-comply")
-	tp.textAtColor(marginL, 655, "/F1", 14, 1, 1, 1, "Compliance Audit Report")
-	tp.textAtColor(marginL, 638, "/F1", 10, 0.7, 0.7, 0.7, "SOC2 Trust Services Criteria  |  ISO 27001 Annex A")
+	p1.textC(ml, ph-55, "/F2", 26, 1, 1, 1, "actions-comply")
+	p1.textC(ml, ph-78, "/F1", 12, 0.75, 0.75, 0.8, "Compliance Audit Report")
+	// Right-aligned date
+	p1.textC(pw-mr-160, ph-55, "/F1", 9, 0.6, 0.6, 0.65,
+		report.GeneratedAt.Format("2 January 2006"))
+	p1.textC(pw-mr-160, ph-70, "/F1", 8, 0.6, 0.6, 0.65,
+		fmt.Sprintf("Report %s", report.ID))
 
-	// Metadata section
-	y := 580.0
-	metaLines := []string{
-		fmt.Sprintf("Organisation:   %s", report.Org),
-		fmt.Sprintf("Repositories:   %s", strings.Join(report.Repos, ", ")),
-		fmt.Sprintf("Report ID:      %s", report.ID),
-		fmt.Sprintf("Generated:      %s", report.GeneratedAt.Format(time.RFC3339)),
-	}
+	y := ph - 155.0
+
+	// Metadata row
 	fws := make([]string, len(report.Frameworks))
 	for i, f := range report.Frameworks {
 		fws[i] = strings.ToUpper(string(f))
 	}
-	metaLines = append(metaLines, fmt.Sprintf("Frameworks:     %s", strings.Join(fws, ", ")))
-
-	for _, line := range metaLines {
-		tp.textAt(marginL, y, "/F1", 10, line)
-		y -= 18
+	metaItems := []struct{ k, v string }{
+		{"Org", report.Org},
+		{"Repos", strings.Join(report.Repos, ", ")},
+		{"Frameworks", strings.Join(fws, ", ")},
+		{"Period", fmt.Sprintf("%s to %s",
+			report.Period.From.Format("2006-01-02"),
+			report.Period.To.Format("2006-01-02"))},
 	}
-
-	// Scorecard box
-	y -= 20
-	tp.rectFill(marginL, y-90, contentW, 100, 0.96, 0.96, 0.96)
-	tp.textAt(marginL+10, y, "/F2", 13, "Scorecard")
-	y -= 22
-	tp.textAt(marginL+10, y, "/F1", 11,
-		fmt.Sprintf("Total Findings: %d", report.Summary.TotalFindings))
-	y -= 18
-	tp.textAt(marginL+10, y, "/F1", 10,
-		fmt.Sprintf("Pass: %d    Fail: %d    Warn: %d    Skipped: %d",
-			report.Summary.CountByStatus[models.StatusPass],
-			report.Summary.CountByStatus[models.StatusFail],
-			report.Summary.CountByStatus[models.StatusWarn],
-			report.Summary.CountByStatus[models.StatusSkipped]))
-	y -= 16
-	tp.textAt(marginL+10, y, "/F1", 10,
-		fmt.Sprintf("Critical: %d    High: %d    Medium: %d    Low: %d    Info: %d",
-			report.Summary.CountBySeverity[models.SeverityCritical],
-			report.Summary.CountBySeverity[models.SeverityHigh],
-			report.Summary.CountBySeverity[models.SeverityMedium],
-			report.Summary.CountBySeverity[models.SeverityLow],
-			report.Summary.CountBySeverity[models.SeverityInfo]))
-
-	allPages = append(allPages, tp.content())
-
-	// ==================== Control Status + Check Summary Page ====================
-	cp := &pdfPage{}
-	y = pageH - marginT
-
-	cp.textAt(marginL, y, "/F2", 16, "Control Status")
-	y -= 8
-	cp.lineAt(marginL, y, pageW-marginR, 0.5)
-	y -= 20
-
-	for ctrl, status := range report.Summary.ControlStatus {
-		label := strings.ToUpper(string(status))
-		r, g, b := 0.5, 0.5, 0.5
-		switch status {
-		case models.StatusFail:
-			cp.rectFill(marginL, y-3, 4, 12, 0.9, 0.2, 0.2)
-			r, g, b = 0.85, 0.15, 0.15
-		case models.StatusWarn:
-			cp.rectFill(marginL, y-3, 4, 12, 0.95, 0.7, 0.1)
-			r, g, b = 0.85, 0.6, 0.0
-		case models.StatusPass:
-			cp.rectFill(marginL, y-3, 4, 12, 0.2, 0.7, 0.3)
-			r, g, b = 0.1, 0.6, 0.2
+	p1.rect(ml, y-20, cw, 22, colGrayBg.r, colGrayBg.g, colGrayBg.b)
+	mx := ml + 8.0
+	for _, m := range metaItems {
+		p1.textC(mx, y-14, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, m.k+":")
+		p1.text(mx+textWidth(m.k+":")+4, y-14, "/F1", 7, m.v)
+		mx += textWidth(m.k+": "+m.v) + 20
+		if mx > pw-mr-50 {
+			break
 		}
-		cp.textAt(marginL+12, y, "/F1", 10, string(ctrl))
-		cp.textAtColor(marginL+220, y, "/F2", 10, r, g, b, label)
-		y -= 18
 	}
+	y -= 35
 
-	y -= 25
-	cp.textAt(marginL, y, "/F2", 16, "Check Summary")
-	y -= 8
-	cp.lineAt(marginL, y, pageW-marginR, 0.5)
-	y -= 20
-
-	// Table header
-	cp.rectFill(marginL, y-3, contentW, 16, 0.92, 0.92, 0.92)
-	cp.textAt(marginL+5, y, "/F2", 9, "Check")
-	cp.textAt(marginL+290, y, "/F2", 9, "Fail")
-	cp.textAt(marginL+340, y, "/F2", 9, "Warn")
-	cp.textAt(marginL+390, y, "/F2", 9, "Pass")
-	cp.textAt(marginL+440, y, "/F2", 9, "Skip")
+	// ── Scorecard metric cards ──
+	p1.text(ml, y, "/F2", 13, "Scorecard")
 	y -= 18
 
-	for _, cr := range report.CheckResults {
-		fail, warn, pass, skip := 0, 0, 0, 0
-		for _, f := range cr.Findings {
-			switch f.Status {
-			case models.StatusFail:
-				fail++
-			case models.StatusWarn:
-				warn++
-			case models.StatusPass:
-				pass++
-			case models.StatusSkipped:
-				skip++
+	cardW := (cw - 20) / 5.0 // 5 cards
+	cardH := 52.0
+	cards := []struct {
+		label string
+		value int
+		col   rgb
+	}{
+		{"TOTAL", report.Summary.TotalFindings, colDark},
+		{"PASS", report.Summary.CountByStatus[models.StatusPass], colGreen},
+		{"FAIL", report.Summary.CountByStatus[models.StatusFail], colRed},
+		{"WARN", report.Summary.CountByStatus[models.StatusWarn], colAmber},
+		{"CRITICAL", report.Summary.CountBySeverity[models.SeverityCritical], colRed},
+	}
+	for i, c := range cards {
+		cx := ml + float64(i)*(cardW+5)
+		p1.rect(cx, y-cardH, cardW, cardH, colGrayBg.r, colGrayBg.g, colGrayBg.b)
+		// Left accent bar
+		p1.rect(cx, y-cardH, 3, cardH, c.col.r, c.col.g, c.col.b)
+		p1.textC(cx+14, y-20, "/F2", 22, c.col.r, c.col.g, c.col.b,
+			fmt.Sprintf("%d", c.value))
+		p1.textC(cx+14, y-38, "/F1", 7, colGrayText.r, colGrayText.g, colGrayText.b, c.label)
+	}
+	y -= cardH + 8
+
+	// Second row: severity breakdown
+	smallCards := []struct {
+		label string
+		value int
+		col   rgb
+	}{
+		{"HIGH", report.Summary.CountBySeverity[models.SeverityHigh], colOrange},
+		{"MEDIUM", report.Summary.CountBySeverity[models.SeverityMedium], colAmber},
+		{"LOW", report.Summary.CountBySeverity[models.SeverityLow], colGrayText},
+		{"INFO", report.Summary.CountBySeverity[models.SeverityInfo], colBlue},
+		{"SKIPPED", report.Summary.CountByStatus[models.StatusSkipped], colGrayText},
+	}
+	scH := 32.0
+	for i, c := range smallCards {
+		cx := ml + float64(i)*(cardW+5)
+		p1.rect(cx, y-scH, cardW, scH, colGrayBg.r, colGrayBg.g, colGrayBg.b)
+		p1.rect(cx, y-scH, 3, scH, c.col.r, c.col.g, c.col.b)
+		p1.textC(cx+14, y-14, "/F2", 14, c.col.r, c.col.g, c.col.b,
+			fmt.Sprintf("%d", c.value))
+		p1.textC(cx+14, y-26, "/F1", 6, colGrayText.r, colGrayText.g, colGrayText.b, c.label)
+	}
+	y -= scH + 20
+
+	// ── Control Status (two columns) ──
+	p1.text(ml, y, "/F2", 12, "Control Status")
+	y -= 5
+	p1.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)
+	y -= 14
+
+	// Sort controls for consistent output
+	var ctrls []models.ControlID
+	for c := range report.Summary.ControlStatus {
+		ctrls = append(ctrls, c)
+	}
+	sort.Slice(ctrls, func(i, j int) bool { return string(ctrls[i]) < string(ctrls[j]) })
+
+	colWidth := cw / 2
+	col := 0
+	rowY := y
+	for i, ctrl := range ctrls {
+		status := report.Summary.ControlStatus[ctrl]
+		cx := ml + float64(col)*colWidth
+		sc := sevColorForStatus(status)
+		// Status dot
+		p1.rect(cx+2, rowY-1, 6, 6, sc.r, sc.g, sc.b)
+		p1.text(cx+14, rowY, "/F1", 8, string(ctrl))
+		p1.textC(cx+colWidth-45, rowY, "/F2", 8, sc.r, sc.g, sc.b,
+			strings.ToUpper(string(status)))
+		col++
+		if col >= 2 {
+			col = 0
+			rowY -= 14
+		}
+		_ = i
+	}
+	if col != 0 {
+		rowY -= 14
+	}
+	y = rowY - 12
+
+	// ── Check Summary Table ──
+	p1.text(ml, y, "/F2", 12, "Check Summary")
+	y -= 5
+	p1.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)
+	y -= 16
+
+	// Header
+	p1.rect(ml, y-2, cw, 14, colDark.r, colDark.g, colDark.b)
+	p1.textC(ml+8, y+1, "/F2", 8, 1, 1, 1, "CHECK")
+	colPositions := []float64{ml + 310, ml + 360, ml + 410, ml + 460}
+	headers := []string{"FAIL", "WARN", "PASS", "SKIP"}
+	for i, h := range headers {
+		p1.textC(colPositions[i], y+1, "/F2", 8, 1, 1, 1, h)
+	}
+	y -= 16
+
+	for i, cr := range report.CheckResults {
+		fail, warn, pass, skip := countStatuses(cr)
+		if i%2 == 0 {
+			p1.rect(ml, y-2, cw, 14, colGrayBg.r, colGrayBg.g, colGrayBg.b)
+		}
+		p1.text(ml+8, y+1, "/F3", 7, truncStr(cr.CheckID, 55))
+		nums := []int{fail, warn, pass, skip}
+		numCols := []rgb{colRed, colAmber, colGreen, colGrayText}
+		for j, n := range nums {
+			if n > 0 {
+				p1.textC(colPositions[j], y+1, "/F2", 8, numCols[j].r, numCols[j].g, numCols[j].b,
+					fmt.Sprintf("%d", n))
+			} else {
+				p1.textC(colPositions[j], y+1, "/F1", 8, 0.78, 0.78, 0.78, "0")
 			}
 		}
-		cp.textAt(marginL+5, y, "/F3", 8, truncStr(cr.CheckID, 50))
-		cp.textAt(marginL+295, y, "/F1", 9, fmt.Sprintf("%d", fail))
-		cp.textAt(marginL+345, y, "/F1", 9, fmt.Sprintf("%d", warn))
-		cp.textAt(marginL+395, y, "/F1", 9, fmt.Sprintf("%d", pass))
-		cp.textAt(marginL+445, y, "/F1", 9, fmt.Sprintf("%d", skip))
-		y -= 16
-		cp.lineAt(marginL, y+4, pageW-marginR, 0.2)
+		y -= 14
 	}
 
-	allPages = append(allPages, cp.content())
+	allPages = append(allPages, p1.content())
 
-	// ==================== Finding Pages ====================
-	curPage := &pdfPage{}
-	y = pageH - marginT
+	// ── Finding Pages ────────────────────────────────────────────────────
+	cur := &pdfPage{}
+	y = ph - mt
 
-	newPage := func() {
-		allPages = append(allPages, curPage.content())
-		curPage = &pdfPage{}
-		y = pageH - marginT
+	flush := func() {
+		allPages = append(allPages, cur.content())
+		cur = &pdfPage{}
+		y = ph - mt
 	}
-	checkSpace := func(needed float64) {
-		if y < marginB+needed {
-			newPage()
+	need := func(n float64) {
+		if y < mb+n {
+			flush()
 		}
 	}
 
@@ -219,52 +308,48 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 			continue
 		}
 
-		checkSpace(60)
+		need(50)
+		// Section banner
+		cur.rect(ml, y-4, cw, 20, colDark.r, colDark.g, colDark.b)
+		cur.rect(ml, y-4, 4, 20, colBlue.r, colBlue.g, colBlue.b) // accent
+		cur.textC(ml+12, y, "/F2", 10, 1, 1, 1, cr.CheckID)
 
-		// Section header with background
-		curPage.rectFill(marginL, y-5, contentW, 22, 0.15, 0.15, 0.22)
-		curPage.textAtColor(marginL+8, y, "/F2", 11, 1, 1, 1, cr.CheckID)
-		y -= 28
+		// Pass count on right
+		_, _, passN, _ := countStatuses(cr)
+		if passN > 0 {
+			cur.textC(pw-mr-60, y, "/F1", 8, 0.6, 0.6, 0.65,
+				fmt.Sprintf("%d passed", passN))
+		}
+		y -= 26
 
 		for _, g := range groups {
-			checkSpace(55)
+			need(50)
 
-			// Severity indicator bar
-			switch g.Severity {
-			case models.SeverityCritical:
-				curPage.rectFill(marginL, y-2, 3, 14, 0.8, 0.0, 0.0)
-			case models.SeverityHigh:
-				curPage.rectFill(marginL, y-2, 3, 14, 0.95, 0.3, 0.1)
-			case models.SeverityMedium:
-				curPage.rectFill(marginL, y-2, 3, 14, 0.95, 0.7, 0.1)
-			default:
-				curPage.rectFill(marginL, y-2, 3, 14, 0.6, 0.6, 0.6)
-			}
+			sc := sevColor(g.Severity)
+			bg := sevBg(g.Severity)
 
-			// Status tag (color-coded)
-			tag := fmt.Sprintf("[%s/%s]", strings.ToUpper(string(g.Status)), strings.ToUpper(string(g.Severity)))
-			tr, tg, tb := 0.5, 0.5, 0.5
-			switch g.Severity {
-			case models.SeverityCritical:
-				tr, tg, tb = 0.8, 0.0, 0.0
-			case models.SeverityHigh:
-				tr, tg, tb = 0.9, 0.25, 0.05
-			case models.SeverityMedium:
-				tr, tg, tb = 0.85, 0.6, 0.0
-			}
-			curPage.textAtColor(marginL+8, y, "/F2", 9, tr, tg, tb, tag)
+			// Finding card background
+			cardH := estimateCardHeight(g)
+			cur.rect(ml+4, y-cardH+12, cw-8, cardH, bg.r, bg.g, bg.b)
+			// Left severity bar
+			cur.rect(ml+4, y-cardH+12, 3, cardH, sc.r, sc.g, sc.b)
 
+			// Tag + count
+			tag := fmt.Sprintf("%s / %s",
+				strings.ToUpper(string(g.Status)),
+				strings.ToUpper(string(g.Severity)))
+			cur.textC(ml+14, y, "/F2", 8, sc.r, sc.g, sc.b, tag)
 			if g.Count > 1 {
-				curPage.textAt(marginL+120, y, "/F1", 8,
-					fmt.Sprintf("(%d occurrences)", g.Count))
+				cur.textC(ml+130, y, "/F1", 8, colGrayText.r, colGrayText.g, colGrayText.b,
+					fmt.Sprintf("%d occurrences", g.Count))
 			}
-			y -= 14
+			y -= 13
 
-			// Message (wrapped)
-			for _, line := range wrapText(g.Message, contentW-20, 9) {
-				checkSpace(14)
-				curPage.textAt(marginL+12, y, "/F1", 9, line)
-				y -= 13
+			// Message
+			for _, ln := range wrapText(g.Message, cw-40, 9) {
+				need(12)
+				cur.text(ml+14, y, "/F2", 9, ln)
+				y -= 12
 			}
 
 			// Targets
@@ -273,57 +358,56 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 				limit = len(g.Targets)
 			}
 			for _, t := range g.Targets[:limit] {
-				checkSpace(12)
-				curPage.textAt(marginL+18, y, "/F3", 7, truncStr(t, 90))
-				y -= 11
+				need(10)
+				cur.textC(ml+18, y, "/F3", 6.5, colGrayText.r, colGrayText.g, colGrayText.b,
+					truncStr(t, 100))
+				y -= 9
 			}
 			if len(g.Targets) > 3 {
-				checkSpace(12)
-				curPage.textAt(marginL+18, y, "/F1", 7,
-					fmt.Sprintf("... and %d more", len(g.Targets)-3))
-				y -= 11
+				need(10)
+				cur.textC(ml+18, y, "/F1", 6.5, colGrayText.r, colGrayText.g, colGrayText.b,
+					fmt.Sprintf("+ %d more", len(g.Targets)-3))
+				y -= 9
 			}
 
-			// Detail
+			// Remediation (compact, muted)
 			if g.Detail != "" {
-				checkSpace(12)
-				curPage.rectFill(marginL+15, y-2, contentW-30, 1, 0.85, 0.85, 0.85)
-				y -= 6
-				for _, line := range wrapText(g.Detail, contentW-40, 8) {
-					checkSpace(11)
-					curPage.textAt(marginL+18, y, "/F1", 8, line)
-					y -= 11
+				y -= 3
+				for _, ln := range wrapText(g.Detail, cw-50, 7) {
+					need(9)
+					cur.textC(ml+18, y, "/F1", 7,
+						colGrayText.r, colGrayText.g, colGrayText.b, ln)
+					y -= 9
 				}
 			}
 
-			y -= 10 // spacing between findings
+			y -= 8
 		}
-		y -= 8
+		y -= 6
 	}
-	// Flush last page
-	allPages = append(allPages, curPage.content())
+	allPages = append(allPages, cur.content())
 
-	// ==================== Build PDF Structure ====================
-	resources := fmt.Sprintf("<< /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>")
+	// ── Assemble PDF ─────────────────────────────────────────────────────
+	res := "<< /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >>"
 
 	for i, content := range allPages {
-		streamObj := d.addObj(fmt.Sprintf("<< /Length %d >>\nstream\n%sendstream", len(content), content))
+		sObj := d.addObj(fmt.Sprintf("<< /Length %d >>\nstream\n%sendstream", len(content), content))
 
-		pageNum := i + 1
-		footer := fmt.Sprintf(
-			"BT /F1 8 Tf 0.5 0.5 0.5 rg 1 0 0 1 %.1f 35.0 Tm (Page %d of %d) Tj ET\n"+
-				"0.85 0.85 0.85 RG 0.5 w %.1f 50.0 m %.1f 50.0 l S",
-			pageW/2-25, pageNum, len(allPages), marginL, pageW-marginR)
-		footerObj := d.addObj(fmt.Sprintf("<< /Length %d >>\nstream\n%s\nendstream", len(footer), footer))
+		pn := i + 1
+		ftr := fmt.Sprintf(
+			"BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 %.1f 28.0 Tm (Page %d of %d) Tj ET\n"+
+				"BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 %.1f 28.0 Tm (actions-comply) Tj ET\n"+
+				"0.88 0.88 0.88 RG 0.4 w %.1f 42.0 m %.1f 42.0 l S",
+			pw/2-20, pn, len(allPages), ml, ml, pw-mr)
+		fObj := d.addObj(fmt.Sprintf("<< /Length %d >>\nstream\n%s\nendstream", len(ftr), ftr))
 
-		pageObjNum := d.addObj(fmt.Sprintf(
+		pgObj := d.addObj(fmt.Sprintf(
 			"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 %.0f %.0f] /Contents [%d 0 R %d 0 R] /Resources %s >>",
-			pageW, pageH, streamObj, footerObj, resources))
-		d.pages = append(d.pages, pageObjNum)
+			pw, ph, sObj, fObj, res))
+		d.pages = append(d.pages, pgObj)
 	}
 
 	d.objects[0] = []byte("<< /Type /Catalog /Pages 2 0 R >>")
-
 	kids := make([]string, len(d.pages))
 	for i, p := range d.pages {
 		kids[i] = fmt.Sprintf("%d 0 R", p)
@@ -334,36 +418,86 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 	return d.writePDF(w)
 }
 
+// ── Helpers ─────────────────────────────────────────────────────────────────
+
+func countStatuses(cr models.CheckResult) (fail, warn, pass, skip int) {
+	for _, f := range cr.Findings {
+		switch f.Status {
+		case models.StatusFail:
+			fail++
+		case models.StatusWarn:
+			warn++
+		case models.StatusPass:
+			pass++
+		case models.StatusSkipped:
+			skip++
+		}
+	}
+	return
+}
+
+func sevColorForStatus(s models.Status) rgb {
+	switch s {
+	case models.StatusFail:
+		return colRed
+	case models.StatusWarn:
+		return colAmber
+	case models.StatusPass:
+		return colGreen
+	default:
+		return colGrayText
+	}
+}
+
+func estimateCardHeight(g findingGroup) float64 {
+	h := 13.0 // tag line
+	h += float64(len(wrapText(g.Message, cw-40, 9))) * 12.0
+	targets := len(g.Targets)
+	if targets > 3 {
+		targets = 4
+	}
+	h += float64(targets) * 9.0
+	if g.Detail != "" {
+		h += 3 + float64(len(wrapText(g.Detail, cw-50, 7)))*9.0
+	}
+	h += 4
+	return h
+}
+
+// textWidth gives a rough width estimate for Helvetica at size ~7-8pt.
+func textWidth(s string) float64 {
+	return float64(len(s)) * 4.0
+}
+
 func (d *pdfDoc) writePDF(w io.Writer) error {
 	var written int64
-	write := func(s string) {
+	wr := func(s string) {
 		n, _ := fmt.Fprint(w, s)
 		written += int64(n)
 	}
 
-	write("%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
+	wr("%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
 
 	offsets := make([]int64, len(d.objects))
 	for i, obj := range d.objects {
 		offsets[i] = written
 		s := fmt.Sprintf("%d 0 obj\n%s\nendobj\n", i+1, string(obj))
-		write(s)
+		wr(s)
 	}
 
-	xrefStart := written
-	write(fmt.Sprintf("xref\n0 %d\n", len(d.objects)+1))
-	write("0000000000 65535 f \n")
+	xref := written
+	wr(fmt.Sprintf("xref\n0 %d\n", len(d.objects)+1))
+	wr("0000000000 65535 f \n")
 	for _, off := range offsets {
-		write(fmt.Sprintf("%010d 00000 n \n", off))
+		wr(fmt.Sprintf("%010d 00000 n \n", off))
 	}
 
-	write(fmt.Sprintf("trailer\n<< /Size %d /Root 1 0 R >>\n", len(d.objects)+1))
-	write(fmt.Sprintf("startxref\n%d\n%%%%EOF\n", xrefStart))
-
+	wr(fmt.Sprintf("trailer\n<< /Size %d /Root 1 0 R >>\n", len(d.objects)+1))
+	wr(fmt.Sprintf("startxref\n%d\n%%%%EOF\n", xref))
 	return nil
 }
 
-func pdfEscape(s string) string {
+func pdfEsc(s string) string {
 	s = strings.ReplaceAll(s, "\\", "\\\\")
 	s = strings.ReplaceAll(s, "(", "\\(")
 	s = strings.ReplaceAll(s, ")", "\\)")
@@ -382,22 +516,19 @@ func wrapText(text string, width float64, fontSize float64) []string {
 	if charsPerLine < 20 {
 		charsPerLine = 20
 	}
-
 	words := strings.Fields(text)
 	if len(words) == 0 {
 		return nil
 	}
-
 	var lines []string
-	current := words[0]
-	for _, word := range words[1:] {
-		if len(current)+1+len(word) > charsPerLine {
-			lines = append(lines, current)
-			current = word
+	cur := words[0]
+	for _, w := range words[1:] {
+		if len(cur)+1+len(w) > charsPerLine {
+			lines = append(lines, cur)
+			cur = w
 		} else {
-			current += " " + word
+			cur += " " + w
 		}
 	}
-	lines = append(lines, current)
-	return lines
+	return append(lines, cur)
 }

@@ -1,0 +1,186 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 7055 >>
+stream
+0.11 0.11 0.16 rg 0.0 662.0 612.0 130.0 re f
+0.18 0.42 0.78 rg 0.0 659.0 612.0 3.0 re f
+BT 1.00 1.00 1.00 rg /F2 26 Tf 1 0 0 1 45.0 737.0 Tm (actions-comply) Tj ET
+BT 0.75 0.75 0.80 rg /F1 12 Tf 1 0 0 1 45.0 714.0 Tm (Compliance Audit Report) Tj ET
+BT 0.60 0.60 0.65 rg /F1 9 Tf 1 0 0 1 407.0 737.0 Tm (21 March 2026) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774090799) Tj ET
+0.96 0.96 0.97 rg 45.0 617.0 522.0 22.0 re f
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 623.0 Tm (Org:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 73.0 623.0 Tm (automationpi) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 141.0 623.0 Tm (Repos:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 169.0 623.0 Tm (actions-comply) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 245.0 623.0 Tm (Frameworks:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 293.0 623.0 Tm (SOC2, ISO27001) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 369.0 623.0 Tm (Period:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 401.0 623.0 Tm (2025-12-21 to 2026-03-21) Tj ET
+BT 0 0 0 rg /F2 13 Tf 1 0 0 1 45.0 602.0 Tm (Scorecard) Tj ET
+0.96 0.96 0.97 rg 45.0 532.0 100.4 52.0 re f
+0.11 0.11 0.16 rg 45.0 532.0 3.0 52.0 re f
+BT 0.11 0.11 0.16 rg /F2 22 Tf 1 0 0 1 59.0 564.0 Tm (17) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 59.0 546.0 Tm (TOTAL) Tj ET
+0.96 0.96 0.97 rg 150.4 532.0 100.4 52.0 re f
+0.15 0.62 0.28 rg 150.4 532.0 3.0 52.0 re f
+BT 0.15 0.62 0.28 rg /F2 22 Tf 1 0 0 1 164.4 564.0 Tm (17) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 164.4 546.0 Tm (PASS) Tj ET
+0.96 0.96 0.97 rg 255.8 532.0 100.4 52.0 re f
+0.85 0.18 0.18 rg 255.8 532.0 3.0 52.0 re f
+BT 0.85 0.18 0.18 rg /F2 22 Tf 1 0 0 1 269.8 564.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 269.8 546.0 Tm (FAIL) Tj ET
+0.96 0.96 0.97 rg 361.2 532.0 100.4 52.0 re f
+0.85 0.60 0.00 rg 361.2 532.0 3.0 52.0 re f
+BT 0.85 0.60 0.00 rg /F2 22 Tf 1 0 0 1 375.2 564.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 375.2 546.0 Tm (WARN) Tj ET
+0.96 0.96 0.97 rg 466.6 532.0 100.4 52.0 re f
+0.85 0.18 0.18 rg 466.6 532.0 3.0 52.0 re f
+BT 0.85 0.18 0.18 rg /F2 22 Tf 1 0 0 1 480.6 564.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 480.6 546.0 Tm (CRITICAL) Tj ET
+0.96 0.96 0.97 rg 45.0 492.0 100.4 32.0 re f
+0.90 0.35 0.08 rg 45.0 492.0 3.0 32.0 re f
+BT 0.90 0.35 0.08 rg /F2 14 Tf 1 0 0 1 59.0 510.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 59.0 498.0 Tm (HIGH) Tj ET
+0.96 0.96 0.97 rg 150.4 492.0 100.4 32.0 re f
+0.85 0.60 0.00 rg 150.4 492.0 3.0 32.0 re f
+BT 0.85 0.60 0.00 rg /F2 14 Tf 1 0 0 1 164.4 510.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 164.4 498.0 Tm (MEDIUM) Tj ET
+0.96 0.96 0.97 rg 255.8 492.0 100.4 32.0 re f
+0.45 0.45 0.45 rg 255.8 492.0 3.0 32.0 re f
+BT 0.45 0.45 0.45 rg /F2 14 Tf 1 0 0 1 269.8 510.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 269.8 498.0 Tm (LOW) Tj ET
+0.96 0.96 0.97 rg 361.2 492.0 100.4 32.0 re f
+0.18 0.42 0.78 rg 361.2 492.0 3.0 32.0 re f
+BT 0.18 0.42 0.78 rg /F2 14 Tf 1 0 0 1 375.2 510.0 Tm (17) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 375.2 498.0 Tm (INFO) Tj ET
+0.96 0.96 0.97 rg 466.6 492.0 100.4 32.0 re f
+0.45 0.45 0.45 rg 466.6 492.0 3.0 32.0 re f
+BT 0.45 0.45 0.45 rg /F2 14 Tf 1 0 0 1 480.6 510.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 480.6 498.0 Tm (SKIPPED) Tj ET
+BT 0 0 0 rg /F2 12 Tf 1 0 0 1 45.0 472.0 Tm (Control Status) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 467.0 m 567.0 467.0 l S
+0.15 0.62 0.28 rg 47.0 452.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 453.0 Tm (ISO27001-A.12.1) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 453.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 308.0 452.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 453.0 Tm (ISO27001-A.14.2) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 453.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 47.0 438.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 439.0 Tm (ISO27001-A.15.1) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 439.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 308.0 438.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 439.0 Tm (ISO27001-A.9.4) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 439.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 47.0 424.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 425.0 Tm (SOC2-CC6.1) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 425.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 308.0 424.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 425.0 Tm (SOC2-CC7.2) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 425.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 47.0 410.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 411.0 Tm (SOC2-CC8.1) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 411.0 Tm (PASS) Tj ET
+0.15 0.62 0.28 rg 308.0 410.0 6.0 6.0 re f
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 411.0 Tm (SOC2-CC9.2) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 411.0 Tm (PASS) Tj ET
+BT 0 0 0 rg /F2 12 Tf 1 0 0 1 45.0 385.0 Tm (Check Summary) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 380.0 m 567.0 380.0 l S
+0.11 0.11 0.16 rg 45.0 362.0 522.0 14.0 re f
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 53.0 365.0 Tm (CHECK) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 355.0 365.0 Tm (FAIL) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 405.0 365.0 Tm (WARN) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 455.0 365.0 Tm (PASS) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 505.0 365.0 Tm (SKIP) Tj ET
+0.96 0.96 0.97 rg 45.0 346.0 522.0 14.0 re f
+BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 349.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 349.0 Tm (0) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 349.0 Tm (0) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 349.0 Tm (1) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 349.0 Tm (0) Tj ET
+BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 335.0 Tm (supplychain.action_bom) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 335.0 Tm (0) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 335.0 Tm (0) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 335.0 Tm (3) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 335.0 Tm (0) Tj ET
+0.96 0.96 0.97 rg 45.0 318.0 522.0 14.0 re f
+BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 321.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 321.0 Tm (0) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 321.0 Tm (0) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 321.0 Tm (11) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 321.0 Tm (0) Tj ET
+BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 307.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 307.0 Tm (0) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 307.0 Tm (0) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 307.0 Tm (1) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 307.0 Tm (0) Tj ET
+0.96 0.96 0.97 rg 45.0 290.0 522.0 14.0 re f
+BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 293.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 293.0 Tm (0) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 293.0 Tm (0) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 293.0 Tm (1) Tj ET
+BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 293.0 Tm (0) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 2) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [6 0 R 7 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+9 0 obj
+<< /Length 0 >>
+stream
+endstream
+endobj
+10 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 2) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [9 0 R 10 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000128 00000 n 
+0000000198 00000 n 
+0000000273 00000 n 
+0000000341 00000 n 
+0000007447 00000 n 
+0000007688 00000 n 
+0000007842 00000 n 
+0000007890 00000 n 
+0000008132 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+8288
+%%EOF
