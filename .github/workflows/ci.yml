@@ -72,16 +72,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
 
-      - name: Setup Go
-        uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88eb36e1752db003d
-        with:
-          go-version: '1.23'
-
-      - name: Build
-        run: go build -o comply ./cmd/comply
-
       - name: Self audit
-        run: ./comply audit --workflow-dir .github/workflows --org automationpi --repos actions-comply --fail-on high
+        uses: ./
+        with:
+          framework: soc2,iso27001
+          output: summary
+          fail-on: high
 
   release:
     name: Release
