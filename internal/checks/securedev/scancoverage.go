@@ -79,6 +79,29 @@ func (c *ScanCoverage) Run(ctx *models.CheckContext) (*models.CheckResult, error
 
 	scanners := c.scanners()
 	for _, wf := range prWorkflows {
+		// Skip utility/housekeeping workflows that don't execute code
+		if isUtilityWorkflow(wf) {
+			result.Findings = append(result.Findings, models.Finding{
+				CheckID:    c.ID(),
+				CheckTitle: c.Title(),
+				Controls:   c.Controls(),
+				Status:     models.StatusSkipped,
+				Severity:   models.SeverityInfo,
+				Target:     fmt.Sprintf("%s/%s:%s", ctx.Org, ctx.Repo, wf.Path),
+				Message:    fmt.Sprintf("Utility workflow skipped: %s", wf.Name),
+				Evidence: []models.Evidence{
+					{
+						Type:        models.EvidenceWorkflowFile,
+						Description: fmt.Sprintf("Utility workflow %s", wf.Path),
+						URL:         fmt.Sprintf("https://github.com/%s/%s/blob/main/%s", ctx.Org, ctx.Repo, wf.Path),
+						CollectedAt: now,
+					},
+				},
+				EvaluatedAt: now,
+			})
+			continue
+		}
+
 		target := fmt.Sprintf("%s/%s:%s", ctx.Org, ctx.Repo, wf.Path)
 		evidence := models.Evidence{
 			Type:        models.EvidenceWorkflowFile,
@@ -151,4 +174,24 @@ func (c *ScanCoverage) findScanners(wf *models.WorkflowFile, scanners map[string
 	}
 
 	return found
+}
+
+// utilityPatterns are substrings that identify housekeeping/utility workflows
+// which don't execute application code and don't need security scanners.
+var utilityPatterns = []string{
+	"label", "cache", "stale", "lock", "assign", "triage",
+	"greet", "welcome", "auto-merge", "automerge", "dependabot",
+	"clean", "housekeep", "comment", "draft", "conflict",
+	"semantic", "conventional", "changelog",
+}
+
+func isUtilityWorkflow(wf *models.WorkflowFile) bool {
+	nameLower := strings.ToLower(wf.Name)
+	pathLower := strings.ToLower(wf.Path)
+	for _, pattern := range utilityPatterns {
+		if strings.Contains(nameLower, pattern) || strings.Contains(pathLower, pattern) {
+			return true
+		}
+	}
+	return false
 }

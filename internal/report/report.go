@@ -10,6 +10,53 @@ import (
 	"github.com/automationpi/actions-comply/pkg/models"
 )
 
+// findingGroup collects findings with the same message for display.
+type findingGroup struct {
+	Status   models.Status
+	Severity models.Severity
+	Message  string
+	Detail   string
+	Targets  []string
+	Count    int
+}
+
+// groupFindings groups non-pass findings by message within a check result.
+func groupFindings(cr models.CheckResult) []findingGroup {
+	order := []string{}
+	groups := map[string]*findingGroup{}
+
+	for _, f := range cr.Findings {
+		if f.Status == models.StatusPass || f.Status == models.StatusSkipped {
+			continue
+		}
+		key := f.Message
+		if g, ok := groups[key]; ok {
+			g.Count++
+			g.Targets = append(g.Targets, f.Target)
+			// Escalate severity
+			if models.SeverityRank(f.Severity) > models.SeverityRank(g.Severity) {
+				g.Severity = f.Severity
+			}
+		} else {
+			order = append(order, key)
+			groups[key] = &findingGroup{
+				Status:   f.Status,
+				Severity: f.Severity,
+				Message:  f.Message,
+				Detail:   f.Detail,
+				Targets:  []string{f.Target},
+				Count:    1,
+			}
+		}
+	}
+
+	result := make([]findingGroup, 0, len(order))
+	for _, key := range order {
+		result = append(result, *groups[key])
+	}
+	return result
+}
+
 // RenderText writes a human-readable text report.
 func RenderText(w io.Writer, report *models.AuditReport) error {
 	fmt.Fprintf(w, "═══════════════════════════════════════════════════════════════\n")
@@ -44,33 +91,72 @@ func RenderText(w io.Writer, report *models.AuditReport) error {
 		fmt.Fprintln(w)
 	}
 
-	// Findings detail
+	// Check summary table
+	fmt.Fprintf(w, "CHECK SUMMARY\n")
+	fmt.Fprintf(w, "─────────────────────────────────────────────────────────────────\n")
+	fmt.Fprintf(w, "  %-40s %5s %5s %5s %5s\n", "Check", "Fail", "Warn", "Pass", "Skip")
+	fmt.Fprintf(w, "  %-40s %5s %5s %5s %5s\n", "─────", "────", "────", "────", "────")
 	for _, cr := range report.CheckResults {
-		hasNonPass := false
+		fail, warn, pass, skip := 0, 0, 0, 0
 		for _, f := range cr.Findings {
-			if f.Status != models.StatusPass {
-				hasNonPass = true
-				break
+			switch f.Status {
+			case models.StatusFail:
+				fail++
+			case models.StatusWarn:
+				warn++
+			case models.StatusPass:
+				pass++
+			case models.StatusSkipped:
+				skip++
 			}
 		}
+		fmt.Fprintf(w, "  %-40s %5d %5d %5d %5d\n", cr.CheckID, fail, warn, pass, skip)
+	}
+	fmt.Fprintln(w)
 
-		if hasNonPass {
-			fmt.Fprintf(w, "CHECK: %s\n", cr.CheckID)
-			fmt.Fprintf(w, "─────────────────────────────────────────\n")
-			for _, f := range cr.Findings {
-				if f.Status == models.StatusPass {
-					continue
-				}
-				fmt.Fprintf(w, "  [%s/%s] %s\n", strings.ToUpper(string(f.Status)), strings.ToUpper(string(f.Severity)), f.Message)
-				fmt.Fprintf(w, "    Target: %s\n", f.Target)
-				if f.Detail != "" {
-					fmt.Fprintf(w, "    Detail: %s\n", f.Detail)
-				}
-				for _, ev := range f.Evidence {
-					fmt.Fprintf(w, "    Evidence: %s — %s\n", ev.URL, ev.Description)
-				}
-				fmt.Fprintln(w)
+	// Grouped findings detail
+	for _, cr := range report.CheckResults {
+		groups := groupFindings(cr)
+		if len(groups) == 0 {
+			// All passed
+			passCount := len(cr.Findings)
+			if passCount > 0 {
+				fmt.Fprintf(w, "  %s: %d passed\n\n", cr.CheckID, passCount)
 			}
+			continue
+		}
+
+		fmt.Fprintf(w, "CHECK: %s\n", cr.CheckID)
+		fmt.Fprintf(w, "─────────────────────────────────────────\n")
+
+		for _, g := range groups {
+			if g.Count == 1 {
+				fmt.Fprintf(w, "  [%s/%s] %s\n",
+					strings.ToUpper(string(g.Status)),
+					strings.ToUpper(string(g.Severity)),
+					g.Message)
+				fmt.Fprintf(w, "    Target: %s\n", g.Targets[0])
+			} else {
+				fmt.Fprintf(w, "  [%s/%s] %s (%d occurrences)\n",
+					strings.ToUpper(string(g.Status)),
+					strings.ToUpper(string(g.Severity)),
+					g.Message, g.Count)
+				// Show up to 3 example targets
+				limit := 3
+				if len(g.Targets) < limit {
+					limit = len(g.Targets)
+				}
+				for _, t := range g.Targets[:limit] {
+					fmt.Fprintf(w, "    - %s\n", t)
+				}
+				if len(g.Targets) > 3 {
+					fmt.Fprintf(w, "    ... and %d more\n", len(g.Targets)-3)
+				}
+			}
+			if g.Detail != "" {
+				fmt.Fprintf(w, "    Detail: %s\n", g.Detail)
+			}
+			fmt.Fprintln(w)
 		}
 
 		// Count passes
@@ -124,24 +210,34 @@ func RenderSummary(w io.Writer, report *models.AuditReport) error {
 		fmt.Fprintln(w)
 	}
 
-	// Failures
-	hasFailures := false
+	// Grouped findings
+	hasFindings := false
 	for _, cr := range report.CheckResults {
-		for _, f := range cr.Findings {
-			if f.Status == models.StatusFail || f.Status == models.StatusWarn {
-				if !hasFailures {
-					fmt.Fprintf(w, "## Findings\n\n")
-					hasFailures = true
+		groups := groupFindings(cr)
+		for _, g := range groups {
+			if !hasFindings {
+				fmt.Fprintf(w, "## Findings\n\n")
+				hasFindings = true
+			}
+			if g.Count == 1 {
+				fmt.Fprintf(w, "### %s [%s/%s]\n\n", g.Message, g.Status, g.Severity)
+				fmt.Fprintf(w, "**Target:** %s\n\n", g.Targets[0])
+			} else {
+				fmt.Fprintf(w, "### %s [%s/%s] (%d occurrences)\n\n", g.Message, g.Status, g.Severity, g.Count)
+				limit := 5
+				if len(g.Targets) < limit {
+					limit = len(g.Targets)
 				}
-				fmt.Fprintf(w, "### %s [%s/%s]\n\n", f.Message, f.Status, f.Severity)
-				fmt.Fprintf(w, "**Target:** %s\n\n", f.Target)
-				if f.Detail != "" {
-					fmt.Fprintf(w, "> %s\n\n", f.Detail)
+				for _, t := range g.Targets[:limit] {
+					fmt.Fprintf(w, "- `%s`\n", t)
 				}
-				for _, ev := range f.Evidence {
-					fmt.Fprintf(w, "- [%s](%s)\n", ev.Description, ev.URL)
+				if len(g.Targets) > 5 {
+					fmt.Fprintf(w, "- ... and %d more\n", len(g.Targets)-5)
 				}
 				fmt.Fprintln(w)
+			}
+			if g.Detail != "" {
+				fmt.Fprintf(w, "> %s\n\n", g.Detail)
 			}
 		}
 	}

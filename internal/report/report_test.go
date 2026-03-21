@@ -63,9 +63,9 @@ func TestRenderText(t *testing.T) {
 		"actions-comply Audit Report",
 		"SCORECARD",
 		"Total findings: 3",
+		"CHECK SUMMARY",
 		"Something failed",
 		"Fix this",
-		"https://example.com",
 		"1 passed",
 	}
 	for _, want := range checks {
