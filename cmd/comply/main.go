@@ -162,6 +162,11 @@ func runAudit(args []string) int {
 			fmt.Fprintf(os.Stderr, "Error rendering summary: %v\n", err)
 			return 2
 		}
+	case "pdf":
+		if err := report.RenderPDF(&buf, auditReport); err != nil {
+			fmt.Fprintf(os.Stderr, "Error rendering PDF: %v\n", err)
+			return 2
+		}
 	default:
 		if err := report.RenderText(&buf, auditReport); err != nil {
 			fmt.Fprintf(os.Stderr, "Error rendering text: %v\n", err)
@@ -248,7 +253,7 @@ Audit flags:
   --repos string          Comma-separated repo list
   --framework string      Frameworks: soc2,iso27001 (default: soc2,iso27001)
   --period int            Lookback days (default: 90)
-  --output string         Format: text|json|summary (default: text)
+  --output string         Format: text|json|summary|pdf (default: text)
   --out string            Write report to file
   --fail-on string        Exit 1 if finding >= severity (default: critical)
   --workflow-dir string   Local dir of .yml files (offline mode)
