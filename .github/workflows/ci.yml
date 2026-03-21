@@ -92,6 +92,21 @@ jobs:
           output: summary
           fail-on: high
 
+      - name: Generate PDF report
+        if: always()
+        uses: ./
+        with:
+          framework: soc2,iso27001
+          output: pdf
+          fail-on: critical
+
+      - name: Upload PDF report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: compliance-report
+          path: ${{ runner.temp }}/comply-report.pdf
+
   release:
     name: Release
     runs-on: ubuntu-latest
