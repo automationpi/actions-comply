@@ -46,7 +46,7 @@ Every finding is **backed by evidence** — a direct link to the workflow file, 
 
 ```yaml
 - name: Compliance Audit
-  uses: automationpi/actions-comply@main
+  uses: automationpi/actions-comply@v1
   with:
     framework: soc2,iso27001
     output: summary
@@ -59,14 +59,14 @@ The step summary renders directly in the GitHub Actions UI with pass/fail status
 
 ```yaml
 - name: Compliance Audit
-  uses: automationpi/actions-comply@main
+  uses: automationpi/actions-comply@v1
   with:
     output: summary
     fail-on: high
 
 - name: Generate PDF Report
   if: always()
-  uses: automationpi/actions-comply@main
+  uses: automationpi/actions-comply@v1
   with:
     output: pdf
     fail-on: critical
