@@ -1,6 +1,9 @@
 package report
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // checkExplainer provides human-friendly context for each check group.
 type checkExplainer struct {
@@ -124,4 +127,99 @@ func executiveSummary(totalFindings int, fails int, criticals int, checks map[st
 	}
 
 	return lines
+}
+
+// scopeAndMethodology returns text explaining what was audited and how.
+func scopeAndMethodology(org string, repos []string, workflowCount int, frameworks []string) []string {
+	return []string{
+		"SCOPE",
+		"",
+		fmt.Sprintf("This audit covers the CI/CD pipeline configuration for %s across %d", org, len(repos)),
+		fmt.Sprintf("repository(ies): %s.", truncForText(joinStrings(repos), 90)),
+		fmt.Sprintf("A total of %d GitHub Actions workflow files were analysed.", workflowCount),
+		"",
+		"The audit evaluates compliance against the following frameworks:",
+		fmt.Sprintf("  %s", joinStrings(frameworks)),
+		"",
+		"METHODOLOGY",
+		"",
+		"All checks are deterministic and rule-based — no AI or probabilistic analysis is used.",
+		"Each finding is backed by a direct reference to a workflow file, job, or step. The audit",
+		"covers five control areas:",
+		"",
+		"  1. Permissions — Least-privilege analysis of GITHUB_TOKEN scopes",
+		"  2. Supply Chain — Inventory and SHA-pinning status of third-party actions",
+		"  3. Secure Development — Security scanner presence in PR workflows",
+		"  4. Change Trail — Deployment approval gates and environment protection",
+		"  5. Action BOM — Complete bill of materials for third-party dependencies",
+		"",
+		"LIMITATIONS",
+		"",
+		"This audit covers workflow file configuration only. It does not assess:",
+		"  - Branch protection rules (evaluated at the GitHub API level, not in YAML)",
+		"  - Runtime behavior of actions or scripts",
+		"  - Network controls, data encryption, or HR processes",
+		"  - GitHub Enterprise Server-specific configurations",
+		"  - Repository-level secrets management",
+	}
+}
+
+// whatsWorkingWell generates positive findings — what the org is doing right.
+func whatsWorkingWell(passCount int, totalCount int, checkPasses map[string][]string) []string {
+	var lines []string
+
+	if passCount == 0 {
+		return lines
+	}
+
+	pct := 0
+	if totalCount > 0 {
+		pct = passCount * 100 / totalCount
+	}
+
+	lines = append(lines,
+		fmt.Sprintf("%d of %d checks passed (%d%%). The following areas are well-configured:", passCount, totalCount, pct),
+		"")
+
+	order := []struct {
+		id    string
+		title string
+	}{
+		{"permissions.workflow_overage", "Workflow Permissions"},
+		{"supplychain.unpinned_actions", "Action SHA Pinning"},
+		{"securedev.scan_coverage", "Security Scan Coverage"},
+		{"changetrail.deploy_approval", "Deploy Approval Gates"},
+		{"supplychain.action_bom", "Action Inventory"},
+	}
+
+	for _, o := range order {
+		passes, ok := checkPasses[o.id]
+		if !ok || len(passes) == 0 {
+			continue
+		}
+		lines = append(lines, fmt.Sprintf("  %s — %d workflows compliant", o.title, len(passes)))
+		limit := 3
+		if len(passes) < limit {
+			limit = len(passes)
+		}
+		for _, p := range passes[:limit] {
+			lines = append(lines, fmt.Sprintf("    %s", truncForText(p, 85)))
+		}
+		if len(passes) > 3 {
+			lines = append(lines, fmt.Sprintf("    + %d more", len(passes)-3))
+		}
+	}
+
+	return lines
+}
+
+func joinStrings(ss []string) string {
+	return fmt.Sprintf("%s", strings.Join(ss, ", "))
+}
+
+func truncForText(s string, max int) string {
+	if len(s) <= max {
+		return s
+	}
+	return s[:max-3] + "..."
 }

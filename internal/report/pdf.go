@@ -287,23 +287,93 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 
 	allPages = append(allPages, p1.content())
 
-	// ── Page 2: Executive Summary + What This Means ──────────────────────
+	// ── Page 2: Scope + Executive Summary + What's Working Well ─────────
 	p2 := &pdfPage{}
 	y = ph - mt
+
+	// Count total workflows
+	workflowCount := 0
+	for _, cr := range report.CheckResults {
+		for _, f := range cr.Findings {
+			_ = f
+		}
+	}
+	// Use BOM count or fallback
+	for _, cr := range report.CheckResults {
+		if cr.CheckID == "supplychain.action_bom" {
+			workflowCount = len(cr.Findings)
+			break
+		}
+	}
+	// Better: count unique workflow paths from findings
+	wfPaths := make(map[string]bool)
+	for _, cr := range report.CheckResults {
+		for _, f := range cr.Findings {
+			parts := strings.SplitN(f.Target, ":", 2)
+			if len(parts) == 2 {
+				wfPaths[parts[1]] = true
+			}
+		}
+	}
+	if len(wfPaths) > workflowCount {
+		workflowCount = len(wfPaths)
+	}
+
+	// Scope & Methodology
+	p2.text(ml, y, "/F2", 16, "Scope and Methodology")
+	y -= 6
+	p2.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)
+	y -= 16
+
+	scopeLines := scopeAndMethodology(report.Org, report.Repos, workflowCount, fws)
+	for _, ln := range scopeLines {
+		if ln == "" {
+			y -= 5
+			continue
+		}
+		// Section labels (all caps)
+		if ln == "SCOPE" || ln == "METHODOLOGY" || ln == "LIMITATIONS" {
+			y -= 4
+			p2.textC(ml+5, y, "/F2", 9, colDark.r, colDark.g, colDark.b, ln)
+			y -= 14
+			continue
+		}
+		p2.text(ml+5, y, "/F1", 8, ln)
+		y -= 11
+	}
+
+	y -= 15
+
+	// Executive Summary
+	if y < mb+120 {
+		allPages = append(allPages, p2.content())
+		p2 = &pdfPage{}
+		y = ph - mt
+	}
 
 	p2.text(ml, y, "/F2", 16, "Executive Summary")
 	y -= 6
 	p2.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)
 	y -= 16
 
-	// Build fail counts per check
+	// Build fail/pass counts per check
 	failsByCheck := make(map[string]int)
+	passesByCheck := make(map[string][]string)
 	totalFails := 0
+	totalPasses := 0
 	for _, cr := range report.CheckResults {
-		f, _, _, _ := countStatuses(cr)
+		f, _, p, _ := countStatuses(cr)
 		if f > 0 {
 			failsByCheck[cr.CheckID] = f
 			totalFails += f
+		}
+		if p > 0 {
+			totalPasses += p
+			for _, finding := range cr.Findings {
+				if finding.Status == models.StatusPass {
+					passesByCheck[cr.CheckID] = append(passesByCheck[cr.CheckID], finding.Target)
+				}
+			}
 		}
 	}
 
@@ -321,9 +391,53 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 		y -= 13
 	}
 
+	y -= 15
+
+	// ── What's Working Well ──
+	if y < mb+100 {
+		allPages = append(allPages, p2.content())
+		p2 = &pdfPage{}
+		y = ph - mt
+	}
+
+	p2.rect(ml, y-3, cw, 18, 0.93, 0.98, 0.93) // light green bg
+	p2.rect(ml, y-3, 4, 18, colGreen.r, colGreen.g, colGreen.b) // green accent
+	p2.text(ml+12, y, "/F2", 13, "What's Working Well")
+	y -= 24
+
+	wwLines := whatsWorkingWell(totalPasses, report.Summary.TotalFindings, passesByCheck)
+	for _, ln := range wwLines {
+		if ln == "" {
+			y -= 5
+			continue
+		}
+		if y < mb+12 {
+			allPages = append(allPages, p2.content())
+			p2 = &pdfPage{}
+			y = ph - mt
+		}
+		// Indent detection for sub-items
+		if strings.HasPrefix(ln, "    ") {
+			p2.textC(ml+15, y, "/F3", 7, colGrayText.r, colGrayText.g, colGrayText.b,
+				strings.TrimSpace(ln))
+		} else if strings.HasPrefix(ln, "  ") {
+			p2.textC(ml+10, y, "/F2", 8, colGreen.r, colGreen.g, colGreen.b,
+				strings.TrimSpace(ln))
+		} else {
+			p2.text(ml+5, y, "/F1", 9, ln)
+		}
+		y -= 12
+	}
+
 	y -= 20
 
 	// ── What These Checks Mean ──
+	if y < mb+120 {
+		allPages = append(allPages, p2.content())
+		p2 = &pdfPage{}
+		y = ph - mt
+	}
+
 	p2.text(ml, y, "/F2", 14, "What These Checks Mean")
 	y -= 6
 	p2.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)

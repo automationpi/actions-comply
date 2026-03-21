@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R] /Count 10 >>
+<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R 38 0 R] /Count 11 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -23,7 +23,7 @@ stream
 BT 1.00 1.00 1.00 rg /F2 26 Tf 1 0 0 1 45.0 737.0 Tm (actions-comply) Tj ET
 BT 0.75 0.75 0.80 rg /F1 12 Tf 1 0 0 1 45.0 714.0 Tm (Compliance Audit Report) Tj ET
 BT 0.60 0.60 0.65 rg /F1 9 Tf 1 0 0 1 407.0 737.0 Tm (21 March 2026) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774092436) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774092666) Tj ET
 0.96 0.96 0.97 rg 45.0 617.0 522.0 22.0 re f
 BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 623.0 Tm (Org:) Tj ET
 BT 0 0 0 rg /F1 7 Tf 1 0 0 1 73.0 623.0 Tm (novuhq) Tj ET
@@ -141,7 +141,7 @@ endobj
 7 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -150,74 +150,65 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [6 0 R 7 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 9 0 obj
-<< /Length 6277 >>
+<< /Length 5268 >>
 stream
-BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 747.0 Tm (Executive Summary) Tj ET
+BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 747.0 Tm (Scope and Methodology) Tj ET
 0.88 0.88 0.88 RG 0.5 w 45.0 741.0 m 567.0 741.0 l S
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 725.0 Tm (This audit found 147 compliance issues, including 7 critical findings) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 712.0 Tm (that should be addressed before your next audit review. Critical findings) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 699.0 Tm (represent missing controls that auditors will flag as exceptions.) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 680.0 Tm (Priority areas to address:) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 661.0 Tm (  1. Deploy Approval Gates \(7 issues\) — Production jobs without) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 648.0 Tm (     environment protection. This is the most auditor-visible gap.) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 635.0 Tm (  2. SHA Pinning \(124 issues\) — Actions using mutable tags instead) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 622.0 Tm (     of commit SHAs. High supply-chain risk, easy to fix.) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 609.0 Tm (  3. Scan Coverage \(6 issues\) — PR workflows without security) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 596.0 Tm (     scanners. Add CodeQL or Trivy to close this gap.) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 583.0 Tm (  4. Permissions \(10 issues\) — Over-provisioned or missing) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 570.0 Tm (     permission blocks. Quick wins for least-privilege.) Tj ET
-BT 0 0 0 rg /F2 14 Tf 1 0 0 1 45.0 537.0 Tm (What These Checks Mean) Tj ET
-0.88 0.88 0.88 RG 0.5 w 45.0 531.0 m 567.0 531.0 l S
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 517.0 Tm (Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.) Tj ET
-0.90 0.35 0.08 rg 45.0 499.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 501.0 Tm (Workflow Permissions) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 489.0 Tm (permissions.workflow_overage) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 475.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 464.0 Tm (GitHub Actions workflows run with a token that has access to your repository. If the token has more permissions than needed) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 454.0 Tm (\(e.g., write access to packages when it only reads code\), a compromised action or script injection can do far more damage) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 444.0 Tm (than necessary.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 430.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 419.0 Tm (Over-permissioned tokens violate least-privilege and expand the blast radius of supply-chain attacks. Auditors flag this) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 409.0 Tm (under access control \(SOC2 CC6.1\).) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 395.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 384.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 374.0 Tm (that a step actually needs.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 362.0 Tm (SOC2 CC6.1 \(Logical Access\)  |  ISO 27001 A.9.4 \(System Access Control\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 350.0 m 557.0 350.0 l S
-0.90 0.35 0.08 rg 45.0 336.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 338.0 Tm (Action SHA Pinning) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 326.0 Tm (supplychain.unpinned_actions) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 312.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 301.0 Tm (When you reference an action with a tag like '@v4', the tag owner can push new code to that tag at any time. Your workflow) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 291.0 Tm (silently picks up the change on the next run — you have no review, no diff, no approval.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 277.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 266.0 Tm (This is the #1 GitHub Actions supply-chain risk. An attacker who compromises an action repo can push malicious code to an) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 256.0 Tm (existing tag and it will run in every workflow that references it. Pinning to a full SHA prevents this.) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 242.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 231.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 221.0 Tm (Dependabot or Renovate to get PRs when new versions are released.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 209.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1, A.14.2 \(Supply Chain, Secure Dev\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 197.0 m 557.0 197.0 l S
-0.90 0.35 0.08 rg 45.0 183.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 185.0 Tm (Security Scan Coverage) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 173.0 Tm (securedev.scan_coverage) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 159.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 148.0 Tm (Pull request workflows are the last gate before code merges. If no security scanner \(SAST, SCA, secrets detection\) runs on) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 138.0 Tm (PRs, vulnerabilities and leaked credentials can reach your default branch undetected.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 124.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 113.0 Tm (Missing scan coverage means you cannot demonstrate to auditors that code is reviewed for security issues before deployment.) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 103.0 Tm (This is a core secure development requirement.) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 89.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 78.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 68.0 Tm (Semgrep \(custom rules\).) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 56.0 Tm (SOC2 CC7.2 \(Security Monitoring\)  |  ISO 27001 A.14.2 \(Secure Development\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 44.0 m 557.0 44.0 l S
+BT 0.11 0.11 0.16 rg /F2 9 Tf 1 0 0 1 50.0 721.0 Tm (SCOPE) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 702.0 Tm (This audit covers the CI/CD pipeline configuration for novuhq across 1) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 691.0 Tm (repository\(ies\): novu.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 680.0 Tm (A total of 143 GitHub Actions workflow files were analysed.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 664.0 Tm (The audit evaluates compliance against the following frameworks:) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 653.0 Tm (  SOC2, ISO27001) Tj ET
+BT 0.11 0.11 0.16 rg /F2 9 Tf 1 0 0 1 50.0 633.0 Tm (METHODOLOGY) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 614.0 Tm (All checks are deterministic and rule-based — no AI or probabilistic analysis is used.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 603.0 Tm (Each finding is backed by a direct reference to a workflow file, job, or step. The audit) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 592.0 Tm (covers five control areas:) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 576.0 Tm (  1. Permissions — Least-privilege analysis of GITHUB_TOKEN scopes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 565.0 Tm (  2. Supply Chain — Inventory and SHA-pinning status of third-party actions) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 554.0 Tm (  3. Secure Development — Security scanner presence in PR workflows) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 543.0 Tm (  4. Change Trail — Deployment approval gates and environment protection) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 532.0 Tm (  5. Action BOM — Complete bill of materials for third-party dependencies) Tj ET
+BT 0.11 0.11 0.16 rg /F2 9 Tf 1 0 0 1 50.0 512.0 Tm (LIMITATIONS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 493.0 Tm (This audit covers workflow file configuration only. It does not assess:) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 482.0 Tm (  - Branch protection rules \(evaluated at the GitHub API level, not in YAML\)) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 471.0 Tm (  - Runtime behavior of actions or scripts) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 460.0 Tm (  - Network controls, data encryption, or HR processes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 449.0 Tm (  - GitHub Enterprise Server-specific configurations) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 438.0 Tm (  - Repository-level secrets management) Tj ET
+BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 412.0 Tm (Executive Summary) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 406.0 m 567.0 406.0 l S
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 390.0 Tm (This audit found 147 compliance issues, including 7 critical findings) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 377.0 Tm (that should be addressed before your next audit review. Critical findings) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 364.0 Tm (represent missing controls that auditors will flag as exceptions.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 345.0 Tm (Priority areas to address:) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 326.0 Tm (  1. Deploy Approval Gates \(7 issues\) — Production jobs without) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 313.0 Tm (     environment protection. This is the most auditor-visible gap.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 300.0 Tm (  2. SHA Pinning \(124 issues\) — Actions using mutable tags instead) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 287.0 Tm (     of commit SHAs. High supply-chain risk, easy to fix.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 274.0 Tm (  3. Scan Coverage \(6 issues\) — PR workflows without security) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 261.0 Tm (     scanners. Add CodeQL or Trivy to close this gap.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 248.0 Tm (  4. Permissions \(10 issues\) — Over-provisioned or missing) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 235.0 Tm (     permission blocks. Quick wins for least-privilege.) Tj ET
+0.93 0.98 0.93 rg 45.0 204.0 522.0 18.0 re f
+0.15 0.62 0.28 rg 45.0 204.0 4.0 18.0 re f
+BT 0 0 0 rg /F2 13 Tf 1 0 0 1 57.0 207.0 Tm (What's Working Well) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 183.0 Tm (49 of 229 checks passed \(21%\). The following areas are well-configured:) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 166.0 Tm (Action SHA Pinning — 4 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 154.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/amazon-ecs-render-task-de...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 142.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/amazon-ecs-deploy-task-de...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 130.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → aws-actions/amazon-e...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 118.0 Tm (+ 1 more) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 106.0 Tm (Security Scan Coverage — 1 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 94.0 Tm (novuhq/novu:.github/workflows/codeql-analysis.yml) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 82.0 Tm (Deploy Approval Gates — 7 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 70.0 Tm (novuhq/novu:.github/workflows/deploy.yml/jobs/deploy) Tj ET
 endstream
 endobj
 10 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -226,6 +217,76 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [9 0 R 10 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 12 0 obj
+<< /Length 5539 >>
+stream
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 747.0 Tm (novuhq/novu:.github/workflows/deploy.yml/jobs/sentry_release) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 735.0 Tm (novuhq/novu:.github/workflows/deploy.yml/jobs/new_relic_release) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 723.0 Tm (+ 4 more) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 711.0 Tm (Action Inventory — 37 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 699.0 Tm (actions/checkout) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 687.0 Tm (github/codeql-action) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 675.0 Tm (useblacksmith/setup-node) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 663.0 Tm (+ 34 more) Tj ET
+BT 0 0 0 rg /F2 14 Tf 1 0 0 1 45.0 631.0 Tm (What These Checks Mean) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 625.0 m 567.0 625.0 l S
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 611.0 Tm (Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.) Tj ET
+0.90 0.35 0.08 rg 45.0 593.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 595.0 Tm (Workflow Permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 583.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 569.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 558.0 Tm (GitHub Actions workflows run with a token that has access to your repository. If the token has more permissions than needed) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 548.0 Tm (\(e.g., write access to packages when it only reads code\), a compromised action or script injection can do far more damage) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 538.0 Tm (than necessary.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 524.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 513.0 Tm (Over-permissioned tokens violate least-privilege and expand the blast radius of supply-chain attacks. Auditors flag this) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 503.0 Tm (under access control \(SOC2 CC6.1\).) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 489.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 478.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 468.0 Tm (that a step actually needs.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 456.0 Tm (SOC2 CC6.1 \(Logical Access\)  |  ISO 27001 A.9.4 \(System Access Control\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 444.0 m 557.0 444.0 l S
+0.90 0.35 0.08 rg 45.0 430.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 432.0 Tm (Action SHA Pinning) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 420.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 406.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 395.0 Tm (When you reference an action with a tag like '@v4', the tag owner can push new code to that tag at any time. Your workflow) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 385.0 Tm (silently picks up the change on the next run — you have no review, no diff, no approval.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 371.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 360.0 Tm (This is the #1 GitHub Actions supply-chain risk. An attacker who compromises an action repo can push malicious code to an) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 350.0 Tm (existing tag and it will run in every workflow that references it. Pinning to a full SHA prevents this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 336.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 325.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 315.0 Tm (Dependabot or Renovate to get PRs when new versions are released.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 303.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1, A.14.2 \(Supply Chain, Secure Dev\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 291.0 m 557.0 291.0 l S
+0.90 0.35 0.08 rg 45.0 277.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 279.0 Tm (Security Scan Coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 267.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 253.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 242.0 Tm (Pull request workflows are the last gate before code merges. If no security scanner \(SAST, SCA, secrets detection\) runs on) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 232.0 Tm (PRs, vulnerabilities and leaked credentials can reach your default branch undetected.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 218.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 207.0 Tm (Missing scan coverage means you cannot demonstrate to auditors that code is reviewed for security issues before deployment.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 197.0 Tm (This is a core secure development requirement.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 183.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 172.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 162.0 Tm (Semgrep \(custom rules\).) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 150.0 Tm (SOC2 CC7.2 \(Security Monitoring\)  |  ISO 27001 A.14.2 \(Secure Development\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 138.0 m 557.0 138.0 l S
+endstream
+endobj
+13 0 obj
+<< /Length 191 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [12 0 R 13 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+15 0 obj
 << /Length 2873 >>
 stream
 0.90 0.35 0.08 rg 45.0 745.0 3.0 12.0 re f
@@ -257,18 +318,18 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 475.0 Tm (SOC2 CC9.2 \(Risk Assessmen
 0.92 0.92 0.92 RG 0.3 w 55.0 463.0 m 557.0 463.0 l S
 endstream
 endobj
-13 0 obj
+16 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
 endobj
-14 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [12 0 R 13 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [15 0 R 16 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
-15 0 obj
+18 0 obj
 << /Length 8424 >>
 stream
 0.11 0.11 0.16 rg 45.0 743.0 522.0 20.0 re f
@@ -306,38 +367,38 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 500.0 Tm ('actions: read' or remove i
 0.90 0.35 0.08 rg 49.0 427.0 3.0 68.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 483.0 Tm (FAIL / HIGH) Tj ET
 BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 483.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 470.0 Tm (Unnecessary write access — 'id-token: write' granted but no step needs it) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 470.0 Tm (Unnecessary write access — 'contents: write' granted but no step needs it) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 458.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 449.0 Tm (novuhq/novu:.github/workflows/prepare-self-hosted-release.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 437.0 Tm (The workflow declares 'id-token: write' but none of the actions in this workflow require write access to id-token. Change it to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 428.0 Tm ('id-token: read' or remove it.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 437.0 Tm (The workflow declares 'contents: write' but none of the actions in this workflow require write access to contents. Change it to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 428.0 Tm ('contents: read' or remove it.) Tj ET
 0.98 0.93 0.88 rg 49.0 355.0 514.0 68.0 re f
 0.90 0.35 0.08 rg 49.0 355.0 3.0 68.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 411.0 Tm (FAIL / HIGH) Tj ET
 BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 411.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 398.0 Tm (Unnecessary write access — 'contents: write' granted but no step needs it) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 398.0 Tm (Unnecessary write access — 'packages: write' granted but no step needs it) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 386.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 377.0 Tm (novuhq/novu:.github/workflows/prepare-self-hosted-release.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 365.0 Tm (The workflow declares 'contents: write' but none of the actions in this workflow require write access to contents. Change it to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 356.0 Tm ('contents: read' or remove it.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 365.0 Tm (The workflow declares 'packages: write' but none of the actions in this workflow require write access to packages. Change it to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 356.0 Tm ('packages: read' or remove it.) Tj ET
 0.98 0.93 0.88 rg 49.0 283.0 514.0 68.0 re f
 0.90 0.35 0.08 rg 49.0 283.0 3.0 68.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 339.0 Tm (FAIL / HIGH) Tj ET
 BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 339.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 326.0 Tm (Unnecessary write access — 'packages: write' granted but no step needs it) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 326.0 Tm (Unnecessary write access — 'deployments: write' granted but no step needs it) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 314.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 305.0 Tm (novuhq/novu:.github/workflows/prepare-self-hosted-release.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 293.0 Tm (The workflow declares 'packages: write' but none of the actions in this workflow require write access to packages. Change it to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 284.0 Tm ('packages: read' or remove it.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 293.0 Tm (The workflow declares 'deployments: write' but none of the actions in this workflow require write access to deployments. Change it to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 284.0 Tm ('deployments: read' or remove it.) Tj ET
 0.98 0.93 0.88 rg 49.0 211.0 514.0 68.0 re f
 0.90 0.35 0.08 rg 49.0 211.0 3.0 68.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 267.0 Tm (FAIL / HIGH) Tj ET
 BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 267.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 254.0 Tm (Unnecessary write access — 'deployments: write' granted but no step needs it) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 254.0 Tm (Unnecessary write access — 'id-token: write' granted but no step needs it) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 242.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml) Tj ET
 BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 233.0 Tm (novuhq/novu:.github/workflows/prepare-self-hosted-release.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 221.0 Tm (The workflow declares 'deployments: write' but none of the actions in this workflow require write access to deployments. Change it to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 212.0 Tm ('deployments: read' or remove it.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 221.0 Tm (The workflow declares 'id-token: write' but none of the actions in this workflow require write access to id-token. Change it to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 212.0 Tm ('id-token: read' or remove it.) Tj ET
 0.11 0.11 0.16 rg 45.0 185.0 522.0 20.0 re f
 0.18 0.42 0.78 rg 45.0 185.0 4.0 20.0 re f
 BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 189.0 Tm (Action SHA Pinning) Tj ET
@@ -358,19 +419,19 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 77.0 Tm (Replace 'actions/checkout@v5
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 68.0 Tm (different code without your knowledge. Use 'gh api repos/actions/checkout/git/ref/tags/v5' to find the current SHA.) Tj ET
 endstream
 endobj
-16 0 obj
+19 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 5 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
 endobj
-17 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [15 0 R 16 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [18 0 R 19 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
-18 0 obj
-<< /Length 9376 >>
+21 0 obj
+<< /Length 9520 >>
 stream
 0.98 0.93 0.88 rg 49.0 682.0 514.0 77.0 re f
 0.90 0.35 0.08 rg 49.0 682.0 3.0 77.0 re f
@@ -432,131 +493,34 @@ BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 299.0 Tm (novuhq/novu:.github/workflo
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 287.0 Tm (Replace 'amannn/action-semantic-pull-request@v5' with 'amannn/action-semantic-pull-request@<full-sha>'. Tags like 'v5' can be moved by) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 278.0 Tm (the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 269.0 Tm (repos/amannn/action-semantic-pull-request/git/ref/tags/v5' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 205.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 205.0 3.0 59.0 re f
+0.98 0.93 0.88 rg 49.0 169.0 514.0 95.0 re f
+0.90 0.35 0.08 rg 49.0 169.0 3.0 95.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 252.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 239.0 Tm (Action actions/checkout uses tag 'v4' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 227.0 Tm (novuhq/novu:.github/workflows/deploy.yml → actions/checkout@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 215.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-sha>'. Tags like 'v4' can be moved by the action owner to point to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 206.0 Tm (different code without your knowledge. Use 'gh api repos/actions/checkout/git/ref/tags/v4' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 121.0 514.0 80.0 re f
-0.90 0.35 0.08 rg 49.0 121.0 3.0 80.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 189.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 176.0 Tm (Action novuhq/clickhouse-cloud-whitelist-ip-action uses tag 'v1.0.0' — can be silently changed by the) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 164.0 Tm (owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 152.0 Tm (novuhq/novu:.github/workflows/deploy.yml → novuhq/clickhouse-cloud-whitelist-ip-action@v1.0.0) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 140.0 Tm (Replace 'novuhq/clickhouse-cloud-whitelist-ip-action@v1.0.0' with 'novuhq/clickhouse-cloud-whitelist-ip-action@<full-sha>'. Tags like) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 131.0 Tm ('v1.0.0' can be moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 122.0 Tm (repos/novuhq/clickhouse-cloud-whitelist-ip-action/git/ref/tags/v1.0.0' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 31.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 31.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 105.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 105.0 Tm (5 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 92.0 Tm (Action pnpm/action-setup uses tag 'v4' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 80.0 Tm (novuhq/novu:.github/workflows/deploy.yml → pnpm/action-setup@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 71.0 Tm (novuhq/novu:.github/workflows/deploy.yml → pnpm/action-setup@v4) Tj ET
-endstream
-endobj
-19 0 obj
-<< /Length 191 >>
-stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 5 of 10) Tj ET
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
-0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
-endstream
-endobj
-20 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [18 0 R 19 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
-endobj
-21 0 obj
-<< /Length 9409 >>
-stream
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 747.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml → pnpm/action-setup@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 738.0 Tm (+ 2 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 726.0 Tm (Replace 'pnpm/action-setup@v4' with 'pnpm/action-setup@<full-sha>'. Tags like 'v4' can be moved by the action owner to point to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 717.0 Tm (different code without your knowledge. Use 'gh api repos/pnpm/action-setup/git/ref/tags/v4' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 617.0 514.0 95.0 re f
-0.90 0.35 0.08 rg 49.0 617.0 3.0 95.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 700.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 700.0 Tm (5 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 687.0 Tm (Action docker/setup-buildx-action uses tag 'v3' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 675.0 Tm (novuhq/novu:.github/workflows/deploy.yml → docker/setup-buildx-action@v3) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 666.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → docker/setup-buildx-action@v3) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 657.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml → docker/setup-buildx-...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 648.0 Tm (+ 2 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 636.0 Tm (Replace 'docker/setup-buildx-action@v3' with 'docker/setup-buildx-action@<full-sha>'. Tags like 'v3' can be moved by the action owner) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 627.0 Tm (to point to different code without your knowledge. Use 'gh api repos/docker/setup-buildx-action/git/ref/tags/v3' to find the current) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 618.0 Tm (SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 518.0 514.0 95.0 re f
-0.90 0.35 0.08 rg 49.0 518.0 3.0 95.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 601.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 601.0 Tm (5 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 588.0 Tm (Action aws-actions/configure-aws-credentials uses tag 'v4' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 576.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/configure-aws-credentials@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 567.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/configure-aws-credentials@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 558.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → aws-actions/configure-aws-credentia...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 549.0 Tm (+ 2 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 537.0 Tm (Replace 'aws-actions/configure-aws-credentials@v4' with 'aws-actions/configure-aws-credentials@<full-sha>'. Tags like 'v4' can be) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 528.0 Tm (moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 519.0 Tm (repos/aws-actions/configure-aws-credentials/git/ref/tags/v4' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 428.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 428.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 502.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 502.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 489.0 Tm (Action aws-actions/amazon-ecr-login uses tag 'v2' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 477.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/amazon-ecr-login@v2) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 468.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → aws-actions/amazon-ecr-login@v2) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 459.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml → aws-actions/amazon-e...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 447.0 Tm (Replace 'aws-actions/amazon-ecr-login@v2' with 'aws-actions/amazon-ecr-login@<full-sha>'. Tags like 'v2' can be moved by the action) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 438.0 Tm (owner to point to different code without your knowledge. Use 'gh api repos/aws-actions/amazon-ecr-login/git/ref/tags/v2' to find the) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 429.0 Tm (current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 347.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 347.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 412.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 412.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 399.0 Tm (Action martinbeentjes/npm-get-version-action uses tag 'main' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 387.0 Tm (novuhq/novu:.github/workflows/deploy.yml → martinbeentjes/npm-get-version-action@main) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 378.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → martinbeentjes/npm-get-version-acti...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 366.0 Tm (Replace 'martinbeentjes/npm-get-version-action@main' with 'martinbeentjes/npm-get-version-action@<full-sha>'. Tags like 'main' can be) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 357.0 Tm (moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 348.0 Tm (repos/martinbeentjes/npm-get-version-action/git/ref/tags/main' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 275.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 275.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 331.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 331.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 318.0 Tm (Action getsentry/action-release uses tag 'v1' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 306.0 Tm (novuhq/novu:.github/workflows/deploy.yml → getsentry/action-release@v1) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 297.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → getsentry/action-release@v1) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 285.0 Tm (Replace 'getsentry/action-release@v1' with 'getsentry/action-release@<full-sha>'. Tags like 'v1' can be moved by the action owner to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 276.0 Tm (point to different code without your knowledge. Use 'gh api repos/getsentry/action-release/git/ref/tags/v1' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 203.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 203.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 259.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 246.0 Tm (Action newrelic/deployment-marker-action uses tag 'v2.3.0' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 234.0 Tm (novuhq/novu:.github/workflows/deploy.yml → newrelic/deployment-marker-action@v2.3.0) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 222.0 Tm (Replace 'newrelic/deployment-marker-action@v2.3.0' with 'newrelic/deployment-marker-action@<full-sha>'. Tags like 'v2.3.0' can be) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 213.0 Tm (moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 204.0 Tm (repos/newrelic/deployment-marker-action/git/ref/tags/v2.3.0' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 140.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 140.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 187.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 174.0 Tm (Action novuhq/actions-novu-sync uses tag 'v2' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 162.0 Tm (novuhq/novu:.github/workflows/deploy.yml → novuhq/actions-novu-sync@v2) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 150.0 Tm (Replace 'novuhq/actions-novu-sync@v2' with 'novuhq/actions-novu-sync@<full-sha>'. Tags like 'v2' can be moved by the action owner to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 141.0 Tm (point to different code without your knowledge. Use 'gh api repos/novuhq/actions-novu-sync/git/ref/tags/v2' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 77.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 77.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 124.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 111.0 Tm (Action actions/ai-inference uses tag 'v1' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 99.0 Tm (novuhq/novu:.github/workflows/deployment-summary.yml → actions/ai-inference@v1) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 87.0 Tm (Replace 'actions/ai-inference@v1' with 'actions/ai-inference@<full-sha>'. Tags like 'v1' can be moved by the action owner to point to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 78.0 Tm (different code without your knowledge. Use 'gh api repos/actions/ai-inference/git/ref/tags/v1' to find the current SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 252.0 Tm (5 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 239.0 Tm (Action aws-actions/configure-aws-credentials uses tag 'v4' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 227.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/configure-aws-credentials@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 218.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/configure-aws-credentials@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 209.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → aws-actions/configure-aws-credentia...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 200.0 Tm (+ 2 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 188.0 Tm (Replace 'aws-actions/configure-aws-credentials@v4' with 'aws-actions/configure-aws-credentials@<full-sha>'. Tags like 'v4' can be) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 179.0 Tm (moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 170.0 Tm (repos/aws-actions/configure-aws-credentials/git/ref/tags/v4' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 88.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 88.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 153.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 153.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 140.0 Tm (Action martinbeentjes/npm-get-version-action uses tag 'main' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 128.0 Tm (novuhq/novu:.github/workflows/deploy.yml → martinbeentjes/npm-get-version-action@main) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 119.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → martinbeentjes/npm-get-version-acti...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 107.0 Tm (Replace 'martinbeentjes/npm-get-version-action@main' with 'martinbeentjes/npm-get-version-action@<full-sha>'. Tags like 'main' can be) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 98.0 Tm (moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 89.0 Tm (repos/martinbeentjes/npm-get-version-action/git/ref/tags/main' to find the current SHA.) Tj ET
 endstream
 endobj
 22 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 6 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 6 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -565,6 +529,103 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [21 0 R 22 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 24 0 obj
+<< /Length 9266 >>
+stream
+0.98 0.93 0.88 rg 49.0 691.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 691.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action getsentry/action-release uses tag 'v1' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (novuhq/novu:.github/workflows/deploy.yml → getsentry/action-release@v1) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → getsentry/action-release@v1) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 701.0 Tm (Replace 'getsentry/action-release@v1' with 'getsentry/action-release@<full-sha>'. Tags like 'v1' can be moved by the action owner to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 692.0 Tm (point to different code without your knowledge. Use 'gh api repos/getsentry/action-release/git/ref/tags/v1' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 619.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 619.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 675.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 662.0 Tm (Action newrelic/deployment-marker-action uses tag 'v2.3.0' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 650.0 Tm (novuhq/novu:.github/workflows/deploy.yml → newrelic/deployment-marker-action@v2.3.0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 638.0 Tm (Replace 'newrelic/deployment-marker-action@v2.3.0' with 'newrelic/deployment-marker-action@<full-sha>'. Tags like 'v2.3.0' can be) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 629.0 Tm (moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 620.0 Tm (repos/newrelic/deployment-marker-action/git/ref/tags/v2.3.0' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 556.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 556.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 603.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 590.0 Tm (Action novuhq/actions-novu-sync uses tag 'v2' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 578.0 Tm (novuhq/novu:.github/workflows/deploy.yml → novuhq/actions-novu-sync@v2) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 566.0 Tm (Replace 'novuhq/actions-novu-sync@v2' with 'novuhq/actions-novu-sync@<full-sha>'. Tags like 'v2' can be moved by the action owner to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 557.0 Tm (point to different code without your knowledge. Use 'gh api repos/novuhq/actions-novu-sync/git/ref/tags/v2' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 493.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 493.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 540.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 527.0 Tm (Action actions/checkout uses tag 'v4' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 515.0 Tm (novuhq/novu:.github/workflows/deploy.yml → actions/checkout@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 503.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-sha>'. Tags like 'v4' can be moved by the action owner to point to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 494.0 Tm (different code without your knowledge. Use 'gh api repos/actions/checkout/git/ref/tags/v4' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 409.0 514.0 80.0 re f
+0.90 0.35 0.08 rg 49.0 409.0 3.0 80.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 477.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 464.0 Tm (Action novuhq/clickhouse-cloud-whitelist-ip-action uses tag 'v1.0.0' — can be silently changed by the) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 452.0 Tm (owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 440.0 Tm (novuhq/novu:.github/workflows/deploy.yml → novuhq/clickhouse-cloud-whitelist-ip-action@v1.0.0) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 428.0 Tm (Replace 'novuhq/clickhouse-cloud-whitelist-ip-action@v1.0.0' with 'novuhq/clickhouse-cloud-whitelist-ip-action@<full-sha>'. Tags like) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 419.0 Tm ('v1.0.0' can be moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 410.0 Tm (repos/novuhq/clickhouse-cloud-whitelist-ip-action/git/ref/tags/v1.0.0' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 319.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 319.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 393.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 393.0 Tm (5 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 380.0 Tm (Action pnpm/action-setup uses tag 'v4' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 368.0 Tm (novuhq/novu:.github/workflows/deploy.yml → pnpm/action-setup@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 359.0 Tm (novuhq/novu:.github/workflows/deploy.yml → pnpm/action-setup@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 350.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml → pnpm/action-setup@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 341.0 Tm (+ 2 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 329.0 Tm (Replace 'pnpm/action-setup@v4' with 'pnpm/action-setup@<full-sha>'. Tags like 'v4' can be moved by the action owner to point to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 320.0 Tm (different code without your knowledge. Use 'gh api repos/pnpm/action-setup/git/ref/tags/v4' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 220.0 514.0 95.0 re f
+0.90 0.35 0.08 rg 49.0 220.0 3.0 95.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 303.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 303.0 Tm (5 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 290.0 Tm (Action docker/setup-buildx-action uses tag 'v3' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 278.0 Tm (novuhq/novu:.github/workflows/deploy.yml → docker/setup-buildx-action@v3) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 269.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → docker/setup-buildx-action@v3) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 260.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml → docker/setup-buildx-...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 251.0 Tm (+ 2 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 239.0 Tm (Replace 'docker/setup-buildx-action@v3' with 'docker/setup-buildx-action@<full-sha>'. Tags like 'v3' can be moved by the action owner) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 230.0 Tm (to point to different code without your knowledge. Use 'gh api repos/docker/setup-buildx-action/git/ref/tags/v3' to find the current) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 221.0 Tm (SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 130.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 130.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 204.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 204.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 191.0 Tm (Action aws-actions/amazon-ecr-login uses tag 'v2' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 179.0 Tm (novuhq/novu:.github/workflows/deploy.yml → aws-actions/amazon-ecr-login@v2) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 170.0 Tm (novuhq/novu:.github/workflows/dev-deploy-inbound-mail.yml → aws-actions/amazon-ecr-login@v2) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 161.0 Tm (novuhq/novu:.github/workflows/prepare-enterprise-self-hosted-release.yml → aws-actions/amazon-e...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 149.0 Tm (Replace 'aws-actions/amazon-ecr-login@v2' with 'aws-actions/amazon-ecr-login@<full-sha>'. Tags like 'v2' can be moved by the action) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 140.0 Tm (owner to point to different code without your knowledge. Use 'gh api repos/aws-actions/amazon-ecr-login/git/ref/tags/v2' to find the) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 131.0 Tm (current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 67.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 67.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 114.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 101.0 Tm (Action actions/ai-inference uses tag 'v1' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 89.0 Tm (novuhq/novu:.github/workflows/deployment-summary.yml → actions/ai-inference@v1) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 77.0 Tm (Replace 'actions/ai-inference@v1' with 'actions/ai-inference@<full-sha>'. Tags like 'v1' can be moved by the action owner to point to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 68.0 Tm (different code without your knowledge. Use 'gh api repos/actions/ai-inference/git/ref/tags/v1' to find the current SHA.) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Length 191 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 7 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [24 0 R 25 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+27 0 obj
 << /Length 8385 >>
 stream
 0.98 0.93 0.88 rg 49.0 691.0 514.0 68.0 re f
@@ -597,34 +658,34 @@ BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 524.0 Tm (novuhq/novu:.github/workflo
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 512.0 Tm (Replace 'peter-evans/create-or-update-comment@v2' with 'peter-evans/create-or-update-comment@<full-sha>'. Tags like 'v2' can be moved) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 503.0 Tm (by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 494.0 Tm (repos/peter-evans/create-or-update-comment/git/ref/tags/v2' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 421.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 421.0 3.0 68.0 re f
+0.98 0.93 0.88 rg 49.0 403.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 403.0 3.0 86.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 477.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 464.0 Tm (Action actions/dependency-review-action uses tag 'v4' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 452.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → actions/dependency-review-action@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 440.0 Tm (Replace 'actions/dependency-review-action@v4' with 'actions/dependency-review-action@<full-sha>'. Tags like 'v4' can be moved by the) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 431.0 Tm (action owner to point to different code without your knowledge. Use 'gh api repos/actions/dependency-review-action/git/ref/tags/v4' to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 422.0 Tm (find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 337.0 514.0 80.0 re f
-0.90 0.35 0.08 rg 49.0 337.0 3.0 80.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 405.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 392.0 Tm (Action launchdarkly/find-code-references-in-pull-request uses tag 'v2' — can be silently changed by the) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 380.0 Tm (owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 368.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → launchdarkly/find-code-references-in-pull-request@v2) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 356.0 Tm (Replace 'launchdarkly/find-code-references-in-pull-request@v2' with 'launchdarkly/find-code-references-in-pull-request@<full-sha>'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 347.0 Tm (Tags like 'v2' can be moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 338.0 Tm (repos/launchdarkly/find-code-references-in-pull-request/git/ref/tags/v2' to find the current SHA.) Tj ET
-0.98 0.93 0.88 rg 49.0 247.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 247.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 321.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 321.0 Tm (7 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 308.0 Tm (Action mansagroup/nrwl-nx-action uses tag 'v3' — can be silently changed by the owner) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 296.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → mansagroup/nrwl-nx-action@v3) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 287.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → mansagroup/nrwl-nx-action@v3) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 278.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → mansagroup/nrwl-nx-action@v3) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 269.0 Tm (+ 4 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 257.0 Tm (Replace 'mansagroup/nrwl-nx-action@v3' with 'mansagroup/nrwl-nx-action@<full-sha>'. Tags like 'v3' can be moved by the action owner to) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 248.0 Tm (point to different code without your knowledge. Use 'gh api repos/mansagroup/nrwl-nx-action/git/ref/tags/v3' to find the current SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 477.0 Tm (7 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 464.0 Tm (Action mansagroup/nrwl-nx-action uses tag 'v3' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 452.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → mansagroup/nrwl-nx-action@v3) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 443.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → mansagroup/nrwl-nx-action@v3) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 434.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → mansagroup/nrwl-nx-action@v3) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 425.0 Tm (+ 4 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 413.0 Tm (Replace 'mansagroup/nrwl-nx-action@v3' with 'mansagroup/nrwl-nx-action@<full-sha>'. Tags like 'v3' can be moved by the action owner to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 404.0 Tm (point to different code without your knowledge. Use 'gh api repos/mansagroup/nrwl-nx-action/git/ref/tags/v3' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 331.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 331.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 387.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 374.0 Tm (Action actions/dependency-review-action uses tag 'v4' — can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 362.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → actions/dependency-review-action@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 350.0 Tm (Replace 'actions/dependency-review-action@v4' with 'actions/dependency-review-action@<full-sha>'. Tags like 'v4' can be moved by the) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 341.0 Tm (action owner to point to different code without your knowledge. Use 'gh api repos/actions/dependency-review-action/git/ref/tags/v4' to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 332.0 Tm (find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 247.0 514.0 80.0 re f
+0.90 0.35 0.08 rg 49.0 247.0 3.0 80.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 315.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 302.0 Tm (Action launchdarkly/find-code-references-in-pull-request uses tag 'v2' — can be silently changed by the) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 290.0 Tm (owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 278.0 Tm (novuhq/novu:.github/workflows/on-pr.yml → launchdarkly/find-code-references-in-pull-request@v2) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 266.0 Tm (Replace 'launchdarkly/find-code-references-in-pull-request@v2' with 'launchdarkly/find-code-references-in-pull-request@<full-sha>'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 257.0 Tm (Tags like 'v2' can be moved by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 248.0 Tm (repos/launchdarkly/find-code-references-in-pull-request/git/ref/tags/v2' to find the current SHA.) Tj ET
 0.98 0.93 0.88 rg 49.0 175.0 514.0 68.0 re f
 0.90 0.35 0.08 rg 49.0 175.0 3.0 68.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 231.0 Tm (FAIL / HIGH) Tj ET
@@ -642,18 +703,18 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 122.0 Tm (Replace 'nrwl/nx-set-shas@v
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 113.0 Tm (different code without your knowledge. Use 'gh api repos/nrwl/nx-set-shas/git/ref/tags/v2' to find the current SHA.) Tj ET
 endstream
 endobj
-25 0 obj
+28 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 7 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 8 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
 endobj
-26 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [24 0 R 25 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [27 0 R 28 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
-27 0 obj
+30 0 obj
 << /Length 8906 >>
 stream
 0.98 0.93 0.88 rg 49.0 700.0 514.0 59.0 re f
@@ -735,18 +796,18 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 98.0 Tm (Replace 'useblacksmith/cache
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 89.0 Tm (different code without your knowledge. Use 'gh api repos/useblacksmith/cache/git/ref/tags/v5' to find the current SHA.) Tj ET
 endstream
 endobj
-28 0 obj
+31 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 8 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 9 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
 endobj
-29 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [27 0 R 28 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+32 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [30 0 R 31 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
-30 0 obj
+33 0 obj
 << /Length 8340 >>
 stream
 0.98 0.93 0.88 rg 49.0 691.0 514.0 68.0 re f
@@ -830,18 +891,18 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 107.0 Tm (Add 'environment: productio
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 98.0 Tm (push can trigger a production deploy with no human approval.) Tj ET
 endstream
 endobj
-31 0 obj
-<< /Length 191 >>
+34 0 obj
+<< /Length 192 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 9 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 10 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
 endobj
-32 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [30 0 R 31 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+35 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [33 0 R 34 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
-33 0 obj
+36 0 obj
 << /Length 2271 >>
 stream
 0.95 0.88 0.88 rg 49.0 700.0 514.0 59.0 re f
@@ -867,57 +928,60 @@ BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 584.0 Tm (Add 'environment: productio
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 575.0 Tm (push can trigger a production deploy with no human approval.) Tj ET
 endstream
 endobj
-34 0 obj
+37 0 obj
 << /Length 192 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 10 of 10) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 11 of 11) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
 endobj
-35 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [33 0 R 34 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+38 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [36 0 R 37 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 xref
-0 36
+0 39
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000185 00000 n 
-0000000255 00000 n 
-0000000330 00000 n 
-0000000398 00000 n 
-0000007499 00000 n 
-0000007741 00000 n 
-0000007895 00000 n 
-0000014223 00000 n 
-0000014466 00000 n 
-0000014622 00000 n 
-0000017547 00000 n 
-0000017790 00000 n 
-0000017947 00000 n 
-0000026423 00000 n 
-0000026666 00000 n 
-0000026823 00000 n 
-0000036251 00000 n 
-0000036494 00000 n 
-0000036651 00000 n 
-0000046112 00000 n 
-0000046355 00000 n 
-0000046512 00000 n 
-0000054949 00000 n 
-0000055192 00000 n 
-0000055349 00000 n 
-0000064307 00000 n 
-0000064550 00000 n 
-0000064707 00000 n 
-0000073099 00000 n 
-0000073342 00000 n 
-0000073499 00000 n 
-0000075822 00000 n 
-0000076066 00000 n 
+0000000192 00000 n 
+0000000262 00000 n 
+0000000337 00000 n 
+0000000405 00000 n 
+0000007506 00000 n 
+0000007748 00000 n 
+0000007902 00000 n 
+0000013221 00000 n 
+0000013464 00000 n 
+0000013620 00000 n 
+0000019211 00000 n 
+0000019454 00000 n 
+0000019611 00000 n 
+0000022536 00000 n 
+0000022779 00000 n 
+0000022936 00000 n 
+0000031412 00000 n 
+0000031655 00000 n 
+0000031812 00000 n 
+0000041384 00000 n 
+0000041627 00000 n 
+0000041784 00000 n 
+0000051102 00000 n 
+0000051345 00000 n 
+0000051502 00000 n 
+0000059939 00000 n 
+0000060182 00000 n 
+0000060339 00000 n 
+0000069297 00000 n 
+0000069540 00000 n 
+0000069697 00000 n 
+0000078089 00000 n 
+0000078333 00000 n 
+0000078490 00000 n 
+0000080813 00000 n 
+0000081057 00000 n 
 trailer
-<< /Size 36 /Root 1 0 R >>
+<< /Size 39 /Root 1 0 R >>
 startxref
-76223
+81214
 %%EOF
