@@ -431,15 +431,21 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 		}
 		need(headerSpace + 50)
 
-		// Section banner
+		// Section banner — use human-friendly title
+		sectionTitle := cr.CheckID
+		if exp, ok := checkExplainers[cr.CheckID]; ok {
+			sectionTitle = exp.Title
+		}
 		cur.rect(ml, y-4, cw, 20, colDark.r, colDark.g, colDark.b)
 		cur.rect(ml, y-4, 4, 20, colBlue.r, colBlue.g, colBlue.b) // accent
-		cur.textC(ml+12, y, "/F2", 10, 1, 1, 1, cr.CheckID)
+		cur.textC(ml+12, y, "/F2", 10, 1, 1, 1, sectionTitle)
+		// Show check ID smaller on the right
+		cur.textC(pw-mr-180, y+1, "/F3", 7, 0.55, 0.55, 0.6, cr.CheckID)
 
 		// Pass count on right
 		failN, _, passN, _ := countStatuses(cr)
 		if passN > 0 {
-			cur.textC(pw-mr-60, y, "/F1", 8, 0.6, 0.6, 0.65,
+			cur.textC(pw-mr-45, y+1, "/F1", 7, 0.6, 0.6, 0.65,
 				fmt.Sprintf("%d passed", passN))
 		}
 		y -= 24
