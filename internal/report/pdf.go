@@ -287,6 +287,121 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 
 	allPages = append(allPages, p1.content())
 
+	// ── Page 2: Executive Summary + What This Means ──────────────────────
+	p2 := &pdfPage{}
+	y = ph - mt
+
+	p2.text(ml, y, "/F2", 16, "Executive Summary")
+	y -= 6
+	p2.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)
+	y -= 16
+
+	// Build fail counts per check
+	failsByCheck := make(map[string]int)
+	totalFails := 0
+	for _, cr := range report.CheckResults {
+		f, _, _, _ := countStatuses(cr)
+		if f > 0 {
+			failsByCheck[cr.CheckID] = f
+			totalFails += f
+		}
+	}
+
+	summaryLines := executiveSummary(
+		report.Summary.TotalFindings, totalFails,
+		report.Summary.CountBySeverity[models.SeverityCritical],
+		failsByCheck)
+
+	for _, ln := range summaryLines {
+		if ln == "" {
+			y -= 6
+			continue
+		}
+		p2.text(ml+5, y, "/F1", 9, ln)
+		y -= 13
+	}
+
+	y -= 20
+
+	// ── What These Checks Mean ──
+	p2.text(ml, y, "/F2", 14, "What These Checks Mean")
+	y -= 6
+	p2.line(ml, y, pw-mr, y, colGrayLine.r, colGrayLine.g, colGrayLine.b, 0.5)
+	y -= 14
+
+	p2.textC(ml+5, y, "/F1", 8, colGrayText.r, colGrayText.g, colGrayText.b,
+		"Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.")
+	y -= 16
+
+	// Sorted check IDs for consistent ordering
+	checkOrder := []string{
+		"permissions.workflow_overage",
+		"supplychain.unpinned_actions",
+		"securedev.scan_coverage",
+		"changetrail.deploy_approval",
+		"supplychain.action_bom",
+	}
+
+	for _, checkID := range checkOrder {
+		exp, ok := checkExplainers[checkID]
+		if !ok {
+			continue
+		}
+
+		// Check if we need a new page
+		if y < mb+110 {
+			allPages = append(allPages, p2.content())
+			p2 = &pdfPage{}
+			y = ph - mt
+		}
+
+		// Check title with accent
+		sc := colBlue
+		if f, ok := failsByCheck[checkID]; ok && f > 0 {
+			sc = colOrange
+		}
+		p2.rect(ml, y-2, 3, 12, sc.r, sc.g, sc.b)
+		p2.text(ml+10, y, "/F2", 10, exp.Title)
+		p2.textC(ml+10, y-12, "/F3", 7, colGrayText.r, colGrayText.g, colGrayText.b, checkID)
+		y -= 26
+
+		// Why it matters
+		p2.textC(ml+10, y, "/F2", 8, colGrayText.r, colGrayText.g, colGrayText.b, "WHY IT MATTERS")
+		y -= 11
+		for _, ln := range wrapText(exp.Why, cw-25, 8) {
+			p2.text(ml+10, y, "/F1", 8, ln)
+			y -= 10
+		}
+		y -= 4
+
+		// Risk
+		p2.textC(ml+10, y, "/F2", 8, colRed.r, colRed.g, colRed.b, "RISK")
+		y -= 11
+		for _, ln := range wrapText(exp.Risk, cw-25, 8) {
+			p2.text(ml+10, y, "/F1", 8, ln)
+			y -= 10
+		}
+		y -= 4
+
+		// How to fix
+		p2.textC(ml+10, y, "/F2", 8, colGreen.r, colGreen.g, colGreen.b, "HOW TO FIX")
+		y -= 11
+		for _, ln := range wrapText(exp.FixHint, cw-25, 8) {
+			p2.text(ml+10, y, "/F1", 8, ln)
+			y -= 10
+		}
+
+		// Controls
+		p2.textC(ml+10, y-2, "/F1", 7, colGrayText.r, colGrayText.g, colGrayText.b, exp.Controls)
+		y -= 14
+
+		// Separator
+		p2.line(ml+10, y, pw-mr-10, y, 0.92, 0.92, 0.92, 0.3)
+		y -= 12
+	}
+
+	allPages = append(allPages, p2.content())
+
 	// ── Finding Pages ────────────────────────────────────────────────────
 	cur := &pdfPage{}
 	y = ph - mt
@@ -308,19 +423,39 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 			continue
 		}
 
-		need(50)
+		// Section header space: banner + optional context line
+		headerSpace := 30.0
+		if exp, ok := checkExplainers[cr.CheckID]; ok {
+			_ = exp
+			headerSpace = 46.0
+		}
+		need(headerSpace + 50)
+
 		// Section banner
 		cur.rect(ml, y-4, cw, 20, colDark.r, colDark.g, colDark.b)
 		cur.rect(ml, y-4, 4, 20, colBlue.r, colBlue.g, colBlue.b) // accent
 		cur.textC(ml+12, y, "/F2", 10, 1, 1, 1, cr.CheckID)
 
 		// Pass count on right
-		_, _, passN, _ := countStatuses(cr)
+		failN, _, passN, _ := countStatuses(cr)
 		if passN > 0 {
 			cur.textC(pw-mr-60, y, "/F1", 8, 0.6, 0.6, 0.65,
 				fmt.Sprintf("%d passed", passN))
 		}
-		y -= 26
+		y -= 24
+
+		// Brief context line under section header
+		if exp, ok := checkExplainers[cr.CheckID]; ok {
+			hint := exp.FixHint
+			if failN == 0 {
+				hint = "All checks passed for this category."
+			}
+			for _, ln := range wrapText(hint, cw-20, 7.5) {
+				cur.textC(ml+8, y, "/F1", 7.5, colGrayText.r, colGrayText.g, colGrayText.b, ln)
+				y -= 10
+			}
+			y -= 4
+		}
 
 		for _, g := range groups {
 			need(50)

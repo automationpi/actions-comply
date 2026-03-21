@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R 38 0 R] /Count 11 >>
+<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R 32 0 R 35 0 R 38 0 R 41 0 R 44 0 R 47 0 R] /Count 14 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -23,7 +23,7 @@ stream
 BT 1.00 1.00 1.00 rg /F2 26 Tf 1 0 0 1 45.0 737.0 Tm (actions-comply) Tj ET
 BT 0.75 0.75 0.80 rg /F1 12 Tf 1 0 0 1 45.0 714.0 Tm (Compliance Audit Report) Tj ET
 BT 0.60 0.60 0.65 rg /F1 9 Tf 1 0 0 1 407.0 737.0 Tm (21 March 2026) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774090799) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774091206) Tj ET
 0.96 0.96 0.97 rg 45.0 617.0 522.0 22.0 re f
 BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 623.0 Tm (Org:) Tj ET
 BT 0 0 0 rg /F1 7 Tf 1 0 0 1 73.0 623.0 Tm (PostHog) Tj ET
@@ -141,7 +141,7 @@ endobj
 7 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -150,100 +150,74 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [6 0 R 7 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 9 0 obj
-<< /Length 7813 >>
+<< /Length 6278 >>
 stream
-0.11 0.11 0.16 rg 45.0 743.0 522.0 20.0 re f
-0.18 0.42 0.78 rg 45.0 743.0 4.0 20.0 re f
-BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 747.0 Tm (permissions.workflow_overage) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 507.0 747.0 Tm (25 passed) Tj ET
-0.98 0.96 0.88 rg 49.0 647.0 514.0 86.0 re f
-0.85 0.60 0.00 rg 49.0 647.0 3.0 86.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 721.0 Tm (WARN / MEDIUM) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 721.0 Tm (23 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 708.0 Tm (No explicit permissions block — GitHub defaults apply) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 696.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 687.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 678.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 669.0 Tm (+ 20 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 657.0 Tm (Add an explicit permissions block to follow the principle of least privilege. Without it, workflows may receive broader permissions) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 648.0 Tm (than needed.) Tj ET
-0.98 0.93 0.88 rg 49.0 566.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 566.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 631.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 631.0 Tm (4 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 618.0 Tm (Write scope 'contents: write' declared but no step requires it) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 606.0 Tm (PostHog/posthog:.github/workflows/build-hobby-installer.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 597.0 Tm (PostHog/posthog:.github/workflows/build-livestream-tui.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 588.0 Tm (PostHog/posthog:.github/workflows/build-phrocs.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 579.0 Tm (+ 1 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 567.0 Tm (Remove or downgrade 'contents: write' to 'contents: read' unless a step genuinely needs write access.) Tj ET
-0.98 0.93 0.88 rg 49.0 485.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 485.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 550.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 550.0 Tm (16 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 537.0 Tm (Write scope 'pull-requests: write' declared but no step requires it) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 525.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 516.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 507.0 Tm (PostHog/posthog:.github/workflows/ci-backend-update-test-timing.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 498.0 Tm (+ 13 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 486.0 Tm (Remove or downgrade 'pull-requests: write' to 'pull-requests: read' unless a step genuinely needs write access.) Tj ET
-0.98 0.96 0.88 rg 49.0 434.0 514.0 47.0 re f
-0.85 0.60 0.00 rg 49.0 434.0 3.0 47.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 469.0 Tm (WARN / MEDIUM) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 469.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 456.0 Tm (Job 'publish-npm' has write scope 'id-token: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 444.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml/jobs/publish-npm) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 435.0 Tm (PostHog/posthog:.github/workflows/release.yml/jobs/publish-npm) Tj ET
-0.98 0.96 0.88 rg 49.0 392.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 392.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 418.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 405.0 Tm (Job 'publish' has write scope 'id-token: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 393.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml/jobs/publish) Tj ET
-0.98 0.96 0.88 rg 49.0 332.0 514.0 56.0 re f
-0.85 0.60 0.00 rg 49.0 332.0 3.0 56.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 376.0 Tm (WARN / MEDIUM) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 376.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 363.0 Tm (Job 'handle-snapshots' has write scope 'contents: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 351.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/handle-snapshots) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 342.0 Tm (PostHog/posthog:.github/workflows/ci-mcp.yml/jobs/handle-snapshots) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 333.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/handle-snapshots) Tj ET
-0.98 0.96 0.88 rg 49.0 272.0 514.0 56.0 re f
-0.85 0.60 0.00 rg 49.0 272.0 3.0 56.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 316.0 Tm (WARN / MEDIUM) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 316.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 303.0 Tm (Job 'handle-snapshots' has write scope 'pull-requests: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 291.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/handle-snapshots) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 282.0 Tm (PostHog/posthog:.github/workflows/ci-mcp.yml/jobs/handle-snapshots) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 273.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/handle-snapshots) Tj ET
-0.98 0.96 0.88 rg 49.0 230.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 230.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 256.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 243.0 Tm (Job 'handle-screenshots' has write scope 'contents: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 231.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml/jobs/handle-screenshots) Tj ET
-0.98 0.96 0.88 rg 49.0 188.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 188.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 214.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 201.0 Tm (Job 'handle-screenshots' has write scope 'pull-requests: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 189.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml/jobs/handle-screenshots) Tj ET
-0.98 0.93 0.88 rg 49.0 125.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 125.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 172.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 172.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 159.0 Tm (Write scope 'deployments: write' declared but no step requires it) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 147.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 138.0 Tm (PostHog/posthog:.github/workflows/pr-cleanup.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 126.0 Tm (Remove or downgrade 'deployments: write' to 'deployments: read' unless a step genuinely needs write access.) Tj ET
-0.98 0.96 0.88 rg 49.0 83.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 83.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 109.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 96.0 Tm (Job 'cleanup-on-label-removal' has write scope 'deployments: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 84.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml/jobs/cleanup-on-label-removal) Tj ET
+BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 747.0 Tm (Executive Summary) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 741.0 m 567.0 741.0 l S
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 725.0 Tm (This audit found 628 compliance issues, including 9 critical findings) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 712.0 Tm (that should be addressed before your next audit review. Critical findings) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 699.0 Tm (represent missing controls that auditors will flag as exceptions.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 680.0 Tm (Priority areas to address:) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 661.0 Tm (  1. Deploy Approval Gates \(9 issues\) — Production jobs without) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 648.0 Tm (     environment protection. This is the most auditor-visible gap.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 635.0 Tm (  2. SHA Pinning \(543 issues\) — Actions using mutable tags instead) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 622.0 Tm (     of commit SHAs. High supply-chain risk, easy to fix.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 609.0 Tm (  3. Scan Coverage \(50 issues\) — PR workflows without security) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 596.0 Tm (     scanners. Add CodeQL or Trivy to close this gap.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 583.0 Tm (  4. Permissions \(26 issues\) — Over-provisioned or missing) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 570.0 Tm (     permission blocks. Quick wins for least-privilege.) Tj ET
+BT 0 0 0 rg /F2 14 Tf 1 0 0 1 45.0 537.0 Tm (What These Checks Mean) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 531.0 m 567.0 531.0 l S
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 517.0 Tm (Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.) Tj ET
+0.90 0.35 0.08 rg 45.0 499.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 501.0 Tm (Workflow Permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 489.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 475.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 464.0 Tm (GitHub Actions workflows run with a token that has access to your repository. If the token has more permissions than needed) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 454.0 Tm (\(e.g., write access to packages when it only reads code\), a compromised action or script injection can do far more damage) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 444.0 Tm (than necessary.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 430.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 419.0 Tm (Over-permissioned tokens violate least-privilege and expand the blast radius of supply-chain attacks. Auditors flag this) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 409.0 Tm (under access control \(SOC2 CC6.1\).) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 395.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 384.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 374.0 Tm (that a step actually needs.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 362.0 Tm (SOC2 CC6.1 \(Logical Access\)  |  ISO 27001 A.9.4 \(System Access Control\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 350.0 m 557.0 350.0 l S
+0.90 0.35 0.08 rg 45.0 336.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 338.0 Tm (Action SHA Pinning) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 326.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 312.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 301.0 Tm (When you reference an action with a tag like '@v4', the tag owner can push new code to that tag at any time. Your workflow) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 291.0 Tm (silently picks up the change on the next run — you have no review, no diff, no approval.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 277.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 266.0 Tm (This is the #1 GitHub Actions supply-chain risk. An attacker who compromises an action repo can push malicious code to an) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 256.0 Tm (existing tag and it will run in every workflow that references it. Pinning to a full SHA prevents this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 242.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 231.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 221.0 Tm (Dependabot or Renovate to get PRs when new versions are released.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 209.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1, A.14.2 \(Supply Chain, Secure Dev\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 197.0 m 557.0 197.0 l S
+0.90 0.35 0.08 rg 45.0 183.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 185.0 Tm (Security Scan Coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 173.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 159.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 148.0 Tm (Pull request workflows are the last gate before code merges. If no security scanner \(SAST, SCA, secrets detection\) runs on) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 138.0 Tm (PRs, vulnerabilities and leaked credentials can reach your default branch undetected.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 124.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 113.0 Tm (Missing scan coverage means you cannot demonstrate to auditors that code is reviewed for security issues before deployment.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 103.0 Tm (This is a core secure development requirement.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 89.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 78.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 68.0 Tm (Semgrep \(custom rules\).) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 56.0 Tm (SOC2 CC7.2 \(Security Monitoring\)  |  ISO 27001 A.14.2 \(Secure Development\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 44.0 m 557.0 44.0 l S
 endstream
 endobj
 10 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -252,96 +226,41 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [9 0 R 10 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 12 0 obj
-<< /Length 8305 >>
+<< /Length 2873 >>
 stream
-0.98 0.93 0.88 rg 49.0 709.0 514.0 50.0 re f
-0.90 0.35 0.08 rg 49.0 709.0 3.0 50.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Write scope 'actions: write' declared but no step requires it) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 710.0 Tm (Remove or downgrade 'actions: write' to 'actions: read' unless a step genuinely needs write access.) Tj ET
-0.98 0.96 0.88 rg 49.0 667.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 667.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 693.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 680.0 Tm (Job 'snapshot-failure-comment' has write scope 'pull-requests: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 668.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/snapshot-failure-comment) Tj ET
-0.98 0.96 0.88 rg 49.0 625.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 625.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 651.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 638.0 Tm (Job 'snapshot-success-cleanup' has write scope 'pull-requests: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 626.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/snapshot-success-cleanup) Tj ET
-0.98 0.93 0.88 rg 49.0 562.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 562.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 609.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 609.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 596.0 Tm (Write scope 'id-token: write' declared but no step requires it) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 584.0 Tm (PostHog/posthog:.github/workflows/inkeep-agent.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 575.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 563.0 Tm (Remove or downgrade 'id-token: write' to 'id-token: read' unless a step genuinely needs write access.) Tj ET
-0.98 0.96 0.88 rg 49.0 520.0 514.0 38.0 re f
-0.85 0.60 0.00 rg 49.0 520.0 3.0 38.0 re f
-BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 546.0 Tm (WARN / MEDIUM) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 533.0 Tm (Job 'cleanup-hobby-preview' has write scope 'deployments: write' with no matching step need) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 521.0 Tm (PostHog/posthog:.github/workflows/pr-closed.yml/jobs/cleanup-hobby-preview) Tj ET
-0.98 0.93 0.88 rg 49.0 466.0 514.0 50.0 re f
-0.90 0.35 0.08 rg 49.0 466.0 3.0 50.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 504.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 491.0 Tm (Write scope 'issues: write' declared but no step requires it) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 479.0 Tm (PostHog/posthog:.github/workflows/stale.yaml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 467.0 Tm (Remove or downgrade 'issues: write' to 'issues: read' unless a step genuinely needs write access.) Tj ET
-0.11 0.11 0.16 rg 45.0 440.0 522.0 20.0 re f
-0.18 0.42 0.78 rg 45.0 440.0 4.0 20.0 re f
-BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 444.0 Tm (supplychain.unpinned_actions) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 507.0 444.0 Tm (21 passed) Tj ET
-0.98 0.93 0.88 rg 49.0 344.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 344.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 418.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 418.0 Tm (19 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 405.0 Tm (Action actions/download-artifact pinned to mutable tag '37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 393.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → actions/download-artifact@37930b1c2a...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 384.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → actions/download-artifact@37930b...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 375.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → actions/download-artifact@37930b1c2a...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 366.0 Tm (+ 16 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 354.0 Tm (Pin actions/download-artifact to a full 40-character commit SHA instead of tag '37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 345.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 263.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 263.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 328.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 328.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 315.0 Tm (Action actions/checkout pinned to mutable tag 'de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 303.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → actions/checkout@de0fac2e4500dabe000...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 294.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → actions/checkout@de0fac2e4500dabe000...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 285.0 Tm (PostHog/posthog:.github/workflows/ci-openapi-codegen.yml → actions/checkout@de0fac2e4500dabe000...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 273.0 Tm (Pin actions/checkout to a full 40-character commit SHA instead of tag 'de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6'. Mutable tags) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 264.0 Tm (can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 173.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 173.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 247.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 247.0 Tm (9 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 234.0 Tm (Action depot/setup-action pinned to mutable tag 'b0b1ea4f69e92ebf5dea3f8713a1b0c37b2126a5 # v1.6.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 222.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → depot/setup-action@b0b1ea4f69e92ebf5...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 213.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → depot/setup-action@b0b1ea4f69e92ebf5d...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 204.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → depot/setup-action@b0b1ea4f69e92...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 195.0 Tm (+ 6 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 183.0 Tm (Pin depot/setup-action to a full 40-character commit SHA instead of tag 'b0b1ea4f69e92ebf5dea3f8713a1b0c37b2126a5 # v1.6.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 174.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 83.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 83.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 157.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 157.0 Tm (8 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 144.0 Tm (Action docker/setup-qemu-action pinned to mutable tag 'c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 132.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → docker/setup-qemu-action@c7c53464625...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 123.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → docker/setup-qemu-action@c7c53464625b...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 114.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → docker/setup-qemu-action@c7c5346...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 105.0 Tm (+ 5 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 93.0 Tm (Pin docker/setup-qemu-action to a full 40-character commit SHA instead of tag 'c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 84.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.90 0.35 0.08 rg 45.0 745.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 747.0 Tm (Deploy Approval Gates) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 735.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 721.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 710.0 Tm (Production deployments without an approval gate mean any push to main can go straight to production. There is no human) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 700.0 Tm (review, no separation of duties, and no audit trail linking a deployment to a specific change and approver.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 686.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 675.0 Tm (This is a critical control for SOC2 — auditors need to see that every production change was reviewed and approved by) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 665.0 Tm (someone other than the author. Without environment protection rules, you cannot demonstrate this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 651.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 640.0 Tm (Add 'environment: production' to deploy jobs and configure required reviewers in GitHub repository Settings > Environments.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 630.0 Tm (This creates an approval gate with a full audit trail.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 618.0 Tm (SOC2 CC8.1 \(Change Management\)  |  ISO 27001 A.12.1 \(Operations Security\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 606.0 m 557.0 606.0 l S
+0.18 0.42 0.78 rg 45.0 592.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 594.0 Tm (Action Bill of Materials) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 582.0 Tm (supplychain.action_bom) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 568.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 557.0 Tm (Every third-party GitHub Action you use is code that runs inside your CI/CD pipeline with access to your secrets and source) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 547.0 Tm (code. Knowing exactly which actions you depend on is step one of supply-chain security.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 533.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 522.0 Tm (Without an inventory, you cannot track which actions are maintained, which have known vulnerabilities, or which have been) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 512.0 Tm (silently replaced.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 498.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 487.0 Tm (This is an informational check — review the BOM periodically and remove actions that are no longer maintained or needed.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 475.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1 \(Supplier Relationships\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 463.0 m 557.0 463.0 l S
 endstream
 endobj
 13 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -350,7 +269,200 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [12 0 R 13 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 15 0 obj
-<< /Length 8692 >>
+<< /Length 7641 >>
+stream
+0.11 0.11 0.16 rg 45.0 743.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 743.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 747.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 507.0 747.0 Tm (25 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 723.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes that a step) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 713.0 Tm (actually needs.) Tj ET
+0.98 0.96 0.88 rg 49.0 625.0 514.0 86.0 re f
+0.85 0.60 0.00 rg 49.0 625.0 3.0 86.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 699.0 Tm (WARN / MEDIUM) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 699.0 Tm (23 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 686.0 Tm (No explicit permissions block — GitHub defaults apply) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 674.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 665.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 656.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 647.0 Tm (+ 20 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 635.0 Tm (Add an explicit permissions block to follow the principle of least privilege. Without it, workflows may receive broader permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 626.0 Tm (than needed.) Tj ET
+0.98 0.93 0.88 rg 49.0 544.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 544.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 609.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 609.0 Tm (4 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 596.0 Tm (Write scope 'contents: write' declared but no step requires it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 584.0 Tm (PostHog/posthog:.github/workflows/build-hobby-installer.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 575.0 Tm (PostHog/posthog:.github/workflows/build-livestream-tui.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 566.0 Tm (PostHog/posthog:.github/workflows/build-phrocs.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 557.0 Tm (+ 1 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 545.0 Tm (Remove or downgrade 'contents: write' to 'contents: read' unless a step genuinely needs write access.) Tj ET
+0.98 0.93 0.88 rg 49.0 463.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 463.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 528.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 528.0 Tm (16 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 515.0 Tm (Write scope 'pull-requests: write' declared but no step requires it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 503.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 494.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 485.0 Tm (PostHog/posthog:.github/workflows/ci-backend-update-test-timing.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 476.0 Tm (+ 13 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 464.0 Tm (Remove or downgrade 'pull-requests: write' to 'pull-requests: read' unless a step genuinely needs write access.) Tj ET
+0.98 0.96 0.88 rg 49.0 412.0 514.0 47.0 re f
+0.85 0.60 0.00 rg 49.0 412.0 3.0 47.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 447.0 Tm (WARN / MEDIUM) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 447.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 434.0 Tm (Job 'publish-npm' has write scope 'id-token: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 422.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml/jobs/publish-npm) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 413.0 Tm (PostHog/posthog:.github/workflows/release.yml/jobs/publish-npm) Tj ET
+0.98 0.96 0.88 rg 49.0 370.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 370.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 396.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 383.0 Tm (Job 'publish' has write scope 'id-token: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 371.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml/jobs/publish) Tj ET
+0.98 0.96 0.88 rg 49.0 310.0 514.0 56.0 re f
+0.85 0.60 0.00 rg 49.0 310.0 3.0 56.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 354.0 Tm (WARN / MEDIUM) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 354.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 341.0 Tm (Job 'handle-snapshots' has write scope 'contents: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 329.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/handle-snapshots) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 320.0 Tm (PostHog/posthog:.github/workflows/ci-mcp.yml/jobs/handle-snapshots) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 311.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/handle-snapshots) Tj ET
+0.98 0.96 0.88 rg 49.0 250.0 514.0 56.0 re f
+0.85 0.60 0.00 rg 49.0 250.0 3.0 56.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 294.0 Tm (WARN / MEDIUM) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 294.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 281.0 Tm (Job 'handle-snapshots' has write scope 'pull-requests: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 269.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/handle-snapshots) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 260.0 Tm (PostHog/posthog:.github/workflows/ci-mcp.yml/jobs/handle-snapshots) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 251.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/handle-snapshots) Tj ET
+0.98 0.96 0.88 rg 49.0 208.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 208.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 234.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 221.0 Tm (Job 'handle-screenshots' has write scope 'pull-requests: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 209.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml/jobs/handle-screenshots) Tj ET
+0.98 0.96 0.88 rg 49.0 166.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 166.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 192.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 179.0 Tm (Job 'handle-screenshots' has write scope 'contents: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 167.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml/jobs/handle-screenshots) Tj ET
+0.98 0.93 0.88 rg 49.0 103.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 103.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 150.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 150.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 137.0 Tm (Write scope 'deployments: write' declared but no step requires it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 125.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 116.0 Tm (PostHog/posthog:.github/workflows/pr-cleanup.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 104.0 Tm (Remove or downgrade 'deployments: write' to 'deployments: read' unless a step genuinely needs write access.) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Length 191 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 14) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [15 0 R 16 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+18 0 obj
+<< /Length 7809 >>
+stream
+0.98 0.96 0.88 rg 49.0 721.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 721.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Job 'cleanup-on-label-removal' has write scope 'deployments: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml/jobs/cleanup-on-label-removal) Tj ET
+0.98 0.93 0.88 rg 49.0 667.0 514.0 50.0 re f
+0.90 0.35 0.08 rg 49.0 667.0 3.0 50.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 705.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 692.0 Tm (Write scope 'actions: write' declared but no step requires it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 680.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 668.0 Tm (Remove or downgrade 'actions: write' to 'actions: read' unless a step genuinely needs write access.) Tj ET
+0.98 0.96 0.88 rg 49.0 625.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 625.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 651.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 638.0 Tm (Job 'snapshot-failure-comment' has write scope 'pull-requests: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 626.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/snapshot-failure-comment) Tj ET
+0.98 0.96 0.88 rg 49.0 583.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 583.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 609.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 596.0 Tm (Job 'snapshot-success-cleanup' has write scope 'pull-requests: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 584.0 Tm (PostHog/posthog:.github/workflows/ci-storybook.yml/jobs/snapshot-success-cleanup) Tj ET
+0.98 0.93 0.88 rg 49.0 520.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 520.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 567.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 567.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 554.0 Tm (Write scope 'id-token: write' declared but no step requires it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 542.0 Tm (PostHog/posthog:.github/workflows/inkeep-agent.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 533.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 521.0 Tm (Remove or downgrade 'id-token: write' to 'id-token: read' unless a step genuinely needs write access.) Tj ET
+0.98 0.96 0.88 rg 49.0 478.0 514.0 38.0 re f
+0.85 0.60 0.00 rg 49.0 478.0 3.0 38.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 504.0 Tm (WARN / MEDIUM) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 491.0 Tm (Job 'cleanup-hobby-preview' has write scope 'deployments: write' with no matching step need) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 479.0 Tm (PostHog/posthog:.github/workflows/pr-closed.yml/jobs/cleanup-hobby-preview) Tj ET
+0.98 0.93 0.88 rg 49.0 424.0 514.0 50.0 re f
+0.90 0.35 0.08 rg 49.0 424.0 3.0 50.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 462.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 449.0 Tm (Write scope 'issues: write' declared but no step requires it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 437.0 Tm (PostHog/posthog:.github/workflows/stale.yaml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 425.0 Tm (Remove or downgrade 'issues: write' to 'issues: read' unless a step genuinely needs write access.) Tj ET
+0.11 0.11 0.16 rg 45.0 398.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 398.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 402.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 507.0 402.0 Tm (21 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 378.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use Dependabot) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 368.0 Tm (or Renovate to get PRs when new versions are released.) Tj ET
+0.98 0.93 0.88 rg 49.0 289.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 289.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 354.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 354.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 341.0 Tm (Action actions/checkout pinned to mutable tag 'de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 329.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → actions/checkout@de0fac2e4500dabe000...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 320.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → actions/checkout@de0fac2e4500dabe000...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 311.0 Tm (PostHog/posthog:.github/workflows/ci-openapi-codegen.yml → actions/checkout@de0fac2e4500dabe000...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 299.0 Tm (Pin actions/checkout to a full 40-character commit SHA instead of tag 'de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6'. Mutable tags) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 290.0 Tm (can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 199.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 199.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 273.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 273.0 Tm (9 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 260.0 Tm (Action depot/setup-action pinned to mutable tag 'b0b1ea4f69e92ebf5dea3f8713a1b0c37b2126a5 # v1.6.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 248.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → depot/setup-action@b0b1ea4f69e92ebf5...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 239.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → depot/setup-action@b0b1ea4f69e92ebf5d...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 230.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → depot/setup-action@b0b1ea4f69e92...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 221.0 Tm (+ 6 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 209.0 Tm (Pin depot/setup-action to a full 40-character commit SHA instead of tag 'b0b1ea4f69e92ebf5dea3f8713a1b0c37b2126a5 # v1.6.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 200.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 109.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 109.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 183.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 183.0 Tm (8 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 170.0 Tm (Action docker/setup-qemu-action pinned to mutable tag 'c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 158.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → docker/setup-qemu-action@c7c53464625...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 149.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → docker/setup-qemu-action@c7c53464625b...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 140.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → docker/setup-qemu-action@c7c5346...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 131.0 Tm (+ 5 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 119.0 Tm (Pin docker/setup-qemu-action to a full 40-character commit SHA instead of tag 'c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 110.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Length 191 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 5 of 14) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [18 0 R 19 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+21 0 obj
+<< /Length 9394 >>
 stream
 0.98 0.93 0.88 rg 49.0 673.0 514.0 86.0 re f
 0.90 0.35 0.08 rg 49.0 673.0 3.0 86.0 re f
@@ -418,219 +530,31 @@ BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 248.0 Tm (PostHog/posthog:.github/wor
 BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 239.0 Tm (+ 30 more) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 227.0 Tm (Pin actions/upload-artifact to a full 40-character commit SHA instead of tag 'b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0'.) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 218.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 115.0 514.0 98.0 re f
-0.90 0.35 0.08 rg 49.0 115.0 3.0 98.0 re f
+0.98 0.93 0.88 rg 49.0 127.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 127.0 3.0 86.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 201.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 201.0 Tm (24 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 188.0 Tm (Action getsentry/action-github-app-token pinned to mutable tag 'd4b5da6c5e37703f8c3b3e43abb5705b46e159cc #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 176.0 Tm (v3.0.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 164.0 Tm (PostHog/posthog:.github/workflows/auto-assign-reviewers.yml → getsentry/action-github-app-token...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 155.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → getsentry/action-github-app-token@d4b5da6c...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 146.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → getsentry/action-github-app-toke...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 137.0 Tm (+ 21 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 125.0 Tm (Pin getsentry/action-github-app-token to a full 40-character commit SHA instead of tag 'd4b5da6c5e37703f8c3b3e43abb5705b46e159cc #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 116.0 Tm (v3.0.0'. Mutable tags can be moved to point to different code.) Tj ET
-endstream
-endobj
-16 0 obj
-<< /Length 191 >>
-stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 11) Tj ET
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
-0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
-endstream
-endobj
-17 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [15 0 R 16 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
-endobj
-18 0 obj
-<< /Length 8852 >>
-stream
-0.98 0.93 0.88 rg 49.0 682.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 682.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (126 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action actions/checkout pinned to mutable tag 'v6') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/auto-assign-reviewers.yml → actions/checkout@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → actions/checkout@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 704.0 Tm (PostHog/posthog:.github/workflows/build-hobby-installer.yml → actions/checkout@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 695.0 Tm (+ 123 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 683.0 Tm (Pin actions/checkout to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 592.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 592.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 666.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 666.0 Tm (23 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 653.0 Tm (Action actions/setup-node pinned to mutable tag '6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 641.0 Tm (PostHog/posthog:.github/workflows/auto-assign-reviewers.yml → actions/setup-node@6044e13b5dc448...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 632.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → actions/setup-node@6044e13b5dc448c55e2357c...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 623.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → actions/setup-node@6044e13b5dc448c55e...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 614.0 Tm (+ 20 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 602.0 Tm (Pin actions/setup-node to a full 40-character commit SHA instead of tag '6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 593.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 502.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 502.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 576.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 576.0 Tm (24 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 563.0 Tm (Action pnpm/action-setup pinned to mutable tag '41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 551.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → pnpm/action-setup@41ff72655975bd51cab0327f...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 542.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → pnpm/action-setup@41ff72655975bd...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 533.0 Tm (PostHog/posthog:.github/workflows/ci-docs-check.yml → pnpm/action-setup@41ff72655975bd51cab0327...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 524.0 Tm (+ 21 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 512.0 Tm (Pin pnpm/action-setup to a full 40-character commit SHA instead of tag '41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 503.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 427.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 427.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 486.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 473.0 Tm (Action c2corg/browserslist-update-action pinned to mutable tag 'a76abb476199caea5399f9e28ff3f16e491ec566 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 461.0 Tm (v2.5.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 449.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → c2corg/browserslist-update-action@a76abb47...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 437.0 Tm (Pin c2corg/browserslist-update-action to a full 40-character commit SHA instead of tag 'a76abb476199caea5399f9e28ff3f16e491ec566 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 428.0 Tm (v2.5.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 346.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 346.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 411.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 411.0 Tm (7 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 398.0 Tm (Action actions/setup-go pinned to mutable tag 'v6') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 386.0 Tm (PostHog/posthog:.github/workflows/build-hobby-installer.yml → actions/setup-go@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 377.0 Tm (PostHog/posthog:.github/workflows/build-livestream-tui.yml → actions/setup-go@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 368.0 Tm (PostHog/posthog:.github/workflows/build-phrocs.yml → actions/setup-go@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 359.0 Tm (+ 4 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 347.0 Tm (Pin actions/setup-go to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 253.0 514.0 89.0 re f
-0.90 0.35 0.08 rg 49.0 253.0 3.0 89.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 330.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 330.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 317.0 Tm (Action step-security/changed-files pinned to mutable tag '95b56dadb92a30ca9036f16423fd3c088a71ee94 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 305.0 Tm (v46.0.5') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 293.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → step-security/changed-files@95b5...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 284.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → step-security/changed-files@95b56dad...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 275.0 Tm (PostHog/posthog:.github/workflows/container-images-ci.yml → step-security/changed-files@95b56da...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 263.0 Tm (Pin step-security/changed-files to a full 40-character commit SHA instead of tag '95b56dadb92a30ca9036f16423fd3c088a71ee94 # v46.0.5'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 254.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 169.0 514.0 80.0 re f
-0.90 0.35 0.08 rg 49.0 169.0 3.0 80.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 237.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 237.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 224.0 Tm (Action PostHog/check-package-version pinned to mutable tag '138438a8fed9213fa112f841b1c89f9bd68f5cca #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 212.0 Tm (v2.1.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 200.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → PostHog/check-package-version@13...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 191.0 Tm (PostHog/posthog:.github/workflows/ci-hog.yml → PostHog/check-package-version@138438a8fed9213fa1...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 179.0 Tm (Pin PostHog/check-package-version to a full 40-character commit SHA instead of tag '138438a8fed9213fa112f841b1c89f9bd68f5cca #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 170.0 Tm (v2.1.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 88.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 88.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 153.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 153.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 140.0 Tm (Action actions/setup-node pinned to mutable tag '395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 128.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → actions/setup-node@395ad32622319...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 119.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → actions/setup-node@395ad32622319...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 110.0 Tm (PostHog/posthog:.github/workflows/ci-oauth-proxy.yml → actions/setup-node@395ad3262231945c25e84...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 98.0 Tm (Pin actions/setup-node to a full 40-character commit SHA instead of tag '395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 89.0 Tm (tags can be moved to point to different code.) Tj ET
-endstream
-endobj
-19 0 obj
-<< /Length 191 >>
-stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 5 of 11) Tj ET
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
-0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
-endstream
-endobj
-20 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [18 0 R 19 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
-endobj
-21 0 obj
-<< /Length 8972 >>
-stream
-0.98 0.93 0.88 rg 49.0 673.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 673.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (25 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action astral-sh/setup-uv pinned to mutable tag 'eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → astral-sh/setup-uv@eac588ad8def6...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → astral-sh/setup-uv@eac588ad8def63160...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 704.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → astral-sh/setup-uv@eac588ad8def63...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 695.0 Tm (+ 22 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 683.0 Tm (Pin astral-sh/setup-uv to a full 40-character commit SHA instead of tag 'eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 674.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 592.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 592.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 657.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 657.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 644.0 Tm (Action EndBug/add-and-commit pinned to mutable tag 'a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 632.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → EndBug/add-and-commit@a94899bca5...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 623.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → EndBug/add-and-commit@a94899bca583c2...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 614.0 Tm (PostHog/posthog:.github/workflows/foss-sync.yml → EndBug/add-and-commit@a94899bca583c204427a224...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 602.0 Tm (Pin EndBug/add-and-commit to a full 40-character commit SHA instead of tag 'a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 593.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 502.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 502.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 576.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 576.0 Tm (21 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 563.0 Tm (Action actions/setup-python pinned to mutable tag 'a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 551.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → actions/setup-python@a309ff8b426b58e...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 542.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → actions/setup-python@a309ff8b426b58e...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 533.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → actions/setup-python@a309ff8b426b...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 524.0 Tm (+ 18 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 512.0 Tm (Pin actions/setup-python to a full 40-character commit SHA instead of tag 'a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 503.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 427.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 427.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 486.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 473.0 Tm (Action pypa/gh-action-pypi-publish pinned to mutable tag 'ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 461.0 Tm (v1.13.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 449.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → pypa/gh-action-pypi-publish@ed0c5393...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 437.0 Tm (Pin pypa/gh-action-pypi-publish to a full 40-character commit SHA instead of tag 'ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e # v1.13.0'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 428.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 352.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 352.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 411.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 398.0 Tm (Action planetscale/ghcommit-action pinned to mutable tag '25309d8005ac7c3bcd61d3fe19b69e0fe47dbdde #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 386.0 Tm (v0.2.20') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 374.0 Tm (PostHog/posthog:.github/workflows/build-phrocs.yml → planetscale/ghcommit-action@25309d8005ac7c...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 362.0 Tm (Pin planetscale/ghcommit-action to a full 40-character commit SHA instead of tag '25309d8005ac7c3bcd61d3fe19b69e0fe47dbdde # v0.2.20'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 353.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 250.0 514.0 98.0 re f
-0.90 0.35 0.08 rg 49.0 250.0 3.0 98.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 336.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 336.0 Tm (5 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 323.0 Tm (Action aws-actions/configure-aws-credentials pinned to mutable tag) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 311.0 Tm ('61815dcd50bd041e203e49132bacad1fd04d2708 # v5.1.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 299.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → aws-actions/configure-aws-credentials...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 290.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → aws-actions/configure-aws-creden...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 281.0 Tm (PostHog/posthog:.github/workflows/ci-nodejs-container.yml → aws-actions/configure-aws-credentia...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 272.0 Tm (+ 2 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 260.0 Tm (Pin aws-actions/configure-aws-credentials to a full 40-character commit SHA instead of tag '61815dcd50bd041e203e49132bacad1fd04d2708 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 251.0 Tm (v5.1.1'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 148.0 514.0 98.0 re f
-0.90 0.35 0.08 rg 49.0 148.0 3.0 98.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 234.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 234.0 Tm (5 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 221.0 Tm (Action aws-actions/amazon-ecr-login pinned to mutable tag '062b18b96a7aff071d4dc91bc00c4c1a7945b076 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 209.0 Tm (v2.0.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 197.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → aws-actions/amazon-ecr-login@062b18b9...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 188.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → aws-actions/amazon-ecr-login@062...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 179.0 Tm (PostHog/posthog:.github/workflows/ci-nodejs-container.yml → aws-actions/amazon-ecr-login@062b18...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 170.0 Tm (+ 2 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 158.0 Tm (Pin aws-actions/amazon-ecr-login to a full 40-character commit SHA instead of tag '062b18b96a7aff071d4dc91bc00c4c1a7945b076 # v2.0.1'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 149.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 46.0 514.0 98.0 re f
-0.90 0.35 0.08 rg 49.0 46.0 3.0 98.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 132.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 132.0 Tm (26 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 119.0 Tm (Action peter-evans/repository-dispatch pinned to mutable tag '28959ce8df70de7be546dd1250a005dd32156697 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 107.0 Tm (v4.0.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 95.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → peter-evans/repository-dispatch@...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 86.0 Tm (PostHog/posthog:.github/workflows/ci-nodejs-container.yml → peter-evans/repository-dispatch@289...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 77.0 Tm (PostHog/posthog:.github/workflows/ci-recording-rasterizer-container.yml → peter-evans/repositor...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 68.0 Tm (+ 23 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 201.0 Tm (19 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 188.0 Tm (Action actions/download-artifact pinned to mutable tag '37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 176.0 Tm (PostHog/posthog:.github/workflows/_rust-build-images.yml → actions/download-artifact@37930b1c2a...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 167.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → actions/download-artifact@37930b...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 158.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → actions/download-artifact@37930b1c2a...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 149.0 Tm (+ 16 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 137.0 Tm (Pin actions/download-artifact to a full 40-character commit SHA instead of tag '37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 128.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 25.0 514.0 98.0 re f
+0.90 0.35 0.08 rg 49.0 25.0 3.0 98.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 111.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 111.0 Tm (24 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 98.0 Tm (Action getsentry/action-github-app-token pinned to mutable tag 'd4b5da6c5e37703f8c3b3e43abb5705b46e159cc #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 86.0 Tm (v3.0.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 74.0 Tm (PostHog/posthog:.github/workflows/auto-assign-reviewers.yml → getsentry/action-github-app-token...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 65.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → getsentry/action-github-app-token@d4b5da6c...) Tj ET
 endstream
 endobj
 22 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 6 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 6 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -639,93 +563,96 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [21 0 R 22 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 24 0 obj
-<< /Length 8803 >>
+<< /Length 8936 >>
 stream
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 747.0 Tm (Pin peter-evans/repository-dispatch to a full 40-character commit SHA instead of tag '28959ce8df70de7be546dd1250a005dd32156697 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 738.0 Tm (v4.0.1'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 647.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 647.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 721.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 721.0 Tm (22 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 708.0 Tm (Action dorny/paths-filter pinned to mutable tag 'de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 696.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → dorny/paths-filter@de90cc6fb38fc0...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 687.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml → dorny/paths-filter@de90cc6fb38fc0963ad7...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 678.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → dorny/paths-filter@de90cc6fb38fc0963ad72b210...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 669.0 Tm (+ 19 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 657.0 Tm (Pin dorny/paths-filter to a full 40-character commit SHA instead of tag 'de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 648.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 557.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 557.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 631.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 631.0 Tm (12 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 618.0 Tm (Action Swatinem/rust-cache pinned to mutable tag '779680da715d629ac1d338a641029a2f4372abb5 # v2.8.2') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 606.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → Swatinem/rust-cache@779680da715d6...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 597.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml → Swatinem/rust-cache@779680da715d629ac1d...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 588.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml → Swatinem/rust-cache@779680da715d629ac1d...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 579.0 Tm (+ 9 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 567.0 Tm (Pin Swatinem/rust-cache to a full 40-character commit SHA instead of tag '779680da715d629ac1d338a641029a2f4372abb5 # v2.8.2'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 558.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 485.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 485.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 541.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 541.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 528.0 Tm (Action actions/upload-artifact pinned to mutable tag 'v4') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 516.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → actions/upload-artifact@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 507.0 Tm (PostHog/posthog:.github/workflows/pr-approval-agent.yml → actions/upload-artifact@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 495.0 Tm (Pin actions/upload-artifact to a full 40-character commit SHA instead of tag 'v4'. Mutable tags can be moved to point to different) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 486.0 Tm (code.) Tj ET
-0.98 0.93 0.88 rg 49.0 422.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 422.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 469.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 456.0 Tm (Action actions/download-artifact pinned to mutable tag 'v4') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 444.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → actions/download-artifact@v4) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 432.0 Tm (Pin actions/download-artifact to a full 40-character commit SHA instead of tag 'v4'. Mutable tags can be moved to point to different) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 423.0 Tm (code.) Tj ET
-0.98 0.93 0.88 rg 49.0 359.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 359.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 406.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 393.0 Tm (Action actions/download-artifact pinned to mutable tag '95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 381.0 Tm (PostHog/posthog:.github/workflows/ci-ai.yml → actions/download-artifact@95815c38cf2ff2164869cba...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 369.0 Tm (Pin actions/download-artifact to a full 40-character commit SHA instead of tag '95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 360.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 269.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 269.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 343.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 343.0 Tm (23 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 330.0 Tm (Action actions/github-script pinned to mutable tag 'ed597411d8f924073f98dfc5c65a23a2325f34cd # v8') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 318.0 Tm (PostHog/posthog:.github/workflows/ci-ai.yml → actions/github-script@ed597411d8f924073f98dfc5c65...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 309.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → actions/github-script@ed597411d8f9240...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 300.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml → actions/github-script@ed597411d8f924073f98dfc5...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 291.0 Tm (+ 20 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 279.0 Tm (Pin actions/github-script to a full 40-character commit SHA instead of tag 'ed597411d8f924073f98dfc5c65a23a2325f34cd # v8'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 270.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 176.0 514.0 89.0 re f
-0.90 0.35 0.08 rg 49.0 176.0 3.0 89.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 253.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 253.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 240.0 Tm (Action peter-evans/create-pull-request pinned to mutable tag '98357b18bf14b5342f975ff684046ec3b2a07725 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 228.0 Tm (v8.0.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 216.0 Tm (PostHog/posthog:.github/workflows/ci-backend-update-test-timing.yml → peter-evans/create-pull-r...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 207.0 Tm (PostHog/posthog:.github/workflows/update-ai-costs.yml → peter-evans/create-pull-request@98357b1...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 198.0 Tm (PostHog/posthog:.github/workflows/update-bot-ips.yml → peter-evans/create-pull-request@98357b18...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 186.0 Tm (Pin peter-evans/create-pull-request to a full 40-character commit SHA instead of tag '98357b18bf14b5342f975ff684046ec3b2a07725 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 177.0 Tm (v8.0.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 95.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 95.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 160.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 160.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 147.0 Tm (Action pnpm/action-setup pinned to mutable tag 'a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 135.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → pnpm/action-setup@a7487c7e89a18df4991f7f222e...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 126.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → pnpm/action-setup@a7487c7e89a18df4991f7f222e...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 117.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → pnpm/action-setup@a7487c7e89a18df4991f7f222e...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 105.0 Tm (Pin pnpm/action-setup to a full 40-character commit SHA instead of tag 'a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 96.0 Tm (tags can be moved to point to different code.) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 747.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → getsentry/action-github-app-toke...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 738.0 Tm (+ 21 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 726.0 Tm (Pin getsentry/action-github-app-token to a full 40-character commit SHA instead of tag 'd4b5da6c5e37703f8c3b3e43abb5705b46e159cc #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 717.0 Tm (v3.0.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 635.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 635.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 700.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 700.0 Tm (126 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 687.0 Tm (Action actions/checkout pinned to mutable tag 'v6') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 675.0 Tm (PostHog/posthog:.github/workflows/auto-assign-reviewers.yml → actions/checkout@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 666.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → actions/checkout@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 657.0 Tm (PostHog/posthog:.github/workflows/build-hobby-installer.yml → actions/checkout@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 648.0 Tm (+ 123 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 636.0 Tm (Pin actions/checkout to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 545.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 545.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 619.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 619.0 Tm (23 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 606.0 Tm (Action actions/setup-node pinned to mutable tag '6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 594.0 Tm (PostHog/posthog:.github/workflows/auto-assign-reviewers.yml → actions/setup-node@6044e13b5dc448...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 585.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → actions/setup-node@6044e13b5dc448c55e2357c...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 576.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → actions/setup-node@6044e13b5dc448c55e...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 567.0 Tm (+ 20 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 555.0 Tm (Pin actions/setup-node to a full 40-character commit SHA instead of tag '6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 546.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 455.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 455.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 529.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 529.0 Tm (24 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 516.0 Tm (Action pnpm/action-setup pinned to mutable tag '41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 504.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → pnpm/action-setup@41ff72655975bd51cab0327f...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 495.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → pnpm/action-setup@41ff72655975bd...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 486.0 Tm (PostHog/posthog:.github/workflows/ci-docs-check.yml → pnpm/action-setup@41ff72655975bd51cab0327...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 477.0 Tm (+ 21 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 465.0 Tm (Pin pnpm/action-setup to a full 40-character commit SHA instead of tag '41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 456.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 380.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 380.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 439.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 426.0 Tm (Action c2corg/browserslist-update-action pinned to mutable tag 'a76abb476199caea5399f9e28ff3f16e491ec566 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 414.0 Tm (v2.5.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 402.0 Tm (PostHog/posthog:.github/workflows/browserslist.yml → c2corg/browserslist-update-action@a76abb47...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 390.0 Tm (Pin c2corg/browserslist-update-action to a full 40-character commit SHA instead of tag 'a76abb476199caea5399f9e28ff3f16e491ec566 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 381.0 Tm (v2.5.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 299.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 299.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 364.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 364.0 Tm (7 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 351.0 Tm (Action actions/setup-go pinned to mutable tag 'v6') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 339.0 Tm (PostHog/posthog:.github/workflows/build-hobby-installer.yml → actions/setup-go@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 330.0 Tm (PostHog/posthog:.github/workflows/build-livestream-tui.yml → actions/setup-go@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 321.0 Tm (PostHog/posthog:.github/workflows/build-phrocs.yml → actions/setup-go@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 312.0 Tm (+ 4 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 300.0 Tm (Pin actions/setup-go to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 206.0 514.0 89.0 re f
+0.90 0.35 0.08 rg 49.0 206.0 3.0 89.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 283.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 283.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 270.0 Tm (Action step-security/changed-files pinned to mutable tag '95b56dadb92a30ca9036f16423fd3c088a71ee94 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 258.0 Tm (v46.0.5') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 246.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → step-security/changed-files@95b5...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 237.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → step-security/changed-files@95b56dad...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 228.0 Tm (PostHog/posthog:.github/workflows/container-images-ci.yml → step-security/changed-files@95b56da...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 216.0 Tm (Pin step-security/changed-files to a full 40-character commit SHA instead of tag '95b56dadb92a30ca9036f16423fd3c088a71ee94 # v46.0.5'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 207.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 122.0 514.0 80.0 re f
+0.90 0.35 0.08 rg 49.0 122.0 3.0 80.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 190.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 190.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 177.0 Tm (Action PostHog/check-package-version pinned to mutable tag '138438a8fed9213fa112f841b1c89f9bd68f5cca #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 165.0 Tm (v2.1.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 153.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → PostHog/check-package-version@13...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 144.0 Tm (PostHog/posthog:.github/workflows/ci-hog.yml → PostHog/check-package-version@138438a8fed9213fa1...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 132.0 Tm (Pin PostHog/check-package-version to a full 40-character commit SHA instead of tag '138438a8fed9213fa112f841b1c89f9bd68f5cca #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 123.0 Tm (v2.1.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 41.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 41.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 106.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 106.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 93.0 Tm (Action actions/setup-node pinned to mutable tag '395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 81.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → actions/setup-node@395ad32622319...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 72.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → actions/setup-node@395ad32622319...) Tj ET
 endstream
 endobj
 25 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 7 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 7 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -734,92 +661,89 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [24 0 R 25 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 27 0 obj
-<< /Length 8381 >>
+<< /Length 8434 >>
 stream
-0.98 0.93 0.88 rg 49.0 682.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 682.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (4 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action actions/setup-node pinned to mutable tag 'v6') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-node@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-node@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 704.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-node@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 695.0 Tm (+ 1 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 683.0 Tm (Pin actions/setup-node to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 628.0 514.0 50.0 re f
-0.90 0.35 0.08 rg 49.0 628.0 3.0 50.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 666.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 653.0 Tm (Action actions/setup-python pinned to mutable tag 'v6') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 641.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-python@v6) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 629.0 Tm (Pin actions/setup-python to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 565.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 565.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 612.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 599.0 Tm (Action astral-sh/setup-uv pinned to mutable tag '61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 587.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 575.0 Tm (Pin astral-sh/setup-uv to a full 40-character commit SHA instead of tag '61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 566.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 490.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 490.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 549.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 536.0 Tm (Action awalsh128/cache-apt-pkgs-action pinned to mutable tag 'acb598e5ddbc6f68a970c5da0688d2f3a9f04d05 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 524.0 Tm (v1.6.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 512.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → awalsh128/cache-apt-pkgs-action@acb598e5ddbc...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 500.0 Tm (Pin awalsh128/cache-apt-pkgs-action to a full 40-character commit SHA instead of tag 'acb598e5ddbc6f68a970c5da0688d2f3a9f04d05 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 491.0 Tm (v1.6.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 388.0 514.0 98.0 re f
-0.90 0.35 0.08 rg 49.0 388.0 3.0 98.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 474.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 474.0 Tm (8 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 461.0 Tm (Action PostHog/posthog-github-action pinned to mutable tag 'eea1405eeb2d1d2259f0ee0b44d7b152869e6840 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 449.0 Tm (v1.1.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 437.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → PostHog/posthog-github-action@eea1405eeb2d1d...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 428.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → PostHog/posthog-github-action@eea1405...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 419.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → PostHog/posthog-github-action@eea1405eeb2d1...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 410.0 Tm (+ 5 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 398.0 Tm (Pin PostHog/posthog-github-action to a full 40-character commit SHA instead of tag 'eea1405eeb2d1d2259f0ee0b44d7b152869e6840 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 389.0 Tm (v1.1.1'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 325.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 325.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 372.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 359.0 Tm (Action tlambert03/setup-qt-libs pinned to mutable tag '19e4ef2d781d81f5f067182e228b54ec90d23b76 # v1.8') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 347.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → tlambert03/setup-qt-libs@19e4ef2d781d...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 335.0 Tm (Pin tlambert03/setup-qt-libs to a full 40-character commit SHA instead of tag '19e4ef2d781d81f5f067182e228b54ec90d23b76 # v1.8'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 326.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 253.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 253.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 309.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 309.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 296.0 Tm (Action iFaxity/wait-on-action pinned to mutable tag '1fe019e0475491e9e8c4f421b6914ccc3ed8f99c # v1.2.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 284.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → iFaxity/wait-on-action@1fe019e0475491...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 275.0 Tm (PostHog/posthog:.github/workflows/ci-mcp.yml → iFaxity/wait-on-action@1fe019e0475491e9e8c4f421b...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 263.0 Tm (Pin iFaxity/wait-on-action to a full 40-character commit SHA instead of tag '1fe019e0475491e9e8c4f421b6914ccc3ed8f99c # v1.2.1'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 254.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 178.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 178.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 237.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 224.0 Tm (Action preactjs/compressed-size-action pinned to mutable tag '946a292cd35bd1088e0d7eb92b69d1a8d5b5d76a #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 212.0 Tm (v2') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 200.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → preactjs/compressed-size-action@946a292cd35...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 188.0 Tm (Pin preactjs/compressed-size-action to a full 40-character commit SHA instead of tag '946a292cd35bd1088e0d7eb92b69d1a8d5b5d76a # v2'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 179.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 88.0 514.0 86.0 re f
-0.90 0.35 0.08 rg 49.0 88.0 3.0 86.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 162.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 162.0 Tm (11 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 149.0 Tm (Action actions/cache pinned to mutable tag 'cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 137.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → actions/cache/restore@cdf6c1fa76f9f475f3d74...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 128.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → actions/cache/save@cdf6c1fa76f9f475f3d74490...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 119.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → actions/cache/restore@cdf6c1fa76f9f475...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 110.0 Tm (+ 8 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 98.0 Tm (Pin actions/cache to a full 40-character commit SHA instead of tag 'cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5'. Mutable tags can) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 89.0 Tm (be moved to point to different code.) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 747.0 Tm (PostHog/posthog:.github/workflows/ci-oauth-proxy.yml → actions/setup-node@395ad3262231945c25e84...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 735.0 Tm (Pin actions/setup-node to a full 40-character commit SHA instead of tag '395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 726.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 635.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 635.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 709.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 709.0 Tm (25 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 696.0 Tm (Action astral-sh/setup-uv pinned to mutable tag 'eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 684.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → astral-sh/setup-uv@eac588ad8def6...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 675.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → astral-sh/setup-uv@eac588ad8def63160...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 666.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → astral-sh/setup-uv@eac588ad8def63...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 657.0 Tm (+ 22 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 645.0 Tm (Pin astral-sh/setup-uv to a full 40-character commit SHA instead of tag 'eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 636.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 554.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 554.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 619.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 619.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 606.0 Tm (Action EndBug/add-and-commit pinned to mutable tag 'a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 594.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml → EndBug/add-and-commit@a94899bca5...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 585.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → EndBug/add-and-commit@a94899bca583c2...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 576.0 Tm (PostHog/posthog:.github/workflows/foss-sync.yml → EndBug/add-and-commit@a94899bca583c204427a224...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 564.0 Tm (Pin EndBug/add-and-commit to a full 40-character commit SHA instead of tag 'a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 555.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 464.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 464.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 538.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 538.0 Tm (21 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 525.0 Tm (Action actions/setup-python pinned to mutable tag 'a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 513.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → actions/setup-python@a309ff8b426b58e...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 504.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → actions/setup-python@a309ff8b426b58e...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 495.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → actions/setup-python@a309ff8b426b...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 486.0 Tm (+ 18 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 474.0 Tm (Pin actions/setup-python to a full 40-character commit SHA instead of tag 'a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 465.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 389.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 389.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 448.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 435.0 Tm (Action pypa/gh-action-pypi-publish pinned to mutable tag 'ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 423.0 Tm (v1.13.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 411.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml → pypa/gh-action-pypi-publish@ed0c5393...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 399.0 Tm (Pin pypa/gh-action-pypi-publish to a full 40-character commit SHA instead of tag 'ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e # v1.13.0'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 390.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 314.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 314.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 373.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 360.0 Tm (Action planetscale/ghcommit-action pinned to mutable tag '25309d8005ac7c3bcd61d3fe19b69e0fe47dbdde #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 348.0 Tm (v0.2.20') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 336.0 Tm (PostHog/posthog:.github/workflows/build-phrocs.yml → planetscale/ghcommit-action@25309d8005ac7c...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 324.0 Tm (Pin planetscale/ghcommit-action to a full 40-character commit SHA instead of tag '25309d8005ac7c3bcd61d3fe19b69e0fe47dbdde # v0.2.20'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 315.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 212.0 514.0 98.0 re f
+0.90 0.35 0.08 rg 49.0 212.0 3.0 98.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 298.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 298.0 Tm (5 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 285.0 Tm (Action aws-actions/configure-aws-credentials pinned to mutable tag) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 273.0 Tm ('61815dcd50bd041e203e49132bacad1fd04d2708 # v5.1.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 261.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → aws-actions/configure-aws-credentials...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 252.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → aws-actions/configure-aws-creden...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 243.0 Tm (PostHog/posthog:.github/workflows/ci-nodejs-container.yml → aws-actions/configure-aws-credentia...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 234.0 Tm (+ 2 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 222.0 Tm (Pin aws-actions/configure-aws-credentials to a full 40-character commit SHA instead of tag '61815dcd50bd041e203e49132bacad1fd04d2708 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 213.0 Tm (v5.1.1'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 110.0 514.0 98.0 re f
+0.90 0.35 0.08 rg 49.0 110.0 3.0 98.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 196.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 196.0 Tm (5 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 183.0 Tm (Action aws-actions/amazon-ecr-login pinned to mutable tag '062b18b96a7aff071d4dc91bc00c4c1a7945b076 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 171.0 Tm (v2.0.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 159.0 Tm (PostHog/posthog:.github/workflows/cd-ai-evals-image.yml → aws-actions/amazon-ecr-login@062b18b9...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 150.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → aws-actions/amazon-ecr-login@062...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 141.0 Tm (PostHog/posthog:.github/workflows/ci-nodejs-container.yml → aws-actions/amazon-ecr-login@062b18...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 132.0 Tm (+ 2 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 120.0 Tm (Pin aws-actions/amazon-ecr-login to a full 40-character commit SHA instead of tag '062b18b96a7aff071d4dc91bc00c4c1a7945b076 # v2.0.1'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 111.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
 endstream
 endobj
 28 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 8 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 8 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -828,94 +752,93 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [27 0 R 28 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 30 0 obj
-<< /Length 8755 >>
+<< /Length 8644 >>
 stream
 0.98 0.93 0.88 rg 49.0 661.0 514.0 98.0 re f
 0.90 0.35 0.08 rg 49.0 661.0 3.0 98.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (4 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action golangci/golangci-lint-action pinned to mutable tag '1e7e51e771db61008b38414a730f564565cf7c20 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 722.0 Tm (v9.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 710.0 Tm (PostHog/posthog:.github/workflows/ci-hobby-installer.yml → golangci/golangci-lint-action@1e7e51...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 701.0 Tm (PostHog/posthog:.github/workflows/ci-livestream-tui.yml → golangci/golangci-lint-action@1e7e51e...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 692.0 Tm (PostHog/posthog:.github/workflows/ci-livestream.yml → golangci/golangci-lint-action@1e7e51e771d...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 683.0 Tm (+ 1 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 671.0 Tm (Pin golangci/golangci-lint-action to a full 40-character commit SHA instead of tag '1e7e51e771db61008b38414a730f564565cf7c20 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 662.0 Tm (v9.2.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 586.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 586.0 3.0 71.0 re f
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (26 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action peter-evans/repository-dispatch pinned to mutable tag '28959ce8df70de7be546dd1250a005dd32156697 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 722.0 Tm (v4.0.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 710.0 Tm (PostHog/posthog:.github/workflows/cd-llm-analytics-image.yml → peter-evans/repository-dispatch@...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 701.0 Tm (PostHog/posthog:.github/workflows/ci-nodejs-container.yml → peter-evans/repository-dispatch@289...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 692.0 Tm (PostHog/posthog:.github/workflows/ci-recording-rasterizer-container.yml → peter-evans/repositor...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 683.0 Tm (+ 23 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 671.0 Tm (Pin peter-evans/repository-dispatch to a full 40-character commit SHA instead of tag '28959ce8df70de7be546dd1250a005dd32156697 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 662.0 Tm (v4.0.1'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 571.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 571.0 3.0 86.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 645.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 632.0 Tm (Action fountainhead/action-wait-for-check pinned to mutable tag '5a908a24814494009c4bb27c242ea38c93c593be #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 620.0 Tm (v1.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 608.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml → fountainhead/action-wait-for-check@5a908a24814...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 596.0 Tm (Pin fountainhead/action-wait-for-check to a full 40-character commit SHA instead of tag '5a908a24814494009c4bb27c242ea38c93c593be #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 587.0 Tm (v1.2.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 514.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 514.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 570.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 570.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 557.0 Tm (Action actions/setup-go pinned to mutable tag '7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 545.0 Tm (PostHog/posthog:.github/workflows/ci-livestream.yml → actions/setup-go@7a3fe6cf4cb3a834922a1244...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 536.0 Tm (PostHog/posthog:.github/workflows/ci-phrocs.yml → actions/setup-go@7a3fe6cf4cb3a834922a1244abfc...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 524.0 Tm (Pin actions/setup-go to a full 40-character commit SHA instead of tag '7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 515.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 412.0 514.0 98.0 re f
-0.90 0.35 0.08 rg 49.0 412.0 3.0 98.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 498.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 498.0 Tm (10 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 485.0 Tm (Action slackapi/slack-github-action pinned to mutable tag '91efab103c0de0a537f72a35f6b8cda0ee76bf0a #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 473.0 Tm (v2.1.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 461.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → slackapi/slack-github-action@91efab103...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 452.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → slackapi/slack-github-action@91efab103...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 443.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → slackapi/slack-github-action@91efab103...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 434.0 Tm (+ 7 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 422.0 Tm (Pin slackapi/slack-github-action to a full 40-character commit SHA instead of tag '91efab103c0de0a537f72a35f6b8cda0ee76bf0a # v2.1.1'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 413.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 340.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 340.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 396.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 396.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 383.0 Tm (Action bufbuild/buf-action pinned to mutable tag '8f4a1456a0ab6a1eb80ba68e53832e6fcfacc16c # v1.3.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 371.0 Tm (PostHog/posthog:.github/workflows/ci-proto.yml → bufbuild/buf-action@8f4a1456a0ab6a1eb80ba68e53...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 362.0 Tm (PostHog/posthog:.github/workflows/ci-proto.yml → bufbuild/buf-action@8f4a1456a0ab6a1eb80ba68e53...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 350.0 Tm (Pin bufbuild/buf-action to a full 40-character commit SHA instead of tag '8f4a1456a0ab6a1eb80ba68e53832e6fcfacc16c # v1.3.0'. Mutable) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 341.0 Tm (tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 286.0 514.0 50.0 re f
-0.90 0.35 0.08 rg 49.0 286.0 3.0 50.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 324.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 311.0 Tm (Action actions/setup-python pinned to mutable tag 'v5') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 299.0 Tm (PostHog/posthog:.github/workflows/ci-proto.yml → actions/setup-python@v5) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 287.0 Tm (Pin actions/setup-python to a full 40-character commit SHA instead of tag 'v5'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 223.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 223.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 270.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 257.0 Tm (Action cargo-bins/cargo-binstall pinned to mutable tag '5cbf019d8cb9b9d5b086218c41458ea35d817691 # main') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 245.0 Tm (PostHog/posthog:.github/workflows/ci-rust.yml → cargo-bins/cargo-binstall@5cbf019d8cb9b9d5b0862...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 233.0 Tm (Pin cargo-bins/cargo-binstall to a full 40-character commit SHA instead of tag '5cbf019d8cb9b9d5b086218c41458ea35d817691 # main'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 224.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 148.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 148.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 207.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 194.0 Tm (Action zgosalvez/github-actions-ensure-sha-pinned-actions pinned to mutable tag) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 182.0 Tm ('6124774845927d14c601359ab8138699fa5b70c3 # v4.0.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 170.0 Tm (PostHog/posthog:.github/workflows/ci-security.yaml → zgosalvez/github-actions-ensure-sha-pinned...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 158.0 Tm (Pin zgosalvez/github-actions-ensure-sha-pinned-actions to a full 40-character commit SHA instead of tag) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 149.0 Tm ('6124774845927d14c601359ab8138699fa5b70c3 # v4.0.1'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 76.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 76.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 132.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 132.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 119.0 Tm (Action github/codeql-action pinned to mutable tag '5d4e8d1aca955e8d8589aabd499c5cae939e33c7 # v4.31.9') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 107.0 Tm (PostHog/posthog:.github/workflows/codeql.yml → github/codeql-action/init@5d4e8d1aca955e8d8589aa...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 98.0 Tm (PostHog/posthog:.github/workflows/codeql.yml → github/codeql-action/analyze@5d4e8d1aca955e8d858...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 86.0 Tm (Pin github/codeql-action to a full 40-character commit SHA instead of tag '5d4e8d1aca955e8d8589aabd499c5cae939e33c7 # v4.31.9'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 77.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 645.0 Tm (22 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 632.0 Tm (Action dorny/paths-filter pinned to mutable tag 'de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 620.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → dorny/paths-filter@de90cc6fb38fc0...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 611.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml → dorny/paths-filter@de90cc6fb38fc0963ad7...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 602.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → dorny/paths-filter@de90cc6fb38fc0963ad72b210...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 593.0 Tm (+ 19 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 581.0 Tm (Pin dorny/paths-filter to a full 40-character commit SHA instead of tag 'de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 572.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 481.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 481.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 555.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 555.0 Tm (12 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 542.0 Tm (Action Swatinem/rust-cache pinned to mutable tag '779680da715d629ac1d338a641029a2f4372abb5 # v2.8.2') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 530.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → Swatinem/rust-cache@779680da715d6...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 521.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml → Swatinem/rust-cache@779680da715d629ac1d...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 512.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml → Swatinem/rust-cache@779680da715d629ac1d...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 503.0 Tm (+ 9 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 491.0 Tm (Pin Swatinem/rust-cache to a full 40-character commit SHA instead of tag '779680da715d629ac1d338a641029a2f4372abb5 # v2.8.2'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 482.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 409.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 409.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 465.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 465.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 452.0 Tm (Action actions/upload-artifact pinned to mutable tag 'v4') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 440.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → actions/upload-artifact@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 431.0 Tm (PostHog/posthog:.github/workflows/pr-approval-agent.yml → actions/upload-artifact@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 419.0 Tm (Pin actions/upload-artifact to a full 40-character commit SHA instead of tag 'v4'. Mutable tags can be moved to point to different) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 410.0 Tm (code.) Tj ET
+0.98 0.93 0.88 rg 49.0 346.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 346.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 393.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 380.0 Tm (Action actions/download-artifact pinned to mutable tag 'v4') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 368.0 Tm (PostHog/posthog:.github/workflows/cd-sandbox-base-image.yml → actions/download-artifact@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 356.0 Tm (Pin actions/download-artifact to a full 40-character commit SHA instead of tag 'v4'. Mutable tags can be moved to point to different) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 347.0 Tm (code.) Tj ET
+0.98 0.93 0.88 rg 49.0 283.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 283.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 330.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 317.0 Tm (Action actions/download-artifact pinned to mutable tag '95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 305.0 Tm (PostHog/posthog:.github/workflows/ci-ai.yml → actions/download-artifact@95815c38cf2ff2164869cba...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 293.0 Tm (Pin actions/download-artifact to a full 40-character commit SHA instead of tag '95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 284.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 193.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 193.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 267.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 267.0 Tm (23 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 254.0 Tm (Action actions/github-script pinned to mutable tag 'ed597411d8f924073f98dfc5c65a23a2325f34cd # v8') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 242.0 Tm (PostHog/posthog:.github/workflows/ci-ai.yml → actions/github-script@ed597411d8f924073f98dfc5c65...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 233.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → actions/github-script@ed597411d8f9240...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 224.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml → actions/github-script@ed597411d8f924073f98dfc5...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 215.0 Tm (+ 20 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 203.0 Tm (Pin actions/github-script to a full 40-character commit SHA instead of tag 'ed597411d8f924073f98dfc5c65a23a2325f34cd # v8'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 194.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 100.0 514.0 89.0 re f
+0.90 0.35 0.08 rg 49.0 100.0 3.0 89.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 177.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 177.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 164.0 Tm (Action peter-evans/create-pull-request pinned to mutable tag '98357b18bf14b5342f975ff684046ec3b2a07725 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 152.0 Tm (v8.0.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 140.0 Tm (PostHog/posthog:.github/workflows/ci-backend-update-test-timing.yml → peter-evans/create-pull-r...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 131.0 Tm (PostHog/posthog:.github/workflows/update-ai-costs.yml → peter-evans/create-pull-request@98357b1...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 122.0 Tm (PostHog/posthog:.github/workflows/update-bot-ips.yml → peter-evans/create-pull-request@98357b18...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 110.0 Tm (Pin peter-evans/create-pull-request to a full 40-character commit SHA instead of tag '98357b18bf14b5342f975ff684046ec3b2a07725 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 101.0 Tm (v8.0.0'. Mutable tags can be moved to point to different code.) Tj ET
 endstream
 endobj
 31 0 obj
 << /Length 191 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 9 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 9 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -924,85 +847,91 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [30 0 R 31 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 33 0 obj
-<< /Length 7637 >>
+<< /Length 8328 >>
 stream
-0.98 0.93 0.88 rg 49.0 700.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 700.0 3.0 59.0 re f
+0.98 0.93 0.88 rg 49.0 682.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 682.0 3.0 77.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action docker/build-push-action pinned to mutable tag '263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/codespaces.yml → docker/build-push-action@263435318d21b8e681c...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 710.0 Tm (Pin docker/build-push-action to a full 40-character commit SHA instead of tag '263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 701.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 625.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 625.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 684.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 671.0 Tm (Action jbergstroem/hadolint-gh-action pinned to mutable tag '2b00b87f8a56783930b6a4749837d7c45c567ff2 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 659.0 Tm (v1.13.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 647.0 Tm (PostHog/posthog:.github/workflows/container-images-ci.yml → jbergstroem/hadolint-gh-action@2b00...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 635.0 Tm (Pin jbergstroem/hadolint-gh-action to a full 40-character commit SHA instead of tag '2b00b87f8a56783930b6a4749837d7c45c567ff2 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 626.0 Tm (v1.13.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 553.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 553.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 609.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 609.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 596.0 Tm (Action PostHog/git-sync pinned to mutable tag '29d9a6756e8646d0715d5caa9c66438be7e32a1f # v3') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 584.0 Tm (PostHog/posthog:.github/workflows/foss-sync.yml → PostHog/git-sync@29d9a6756e8646d0715d5caa9c66...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 575.0 Tm (PostHog/posthog:.github/workflows/foss-sync.yml → PostHog/git-sync@29d9a6756e8646d0715d5caa9c66...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 563.0 Tm (Pin PostHog/git-sync to a full 40-character commit SHA instead of tag '29d9a6756e8646d0715d5caa9c66438be7e32a1f # v3'. Mutable tags) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 554.0 Tm (can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 478.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 478.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 537.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 524.0 Tm (Action inkeep/inkeep-agents-action pinned to mutable tag '39c725a2bf4d24acb89ae70139e13bf50f637c20 #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 512.0 Tm (v0.6.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 500.0 Tm (PostHog/posthog:.github/workflows/inkeep-agent.yml → inkeep/inkeep-agents-action@39c725a2bf4d24...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 488.0 Tm (Pin inkeep/inkeep-agents-action to a full 40-character commit SHA instead of tag '39c725a2bf4d24acb89ae70139e13bf50f637c20 # v0.6.0'.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 479.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 403.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 403.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 462.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 449.0 Tm (Action amannn/action-semantic-pull-request pinned to mutable tag '48f256284bd46cdaab1048c3721360e808335d50) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 437.0 Tm (# v6.1.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 425.0 Tm (PostHog/posthog:.github/workflows/pr-updated.yml → amannn/action-semantic-pull-request@48f25628...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 413.0 Tm (Pin amannn/action-semantic-pull-request to a full 40-character commit SHA instead of tag '48f256284bd46cdaab1048c3721360e808335d50 #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 404.0 Tm (v6.1.1'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 328.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 328.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 387.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 374.0 Tm (Action rust-lang/crates-io-auth-action pinned to mutable tag 'b7e9a28eded4986ec6b1fa40eeee8f8f165559ec #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 362.0 Tm (v1.0.3') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 350.0 Tm (PostHog/posthog:.github/workflows/publish-symbol-data-crate.yml → rust-lang/crates-io-auth-acti...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 338.0 Tm (Pin rust-lang/crates-io-auth-action to a full 40-character commit SHA instead of tag 'b7e9a28eded4986ec6b1fa40eeee8f8f165559ec #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 329.0 Tm (v1.0.3'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 253.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 253.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 312.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 299.0 Tm (Action actions/create-github-app-token pinned to mutable tag '29824e69f54612133e76f7eaac726eef6c875baf #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 287.0 Tm (v2.2.1') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 275.0 Tm (PostHog/posthog:.github/workflows/release.yml → actions/create-github-app-token@29824e69f546121...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 263.0 Tm (Pin actions/create-github-app-token to a full 40-character commit SHA instead of tag '29824e69f54612133e76f7eaac726eef6c875baf #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 254.0 Tm (v2.2.1'. Mutable tags can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 190.0 514.0 59.0 re f
-0.90 0.35 0.08 rg 49.0 190.0 3.0 59.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 237.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 224.0 Tm (Action actions/stale pinned to mutable tag 'b5d41d4e1d5dceea10e7104786b73624c18a190f # v10.2.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 212.0 Tm (PostHog/posthog:.github/workflows/stale.yaml → actions/stale@b5d41d4e1d5dceea10e7104786b73624c1...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 200.0 Tm (Pin actions/stale to a full 40-character commit SHA instead of tag 'b5d41d4e1d5dceea10e7104786b73624c18a190f # v10.2.0'. Mutable tags) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 191.0 Tm (can be moved to point to different code.) Tj ET
-0.98 0.93 0.88 rg 49.0 115.0 514.0 71.0 re f
-0.90 0.35 0.08 rg 49.0 115.0 3.0 71.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 174.0 Tm (FAIL / HIGH) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 161.0 Tm (Action maheshrayas/action-pr-comment-delete pinned to mutable tag '06d7254b4aeba4491a66a7e0f755b107f7373ccd) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 149.0 Tm (# v3.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 137.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml → maheshrayas/action-pr-comment-delet...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 125.0 Tm (Pin maheshrayas/action-pr-comment-delete to a full 40-character commit SHA instead of tag '06d7254b4aeba4491a66a7e0f755b107f7373ccd #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 116.0 Tm (v3.0'. Mutable tags can be moved to point to different code.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action pnpm/action-setup pinned to mutable tag 'a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → pnpm/action-setup@a7487c7e89a18df4991f7f222e...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → pnpm/action-setup@a7487c7e89a18df4991f7f222e...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 704.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → pnpm/action-setup@a7487c7e89a18df4991f7f222e...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 692.0 Tm (Pin pnpm/action-setup to a full 40-character commit SHA instead of tag 'a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 683.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 601.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 601.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 666.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 666.0 Tm (4 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 653.0 Tm (Action actions/setup-node pinned to mutable tag 'v6') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 641.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-node@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 632.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-node@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 623.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-node@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 614.0 Tm (+ 1 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 602.0 Tm (Pin actions/setup-node to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 547.0 514.0 50.0 re f
+0.90 0.35 0.08 rg 49.0 547.0 3.0 50.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 585.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 572.0 Tm (Action actions/setup-python pinned to mutable tag 'v6') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 560.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → actions/setup-python@v6) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 548.0 Tm (Pin actions/setup-python to a full 40-character commit SHA instead of tag 'v6'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 484.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 484.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 531.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 518.0 Tm (Action astral-sh/setup-uv pinned to mutable tag '61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 506.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → astral-sh/setup-uv@61cb8a9741eeb8a550a1b8544...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 494.0 Tm (Pin astral-sh/setup-uv to a full 40-character commit SHA instead of tag '61cb8a9741eeb8a550a1b8544337180c0fc8476b # v7.2.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 485.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 382.0 514.0 98.0 re f
+0.90 0.35 0.08 rg 49.0 382.0 3.0 98.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 468.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 468.0 Tm (8 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 455.0 Tm (Action PostHog/posthog-github-action pinned to mutable tag 'eea1405eeb2d1d2259f0ee0b44d7b152869e6840 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 443.0 Tm (v1.1.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 431.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → PostHog/posthog-github-action@eea1405eeb2d1d...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 422.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → PostHog/posthog-github-action@eea1405...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 413.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → PostHog/posthog-github-action@eea1405eeb2d1...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 404.0 Tm (+ 5 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 392.0 Tm (Pin PostHog/posthog-github-action to a full 40-character commit SHA instead of tag 'eea1405eeb2d1d2259f0ee0b44d7b152869e6840 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 383.0 Tm (v1.1.1'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 307.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 307.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 366.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 353.0 Tm (Action awalsh128/cache-apt-pkgs-action pinned to mutable tag 'acb598e5ddbc6f68a970c5da0688d2f3a9f04d05 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 341.0 Tm (v1.6.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 329.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml → awalsh128/cache-apt-pkgs-action@acb598e5ddbc...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 317.0 Tm (Pin awalsh128/cache-apt-pkgs-action to a full 40-character commit SHA instead of tag 'acb598e5ddbc6f68a970c5da0688d2f3a9f04d05 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 308.0 Tm (v1.6.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 244.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 244.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 291.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 278.0 Tm (Action tlambert03/setup-qt-libs pinned to mutable tag '19e4ef2d781d81f5f067182e228b54ec90d23b76 # v1.8') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 266.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → tlambert03/setup-qt-libs@19e4ef2d781d...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 254.0 Tm (Pin tlambert03/setup-qt-libs to a full 40-character commit SHA instead of tag '19e4ef2d781d81f5f067182e228b54ec90d23b76 # v1.8'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 245.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 172.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 172.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 228.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 228.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 215.0 Tm (Action iFaxity/wait-on-action pinned to mutable tag '1fe019e0475491e9e8c4f421b6914ccc3ed8f99c # v1.2.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 203.0 Tm (PostHog/posthog:.github/workflows/ci-e2e-playwright.yml → iFaxity/wait-on-action@1fe019e0475491...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 194.0 Tm (PostHog/posthog:.github/workflows/ci-mcp.yml → iFaxity/wait-on-action@1fe019e0475491e9e8c4f421b...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 182.0 Tm (Pin iFaxity/wait-on-action to a full 40-character commit SHA instead of tag '1fe019e0475491e9e8c4f421b6914ccc3ed8f99c # v1.2.1'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 173.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 97.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 97.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 156.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 143.0 Tm (Action preactjs/compressed-size-action pinned to mutable tag '946a292cd35bd1088e0d7eb92b69d1a8d5b5d76a #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 131.0 Tm (v2') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 119.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → preactjs/compressed-size-action@946a292cd35...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 107.0 Tm (Pin preactjs/compressed-size-action to a full 40-character commit SHA instead of tag '946a292cd35bd1088e0d7eb92b69d1a8d5b5d76a # v2'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 98.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
 endstream
 endobj
 34 0 obj
 << /Length 192 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 10 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 10 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -1011,90 +940,95 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [33 0 R 34 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 36 0 obj
-<< /Length 7299 >>
+<< /Length 8795 >>
 stream
-0.98 0.93 0.88 rg 49.0 679.0 514.0 80.0 re f
-0.90 0.35 0.08 rg 49.0 679.0 3.0 80.0 re f
+0.98 0.93 0.88 rg 49.0 673.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 673.0 3.0 86.0 re f
 BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (2 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action datadrivers/terragrunt-action pinned to mutable tag '6a1585446bb75e3db997042db236cf1de7fa7d0e #) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 722.0 Tm (v4.1.0') Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 710.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml → datadrivers/terragrunt-action@6a158...) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 701.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml → datadrivers/terragrunt-action@6a158...) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 689.0 Tm (Pin datadrivers/terragrunt-action to a full 40-character commit SHA instead of tag '6a1585446bb75e3db997042db236cf1de7fa7d0e #) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 680.0 Tm (v4.1.0'. Mutable tags can be moved to point to different code.) Tj ET
-0.11 0.11 0.16 rg 45.0 653.0 522.0 20.0 re f
-0.18 0.42 0.78 rg 45.0 653.0 4.0 20.0 re f
-BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 657.0 Tm (securedev.scan_coverage) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 507.0 657.0 Tm (1 passed) Tj ET
-0.98 0.93 0.88 rg 49.0 566.0 514.0 77.0 re f
-0.90 0.35 0.08 rg 49.0 566.0 3.0 77.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 631.0 Tm (FAIL / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 631.0 Tm (50 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 618.0 Tm (PR workflow contains no security scanning step) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 606.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 597.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 588.0 Tm (PostHog/posthog:.github/workflows/call-flags-project-board.yml) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 579.0 Tm (+ 47 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 567.0 Tm (Add a security scanner \(CodeQL, Trivy, Semgrep, Gitleaks, etc.\) to this PR workflow.) Tj ET
-0.11 0.11 0.16 rg 45.0 540.0 522.0 20.0 re f
-0.18 0.42 0.78 rg 45.0 540.0 4.0 20.0 re f
-BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 544.0 Tm (changetrail.deploy_approval) Tj ET
-0.95 0.88 0.88 rg 49.0 480.0 514.0 50.0 re f
-0.85 0.18 0.18 rg 49.0 480.0 3.0 50.0 re f
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 518.0 Tm (FAIL / CRITICAL) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 505.0 Tm (Production job 'release-skills' has no environment: key) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 493.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml/jobs/release-skills) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 481.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
-0.95 0.88 0.88 rg 49.0 426.0 514.0 50.0 re f
-0.85 0.18 0.18 rg 49.0 426.0 3.0 50.0 re f
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 464.0 Tm (FAIL / CRITICAL) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 451.0 Tm (Production job 'turbo-discover' has no environment: key) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 439.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/turbo-discover) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 427.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
-0.95 0.88 0.88 rg 49.0 372.0 514.0 50.0 re f
-0.85 0.18 0.18 rg 49.0 372.0 3.0 50.0 re f
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 410.0 Tm (FAIL / CRITICAL) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 397.0 Tm (Production job 'turbo-tests' has no environment: key) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 385.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/turbo-tests) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 373.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
-0.95 0.88 0.88 rg 49.0 318.0 514.0 50.0 re f
-0.85 0.18 0.18 rg 49.0 318.0 3.0 50.0 re f
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 356.0 Tm (FAIL / CRITICAL) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 343.0 Tm (Production job 'release-hogvm' has no environment: key) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 331.0 Tm (PostHog/posthog:.github/workflows/ci-hog.yml/jobs/release-hogvm) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 319.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
-0.95 0.88 0.88 rg 49.0 237.0 514.0 77.0 re f
-0.85 0.18 0.18 rg 49.0 237.0 3.0 77.0 re f
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 302.0 Tm (FAIL / CRITICAL) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 302.0 Tm (4 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 289.0 Tm (Production job 'deploy' has no environment: key) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 277.0 Tm (PostHog/posthog:.github/workflows/ci-recording-rasterizer-container.yml/jobs/deploy) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 268.0 Tm (PostHog/posthog:.github/workflows/livestream-docker-image.yml/jobs/deploy) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 259.0 Tm (PostHog/posthog:.github/workflows/llm-gateway-cd.yml/jobs/deploy) Tj ET
-BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 250.0 Tm (+ 1 more) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 238.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
-0.98 0.93 0.88 rg 49.0 165.0 514.0 68.0 re f
-0.90 0.35 0.08 rg 49.0 165.0 3.0 68.0 re f
-BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 221.0 Tm (WARN / HIGH) Tj ET
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 221.0 Tm (3 occurrences) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 208.0 Tm (Workflow triggers on push without pull_request — deploys may bypass PR review) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 196.0 Tm (PostHog/posthog:.github/workflows/livestream-docker-image.yml/jobs/deploy) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 187.0 Tm (PostHog/posthog:.github/workflows/llm-gateway-cd.yml/jobs/deploy) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 178.0 Tm (PostHog/posthog:.github/workflows/rust-docker-build.yml/jobs/deploy) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 166.0 Tm (Add a pull_request trigger or ensure branch protection requires PR review before merge.) Tj ET
-0.95 0.88 0.88 rg 49.0 111.0 514.0 50.0 re f
-0.85 0.18 0.18 rg 49.0 111.0 3.0 50.0 re f
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 149.0 Tm (FAIL / CRITICAL) Tj ET
-BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 136.0 Tm (Production job 'cleanup-hobby-preview' has no environment: key) Tj ET
-BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 124.0 Tm (PostHog/posthog:.github/workflows/pr-closed.yml/jobs/cleanup-hobby-preview) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 112.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (11 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action actions/cache pinned to mutable tag 'cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → actions/cache/restore@cdf6c1fa76f9f475f3d74...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (PostHog/posthog:.github/workflows/ci-frontend.yml → actions/cache/save@cdf6c1fa76f9f475f3d74490...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 704.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → actions/cache/restore@cdf6c1fa76f9f475...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 695.0 Tm (+ 8 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 683.0 Tm (Pin actions/cache to a full 40-character commit SHA instead of tag 'cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5'. Mutable tags can) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 674.0 Tm (be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 571.0 514.0 98.0 re f
+0.90 0.35 0.08 rg 49.0 571.0 3.0 98.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 657.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 657.0 Tm (4 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 644.0 Tm (Action golangci/golangci-lint-action pinned to mutable tag '1e7e51e771db61008b38414a730f564565cf7c20 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 632.0 Tm (v9.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 620.0 Tm (PostHog/posthog:.github/workflows/ci-hobby-installer.yml → golangci/golangci-lint-action@1e7e51...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 611.0 Tm (PostHog/posthog:.github/workflows/ci-livestream-tui.yml → golangci/golangci-lint-action@1e7e51e...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 602.0 Tm (PostHog/posthog:.github/workflows/ci-livestream.yml → golangci/golangci-lint-action@1e7e51e771d...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 593.0 Tm (+ 1 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 581.0 Tm (Pin golangci/golangci-lint-action to a full 40-character commit SHA instead of tag '1e7e51e771db61008b38414a730f564565cf7c20 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 572.0 Tm (v9.2.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 496.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 496.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 555.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 542.0 Tm (Action fountainhead/action-wait-for-check pinned to mutable tag '5a908a24814494009c4bb27c242ea38c93c593be #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 530.0 Tm (v1.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 518.0 Tm (PostHog/posthog:.github/workflows/ci-hobby.yml → fountainhead/action-wait-for-check@5a908a24814...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 506.0 Tm (Pin fountainhead/action-wait-for-check to a full 40-character commit SHA instead of tag '5a908a24814494009c4bb27c242ea38c93c593be #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 497.0 Tm (v1.2.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 424.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 424.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 480.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 480.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 467.0 Tm (Action actions/setup-go pinned to mutable tag '7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 455.0 Tm (PostHog/posthog:.github/workflows/ci-livestream.yml → actions/setup-go@7a3fe6cf4cb3a834922a1244...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 446.0 Tm (PostHog/posthog:.github/workflows/ci-phrocs.yml → actions/setup-go@7a3fe6cf4cb3a834922a1244abfc...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 434.0 Tm (Pin actions/setup-go to a full 40-character commit SHA instead of tag '7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v6.2.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 425.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 322.0 514.0 98.0 re f
+0.90 0.35 0.08 rg 49.0 322.0 3.0 98.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 408.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 408.0 Tm (10 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 395.0 Tm (Action slackapi/slack-github-action pinned to mutable tag '91efab103c0de0a537f72a35f6b8cda0ee76bf0a #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 383.0 Tm (v2.1.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 371.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → slackapi/slack-github-action@91efab103...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 362.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → slackapi/slack-github-action@91efab103...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 353.0 Tm (PostHog/posthog:.github/workflows/ci-master-status.yml → slackapi/slack-github-action@91efab103...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 344.0 Tm (+ 7 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 332.0 Tm (Pin slackapi/slack-github-action to a full 40-character commit SHA instead of tag '91efab103c0de0a537f72a35f6b8cda0ee76bf0a # v2.1.1'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 323.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 250.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 250.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 306.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 306.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 293.0 Tm (Action bufbuild/buf-action pinned to mutable tag '8f4a1456a0ab6a1eb80ba68e53832e6fcfacc16c # v1.3.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 281.0 Tm (PostHog/posthog:.github/workflows/ci-proto.yml → bufbuild/buf-action@8f4a1456a0ab6a1eb80ba68e53...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 272.0 Tm (PostHog/posthog:.github/workflows/ci-proto.yml → bufbuild/buf-action@8f4a1456a0ab6a1eb80ba68e53...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 260.0 Tm (Pin bufbuild/buf-action to a full 40-character commit SHA instead of tag '8f4a1456a0ab6a1eb80ba68e53832e6fcfacc16c # v1.3.0'. Mutable) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 251.0 Tm (tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 196.0 514.0 50.0 re f
+0.90 0.35 0.08 rg 49.0 196.0 3.0 50.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 234.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 221.0 Tm (Action actions/setup-python pinned to mutable tag 'v5') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 209.0 Tm (PostHog/posthog:.github/workflows/ci-proto.yml → actions/setup-python@v5) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 197.0 Tm (Pin actions/setup-python to a full 40-character commit SHA instead of tag 'v5'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 133.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 133.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 180.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 167.0 Tm (Action cargo-bins/cargo-binstall pinned to mutable tag '5cbf019d8cb9b9d5b086218c41458ea35d817691 # main') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 155.0 Tm (PostHog/posthog:.github/workflows/ci-rust.yml → cargo-bins/cargo-binstall@5cbf019d8cb9b9d5b0862...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 143.0 Tm (Pin cargo-bins/cargo-binstall to a full 40-character commit SHA instead of tag '5cbf019d8cb9b9d5b086218c41458ea35d817691 # main'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 134.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 58.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 58.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 117.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 104.0 Tm (Action zgosalvez/github-actions-ensure-sha-pinned-actions pinned to mutable tag) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 92.0 Tm ('6124774845927d14c601359ab8138699fa5b70c3 # v4.0.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 80.0 Tm (PostHog/posthog:.github/workflows/ci-security.yaml → zgosalvez/github-actions-ensure-sha-pinned...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 68.0 Tm (Pin zgosalvez/github-actions-ensure-sha-pinned-actions to a full 40-character commit SHA instead of tag) Tj ET
 endstream
 endobj
 37 0 obj
 << /Length 192 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 11 of 11) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 11 of 14) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -1102,49 +1036,267 @@ endobj
 38 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [36 0 R 37 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
+39 0 obj
+<< /Length 7963 >>
+stream
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 747.0 Tm ('6124774845927d14c601359ab8138699fa5b70c3 # v4.0.1'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 674.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 674.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 730.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 730.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 717.0 Tm (Action github/codeql-action pinned to mutable tag '5d4e8d1aca955e8d8589aabd499c5cae939e33c7 # v4.31.9') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 705.0 Tm (PostHog/posthog:.github/workflows/codeql.yml → github/codeql-action/init@5d4e8d1aca955e8d8589aa...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 696.0 Tm (PostHog/posthog:.github/workflows/codeql.yml → github/codeql-action/analyze@5d4e8d1aca955e8d858...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 684.0 Tm (Pin github/codeql-action to a full 40-character commit SHA instead of tag '5d4e8d1aca955e8d8589aabd499c5cae939e33c7 # v4.31.9'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 675.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 611.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 611.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 658.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 645.0 Tm (Action docker/build-push-action pinned to mutable tag '263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 633.0 Tm (PostHog/posthog:.github/workflows/codespaces.yml → docker/build-push-action@263435318d21b8e681c...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 621.0 Tm (Pin docker/build-push-action to a full 40-character commit SHA instead of tag '263435318d21b8e681c14492fe198d362a7d2c83 # v6.18.0'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 612.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 536.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 536.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 595.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 582.0 Tm (Action jbergstroem/hadolint-gh-action pinned to mutable tag '2b00b87f8a56783930b6a4749837d7c45c567ff2 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 570.0 Tm (v1.13.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 558.0 Tm (PostHog/posthog:.github/workflows/container-images-ci.yml → jbergstroem/hadolint-gh-action@2b00...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 546.0 Tm (Pin jbergstroem/hadolint-gh-action to a full 40-character commit SHA instead of tag '2b00b87f8a56783930b6a4749837d7c45c567ff2 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 537.0 Tm (v1.13.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 464.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 464.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 520.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 520.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 507.0 Tm (Action PostHog/git-sync pinned to mutable tag '29d9a6756e8646d0715d5caa9c66438be7e32a1f # v3') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 495.0 Tm (PostHog/posthog:.github/workflows/foss-sync.yml → PostHog/git-sync@29d9a6756e8646d0715d5caa9c66...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 486.0 Tm (PostHog/posthog:.github/workflows/foss-sync.yml → PostHog/git-sync@29d9a6756e8646d0715d5caa9c66...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 474.0 Tm (Pin PostHog/git-sync to a full 40-character commit SHA instead of tag '29d9a6756e8646d0715d5caa9c66438be7e32a1f # v3'. Mutable tags) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 465.0 Tm (can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 389.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 389.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 448.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 435.0 Tm (Action inkeep/inkeep-agents-action pinned to mutable tag '39c725a2bf4d24acb89ae70139e13bf50f637c20 #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 423.0 Tm (v0.6.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 411.0 Tm (PostHog/posthog:.github/workflows/inkeep-agent.yml → inkeep/inkeep-agents-action@39c725a2bf4d24...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 399.0 Tm (Pin inkeep/inkeep-agents-action to a full 40-character commit SHA instead of tag '39c725a2bf4d24acb89ae70139e13bf50f637c20 # v0.6.0'.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 390.0 Tm (Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 314.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 314.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 373.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 360.0 Tm (Action amannn/action-semantic-pull-request pinned to mutable tag '48f256284bd46cdaab1048c3721360e808335d50) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 348.0 Tm (# v6.1.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 336.0 Tm (PostHog/posthog:.github/workflows/pr-updated.yml → amannn/action-semantic-pull-request@48f25628...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 324.0 Tm (Pin amannn/action-semantic-pull-request to a full 40-character commit SHA instead of tag '48f256284bd46cdaab1048c3721360e808335d50 #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 315.0 Tm (v6.1.1'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 239.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 239.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 298.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 285.0 Tm (Action rust-lang/crates-io-auth-action pinned to mutable tag 'b7e9a28eded4986ec6b1fa40eeee8f8f165559ec #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 273.0 Tm (v1.0.3') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 261.0 Tm (PostHog/posthog:.github/workflows/publish-symbol-data-crate.yml → rust-lang/crates-io-auth-acti...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 249.0 Tm (Pin rust-lang/crates-io-auth-action to a full 40-character commit SHA instead of tag 'b7e9a28eded4986ec6b1fa40eeee8f8f165559ec #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 240.0 Tm (v1.0.3'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 164.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 164.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 223.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 210.0 Tm (Action actions/create-github-app-token pinned to mutable tag '29824e69f54612133e76f7eaac726eef6c875baf #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 198.0 Tm (v2.2.1') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 186.0 Tm (PostHog/posthog:.github/workflows/release.yml → actions/create-github-app-token@29824e69f546121...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 174.0 Tm (Pin actions/create-github-app-token to a full 40-character commit SHA instead of tag '29824e69f54612133e76f7eaac726eef6c875baf #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 165.0 Tm (v2.2.1'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 101.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 101.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 148.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 135.0 Tm (Action actions/stale pinned to mutable tag 'b5d41d4e1d5dceea10e7104786b73624c18a190f # v10.2.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 123.0 Tm (PostHog/posthog:.github/workflows/stale.yaml → actions/stale@b5d41d4e1d5dceea10e7104786b73624c1...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 111.0 Tm (Pin actions/stale to a full 40-character commit SHA instead of tag 'b5d41d4e1d5dceea10e7104786b73624c18a190f # v10.2.0'. Mutable tags) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 102.0 Tm (can be moved to point to different code.) Tj ET
+endstream
+endobj
+40 0 obj
+<< /Length 192 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 12 of 14) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+41 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [39 0 R 40 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+42 0 obj
+<< /Length 7214 >>
+stream
+0.98 0.93 0.88 rg 49.0 688.0 514.0 71.0 re f
+0.90 0.35 0.08 rg 49.0 688.0 3.0 71.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action maheshrayas/action-pr-comment-delete pinned to mutable tag '06d7254b4aeba4491a66a7e0f755b107f7373ccd) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 722.0 Tm (# v3.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 710.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml → maheshrayas/action-pr-comment-delet...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 698.0 Tm (Pin maheshrayas/action-pr-comment-delete to a full 40-character commit SHA instead of tag '06d7254b4aeba4491a66a7e0f755b107f7373ccd #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 689.0 Tm (v3.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.98 0.93 0.88 rg 49.0 604.0 514.0 80.0 re f
+0.90 0.35 0.08 rg 49.0 604.0 3.0 80.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 672.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 672.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 659.0 Tm (Action datadrivers/terragrunt-action pinned to mutable tag '6a1585446bb75e3db997042db236cf1de7fa7d0e #) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 647.0 Tm (v4.1.0') Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 635.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml → datadrivers/terragrunt-action@6a158...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 626.0 Tm (PostHog/posthog:.github/workflows/terragrunt-posthog.yaml → datadrivers/terragrunt-action@6a158...) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 614.0 Tm (Pin datadrivers/terragrunt-action to a full 40-character commit SHA instead of tag '6a1585446bb75e3db997042db236cf1de7fa7d0e #) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 605.0 Tm (v4.1.0'. Mutable tags can be moved to point to different code.) Tj ET
+0.11 0.11 0.16 rg 45.0 578.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 578.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 582.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 507.0 582.0 Tm (1 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 558.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or Semgrep) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 548.0 Tm (\(custom rules\).) Tj ET
+0.98 0.93 0.88 rg 49.0 469.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 469.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 534.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 534.0 Tm (50 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 521.0 Tm (PR workflow contains no security scanning step) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 509.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser-npm.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 500.0 Tm (PostHog/posthog:.github/workflows/build-hogql-parser.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 491.0 Tm (PostHog/posthog:.github/workflows/call-flags-project-board.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 482.0 Tm (+ 47 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 470.0 Tm (Add a security scanner \(CodeQL, Trivy, Semgrep, Gitleaks, etc.\) to this PR workflow.) Tj ET
+0.11 0.11 0.16 rg 45.0 443.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 443.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 447.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 423.0 Tm (Add 'environment: production' to deploy jobs and configure required reviewers in GitHub repository Settings > Environments. This) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 413.0 Tm (creates an approval gate with a full audit trail.) Tj ET
+0.95 0.88 0.88 rg 49.0 361.0 514.0 50.0 re f
+0.85 0.18 0.18 rg 49.0 361.0 3.0 50.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 399.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 386.0 Tm (Production job 'release-skills' has no environment: key) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 374.0 Tm (PostHog/posthog:.github/workflows/ci-agent-skills.yml/jobs/release-skills) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 362.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+0.95 0.88 0.88 rg 49.0 307.0 514.0 50.0 re f
+0.85 0.18 0.18 rg 49.0 307.0 3.0 50.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 345.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 332.0 Tm (Production job 'turbo-discover' has no environment: key) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 320.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/turbo-discover) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 308.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+0.95 0.88 0.88 rg 49.0 253.0 514.0 50.0 re f
+0.85 0.18 0.18 rg 49.0 253.0 3.0 50.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 291.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 278.0 Tm (Production job 'turbo-tests' has no environment: key) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 266.0 Tm (PostHog/posthog:.github/workflows/ci-backend.yml/jobs/turbo-tests) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 254.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+0.95 0.88 0.88 rg 49.0 199.0 514.0 50.0 re f
+0.85 0.18 0.18 rg 49.0 199.0 3.0 50.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 237.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 224.0 Tm (Production job 'release-hogvm' has no environment: key) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 212.0 Tm (PostHog/posthog:.github/workflows/ci-hog.yml/jobs/release-hogvm) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 200.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+0.95 0.88 0.88 rg 49.0 118.0 514.0 77.0 re f
+0.85 0.18 0.18 rg 49.0 118.0 3.0 77.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 183.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 183.0 Tm (4 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 170.0 Tm (Production job 'deploy' has no environment: key) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 158.0 Tm (PostHog/posthog:.github/workflows/ci-recording-rasterizer-container.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 149.0 Tm (PostHog/posthog:.github/workflows/livestream-docker-image.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 140.0 Tm (PostHog/posthog:.github/workflows/llm-gateway-cd.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 131.0 Tm (+ 1 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 119.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+endstream
+endobj
+43 0 obj
+<< /Length 192 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 13 of 14) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+44 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [42 0 R 43 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+45 0 obj
+<< /Length 1509 >>
+stream
+0.98 0.93 0.88 rg 49.0 691.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 691.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (WARN / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 747.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Workflow triggers on push without pull_request — deploys may bypass PR review) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (PostHog/posthog:.github/workflows/livestream-docker-image.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 713.0 Tm (PostHog/posthog:.github/workflows/llm-gateway-cd.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 704.0 Tm (PostHog/posthog:.github/workflows/rust-docker-build.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 692.0 Tm (Add a pull_request trigger or ensure branch protection requires PR review before merge.) Tj ET
+0.95 0.88 0.88 rg 49.0 637.0 514.0 50.0 re f
+0.85 0.18 0.18 rg 49.0 637.0 3.0 50.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 675.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 662.0 Tm (Production job 'cleanup-hobby-preview' has no environment: key) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 650.0 Tm (PostHog/posthog:.github/workflows/pr-closed.yml/jobs/cleanup-hobby-preview) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 638.0 Tm (Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.) Tj ET
+endstream
+endobj
+46 0 obj
+<< /Length 192 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 14 of 14) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+47 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [45 0 R 46 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
 xref
-0 39
+0 48
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000192 00000 n 
-0000000262 00000 n 
-0000000337 00000 n 
-0000000405 00000 n 
-0000007514 00000 n 
-0000007756 00000 n 
-0000007910 00000 n 
-0000015774 00000 n 
-0000016017 00000 n 
-0000016173 00000 n 
-0000024530 00000 n 
-0000024773 00000 n 
-0000024930 00000 n 
-0000033674 00000 n 
-0000033917 00000 n 
-0000034074 00000 n 
-0000042978 00000 n 
-0000043221 00000 n 
-0000043378 00000 n 
-0000052402 00000 n 
-0000052645 00000 n 
-0000052802 00000 n 
-0000061657 00000 n 
-0000061900 00000 n 
-0000062057 00000 n 
-0000070490 00000 n 
-0000070733 00000 n 
-0000070890 00000 n 
-0000079697 00000 n 
-0000079940 00000 n 
-0000080097 00000 n 
-0000087786 00000 n 
-0000088030 00000 n 
-0000088187 00000 n 
-0000095538 00000 n 
-0000095782 00000 n 
+0000000213 00000 n 
+0000000283 00000 n 
+0000000358 00000 n 
+0000000426 00000 n 
+0000007535 00000 n 
+0000007777 00000 n 
+0000007931 00000 n 
+0000014260 00000 n 
+0000014503 00000 n 
+0000014659 00000 n 
+0000017584 00000 n 
+0000017827 00000 n 
+0000017984 00000 n 
+0000025677 00000 n 
+0000025920 00000 n 
+0000026077 00000 n 
+0000033938 00000 n 
+0000034181 00000 n 
+0000034338 00000 n 
+0000043784 00000 n 
+0000044027 00000 n 
+0000044184 00000 n 
+0000053172 00000 n 
+0000053415 00000 n 
+0000053572 00000 n 
+0000062058 00000 n 
+0000062301 00000 n 
+0000062458 00000 n 
+0000071154 00000 n 
+0000071397 00000 n 
+0000071554 00000 n 
+0000079934 00000 n 
+0000080178 00000 n 
+0000080335 00000 n 
+0000089182 00000 n 
+0000089426 00000 n 
+0000089583 00000 n 
+0000097598 00000 n 
+0000097842 00000 n 
+0000097999 00000 n 
+0000105265 00000 n 
+0000105509 00000 n 
+0000105666 00000 n 
+0000107227 00000 n 
+0000107471 00000 n 
 trailer
-<< /Size 39 /Root 1 0 R >>
+<< /Size 48 /Root 1 0 R >>
 startxref
-95939
+107628
 %%EOF

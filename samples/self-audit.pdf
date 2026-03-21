@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R] /Count 4 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -23,7 +23,7 @@ stream
 BT 1.00 1.00 1.00 rg /F2 26 Tf 1 0 0 1 45.0 737.0 Tm (actions-comply) Tj ET
 BT 0.75 0.75 0.80 rg /F1 12 Tf 1 0 0 1 45.0 714.0 Tm (Compliance Audit Report) Tj ET
 BT 0.60 0.60 0.65 rg /F1 9 Tf 1 0 0 1 407.0 737.0 Tm (21 March 2026) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774090799) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774091206) Tj ET
 0.96 0.96 0.97 rg 45.0 617.0 522.0 22.0 re f
 BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 623.0 Tm (Org:) Tj ET
 BT 0 0 0 rg /F1 7 Tf 1 0 0 1 73.0 623.0 Tm (automationpi) Tj ET
@@ -141,7 +141,7 @@ endobj
 7 0 obj
 << /Length 190 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 2) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 4) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -150,14 +150,65 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [6 0 R 7 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 9 0 obj
-<< /Length 0 >>
+<< /Length 5282 >>
 stream
+BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 747.0 Tm (Executive Summary) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 741.0 m 567.0 741.0 l S
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 725.0 Tm (Your GitHub Actions workflows passed all compliance checks. No issues were) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 712.0 Tm (found that would require remediation before an audit. Continue to run this) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 699.0 Tm (audit regularly to maintain compliance posture.) Tj ET
+BT 0 0 0 rg /F2 14 Tf 1 0 0 1 45.0 666.0 Tm (What These Checks Mean) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 660.0 m 567.0 660.0 l S
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 646.0 Tm (Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.) Tj ET
+0.18 0.42 0.78 rg 45.0 628.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 630.0 Tm (Workflow Permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 618.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 604.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 593.0 Tm (GitHub Actions workflows run with a token that has access to your repository. If the token has more permissions than needed) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 583.0 Tm (\(e.g., write access to packages when it only reads code\), a compromised action or script injection can do far more damage) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 573.0 Tm (than necessary.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 559.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 548.0 Tm (Over-permissioned tokens violate least-privilege and expand the blast radius of supply-chain attacks. Auditors flag this) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 538.0 Tm (under access control \(SOC2 CC6.1\).) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 524.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 513.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 503.0 Tm (that a step actually needs.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 491.0 Tm (SOC2 CC6.1 \(Logical Access\)  |  ISO 27001 A.9.4 \(System Access Control\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 479.0 m 557.0 479.0 l S
+0.18 0.42 0.78 rg 45.0 465.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 467.0 Tm (Action SHA Pinning) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 455.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 441.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 430.0 Tm (When you reference an action with a tag like '@v4', the tag owner can push new code to that tag at any time. Your workflow) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 420.0 Tm (silently picks up the change on the next run — you have no review, no diff, no approval.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 406.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 395.0 Tm (This is the #1 GitHub Actions supply-chain risk. An attacker who compromises an action repo can push malicious code to an) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 385.0 Tm (existing tag and it will run in every workflow that references it. Pinning to a full SHA prevents this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 371.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 360.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 350.0 Tm (Dependabot or Renovate to get PRs when new versions are released.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 338.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1, A.14.2 \(Supply Chain, Secure Dev\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 326.0 m 557.0 326.0 l S
+0.18 0.42 0.78 rg 45.0 312.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 314.0 Tm (Security Scan Coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 302.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 288.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 277.0 Tm (Pull request workflows are the last gate before code merges. If no security scanner \(SAST, SCA, secrets detection\) runs on) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 267.0 Tm (PRs, vulnerabilities and leaked credentials can reach your default branch undetected.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 253.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 242.0 Tm (Missing scan coverage means you cannot demonstrate to auditors that code is reviewed for security issues before deployment.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 232.0 Tm (This is a core secure development requirement.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 218.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 207.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 197.0 Tm (Semgrep \(custom rules\).) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 185.0 Tm (SOC2 CC7.2 \(Security Monitoring\)  |  ISO 27001 A.14.2 \(Secure Development\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 173.0 m 557.0 173.0 l S
 endstream
 endobj
 10 0 obj
 << /Length 190 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 2) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 4) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -165,22 +216,87 @@ endobj
 11 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [9 0 R 10 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
+12 0 obj
+<< /Length 2873 >>
+stream
+0.18 0.42 0.78 rg 45.0 745.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 747.0 Tm (Deploy Approval Gates) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 735.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 721.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 710.0 Tm (Production deployments without an approval gate mean any push to main can go straight to production. There is no human) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 700.0 Tm (review, no separation of duties, and no audit trail linking a deployment to a specific change and approver.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 686.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 675.0 Tm (This is a critical control for SOC2 — auditors need to see that every production change was reviewed and approved by) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 665.0 Tm (someone other than the author. Without environment protection rules, you cannot demonstrate this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 651.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 640.0 Tm (Add 'environment: production' to deploy jobs and configure required reviewers in GitHub repository Settings > Environments.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 630.0 Tm (This creates an approval gate with a full audit trail.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 618.0 Tm (SOC2 CC8.1 \(Change Management\)  |  ISO 27001 A.12.1 \(Operations Security\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 606.0 m 557.0 606.0 l S
+0.18 0.42 0.78 rg 45.0 592.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 594.0 Tm (Action Bill of Materials) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 582.0 Tm (supplychain.action_bom) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 568.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 557.0 Tm (Every third-party GitHub Action you use is code that runs inside your CI/CD pipeline with access to your secrets and source) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 547.0 Tm (code. Knowing exactly which actions you depend on is step one of supply-chain security.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 533.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 522.0 Tm (Without an inventory, you cannot track which actions are maintained, which have known vulnerabilities, or which have been) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 512.0 Tm (silently replaced.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 498.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 487.0 Tm (This is an informational check — review the BOM periodically and remove actions that are no longer maintained or needed.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 475.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1 \(Supplier Relationships\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 463.0 m 557.0 463.0 l S
+endstream
+endobj
+13 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 4) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [12 0 R 13 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+15 0 obj
+<< /Length 0 >>
+stream
+endstream
+endobj
+16 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 4) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [15 0 R 16 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
 xref
-0 12
+0 18
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000128 00000 n 
-0000000198 00000 n 
-0000000273 00000 n 
-0000000341 00000 n 
-0000007447 00000 n 
-0000007688 00000 n 
-0000007842 00000 n 
-0000007890 00000 n 
-0000008132 00000 n 
+0000000142 00000 n 
+0000000212 00000 n 
+0000000287 00000 n 
+0000000355 00000 n 
+0000007461 00000 n 
+0000007702 00000 n 
+0000007856 00000 n 
+0000013189 00000 n 
+0000013431 00000 n 
+0000013587 00000 n 
+0000016512 00000 n 
+0000016754 00000 n 
+0000016911 00000 n 
+0000016960 00000 n 
+0000017202 00000 n 
 trailer
-<< /Size 12 /Root 1 0 R >>
+<< /Size 18 /Root 1 0 R >>
 startxref
-8288
+17359
 %%EOF
