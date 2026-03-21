@@ -21,17 +21,17 @@ func TestRenderBOMCSV(t *testing.T) {
 								Name: "Checkout",
 								Uses: "actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29",
 								ActionRef: &models.ActionRef{
-									Raw: "actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29",
+									Raw:   "actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29",
 									Owner: "actions", Name: "checkout",
 									Version: "a5ac7e51b41094c92402da3b24376905380afc29",
-									IsSHA: true,
+									IsSHA:   true,
 								},
 							},
 							{
 								Name: "Setup",
 								Uses: "actions/setup-go@v5",
 								ActionRef: &models.ActionRef{
-									Raw: "actions/setup-go@v5",
+									Raw:   "actions/setup-go@v5",
 									Owner: "actions", Name: "setup-go",
 									Version: "v5",
 								},

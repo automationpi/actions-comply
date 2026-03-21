@@ -2,12 +2,12 @@ package models
 
 // WorkflowFile represents a parsed GitHub Actions workflow.
 type WorkflowFile struct {
-	Path        string            // File path relative to repo root
-	Name        string            // Workflow name from name: field
-	Triggers    []string          // Trigger events: push, pull_request, etc.
-	Permissions *PermissionBlock  // Top-level permissions block (nil if absent)
-	Jobs        map[string]*Job   // Jobs keyed by job ID
-	Raw         string            // Original file content
+	Path        string           // File path relative to repo root
+	Name        string           // Workflow name from name: field
+	Triggers    []string         // Trigger events: push, pull_request, etc.
+	Permissions *PermissionBlock // Top-level permissions block (nil if absent)
+	Jobs        map[string]*Job  // Jobs keyed by job ID
+	Raw         string           // Original file content
 }
 
 // PermissionBlock represents a permissions declaration.
@@ -29,10 +29,10 @@ type Job struct {
 
 // Step represents a single step within a job.
 type Step struct {
-	Name      string // Step display name
-	Uses      string // Action reference (raw string)
-	Run       string // Inline script
-	If        string // Condition expression
+	Name      string     // Step display name
+	Uses      string     // Action reference (raw string)
+	Run       string     // Inline script
+	If        string     // Condition expression
 	ActionRef *ActionRef // Parsed action reference (nil if step has no uses:)
 }
 

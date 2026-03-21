@@ -37,13 +37,13 @@ func sampleReport() *models.AuditReport {
 					{
 						CheckID: "test.check", Status: models.StatusPass, Severity: models.SeverityInfo,
 						Target: "testorg/testrepo:ci.yml", Message: "Something passed",
-						Evidence: []models.Evidence{{URL: "https://example.com", Description: "evidence"}},
+						Evidence:    []models.Evidence{{URL: "https://example.com", Description: "evidence"}},
 						EvaluatedAt: now,
 					},
 					{
 						CheckID: "test.check", Status: models.StatusWarn, Severity: models.SeverityHigh,
 						Target: "testorg/testrepo:ci.yml", Message: "Something warned",
-						Evidence: []models.Evidence{{URL: "https://example.com", Description: "evidence"}},
+						Evidence:    []models.Evidence{{URL: "https://example.com", Description: "evidence"}},
 						EvaluatedAt: now,
 					},
 				},

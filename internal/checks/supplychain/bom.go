@@ -11,11 +11,15 @@ import (
 // ActionBOM inventories every third-party action reference.
 type ActionBOM struct{}
 
-func (c *ActionBOM) ID() string          { return "supplychain.action_bom" }
-func (c *ActionBOM) Title() string        { return "Action Bill of Materials" }
-func (c *ActionBOM) Description() string  { return "Inventories every third-party GitHub Action used across workflows" }
-func (c *ActionBOM) Controls() []models.ControlID { return []models.ControlID{"SOC2-CC9.2", "ISO27001-A.15.1"} }
-func (c *ActionBOM) Severity() models.Severity    { return models.SeverityInfo }
+func (c *ActionBOM) ID() string    { return "supplychain.action_bom" }
+func (c *ActionBOM) Title() string { return "Action Bill of Materials" }
+func (c *ActionBOM) Description() string {
+	return "Inventories every third-party GitHub Action used across workflows"
+}
+func (c *ActionBOM) Controls() []models.ControlID {
+	return []models.ControlID{"SOC2-CC9.2", "ISO27001-A.15.1"}
+}
+func (c *ActionBOM) Severity() models.Severity { return models.SeverityInfo }
 
 func (c *ActionBOM) Run(ctx *models.CheckContext) (*models.CheckResult, error) {
 	result := &models.CheckResult{CheckID: c.ID()}

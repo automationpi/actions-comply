@@ -2,10 +2,10 @@ package report
 
 import (
 	"fmt"
+	"github.com/automationpi/actions-comply/pkg/models"
 	"io"
 	"sort"
 	"strings"
-	"github.com/automationpi/actions-comply/pkg/models"
 )
 
 // ── PDF primitives ──────────────────────────────────────────────────────────
@@ -51,7 +51,7 @@ func (p *pdfPage) content() string { return p.buf.String() }
 const (
 	pw = 612.0 // US Letter
 	ph = 792.0
-	ml = 45.0  // margins
+	ml = 45.0 // margins
 	mr = 45.0
 	mt = 45.0
 	mb = 55.0
@@ -400,7 +400,7 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 		y = ph - mt
 	}
 
-	p2.rect(ml, y-3, cw, 18, 0.93, 0.98, 0.93) // light green bg
+	p2.rect(ml, y-3, cw, 18, 0.93, 0.98, 0.93)                  // light green bg
 	p2.rect(ml, y-3, 4, 18, colGreen.r, colGreen.g, colGreen.b) // green accent
 	p2.text(ml+12, y, "/F2", 13, "What's Working Well")
 	y -= 24

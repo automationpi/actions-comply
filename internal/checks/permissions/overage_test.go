@@ -13,7 +13,7 @@ func TestWorkflowOverage_WriteAll(t *testing.T) {
 		Repo: "testrepo",
 		Workflows: []*models.WorkflowFile{
 			{
-				Path: ".github/workflows/ci.yml",
+				Path:        ".github/workflows/ci.yml",
 				Permissions: &models.PermissionBlock{All: "write-all"},
 			},
 		},
@@ -112,7 +112,7 @@ func TestWorkflowOverage_UnnecessaryWrite(t *testing.T) {
 				Path: ".github/workflows/ci.yml",
 				Permissions: &models.PermissionBlock{
 					Scopes: map[string]string{
-						"contents":  "read",
+						"contents": "read",
 						"packages": "write", // Not needed by checkout
 					},
 				},

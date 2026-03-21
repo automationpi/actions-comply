@@ -22,7 +22,7 @@ func TestUnpinnedActions_SHAPinned(t *testing.T) {
 								ActionRef: &models.ActionRef{
 									Owner: "actions", Name: "checkout",
 									Version: "a5ac7e51b41094c92402da3b24376905380afc29",
-									IsSHA: true,
+									IsSHA:   true,
 								},
 							},
 						},
@@ -216,8 +216,8 @@ func TestCollectBOM(t *testing.T) {
 								},
 							},
 							{
-								Name: "Local",
-								Uses: "./my-action",
+								Name:      "Local",
+								Uses:      "./my-action",
 								ActionRef: &models.ActionRef{IsLocal: true, Path: "./my-action"},
 							},
 						},

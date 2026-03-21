@@ -51,10 +51,10 @@ type parser struct {
 	curStep  *models.Step
 
 	// Dynamic indent tracking — set when we first see each level
-	jobsIndent    int // indent of jobs: key (always 0)
-	jobIDIndent   int // indent of job IDs under jobs:
-	jobBodyIndent int // indent of job body keys (name, steps, etc.)
-	stepsIndent   int // indent of steps: key
+	jobsIndent     int // indent of jobs: key (always 0)
+	jobIDIndent    int // indent of job IDs under jobs:
+	jobBodyIndent  int // indent of job body keys (name, steps, etc.)
+	stepsIndent    int // indent of steps: key
 	stepItemIndent int // indent of step list items (- uses:)
 }
 

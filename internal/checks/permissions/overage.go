@@ -30,11 +30,15 @@ type WorkflowOverage struct {
 	StepUsageMap map[string][]string
 }
 
-func (c *WorkflowOverage) ID() string          { return "permissions.workflow_overage" }
-func (c *WorkflowOverage) Title() string        { return "Workflow Permission Overage" }
-func (c *WorkflowOverage) Description() string  { return "Detects over-provisioned GitHub Actions workflow permissions" }
-func (c *WorkflowOverage) Controls() []models.ControlID { return []models.ControlID{"SOC2-CC6.1", "ISO27001-A.9.4"} }
-func (c *WorkflowOverage) Severity() models.Severity    { return models.SeverityHigh }
+func (c *WorkflowOverage) ID() string    { return "permissions.workflow_overage" }
+func (c *WorkflowOverage) Title() string { return "Workflow Permission Overage" }
+func (c *WorkflowOverage) Description() string {
+	return "Detects over-provisioned GitHub Actions workflow permissions"
+}
+func (c *WorkflowOverage) Controls() []models.ControlID {
+	return []models.ControlID{"SOC2-CC6.1", "ISO27001-A.9.4"}
+}
+func (c *WorkflowOverage) Severity() models.Severity { return models.SeverityHigh }
 
 func (c *WorkflowOverage) stepMap() map[string][]string {
 	if c.StepUsageMap != nil {
@@ -245,4 +249,3 @@ func (c *WorkflowOverage) collectJobNeededPermissions(job *models.Job) map[strin
 	}
 	return needed
 }
-

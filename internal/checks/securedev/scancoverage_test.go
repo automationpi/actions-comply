@@ -21,7 +21,7 @@ func TestScanCoverage_WithScanner(t *testing.T) {
 							{
 								Uses: "github/codeql-action/analyze@v2",
 								ActionRef: &models.ActionRef{
-									Raw: "github/codeql-action/analyze@v2",
+									Raw:   "github/codeql-action/analyze@v2",
 									Owner: "github", Name: "codeql-action",
 								},
 							},

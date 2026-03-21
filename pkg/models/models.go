@@ -50,7 +50,7 @@ type ControlID string
 type Framework string
 
 const (
-	FrameworkSOC2    Framework = "soc2"
+	FrameworkSOC2     Framework = "soc2"
 	FrameworkISO27001 Framework = "iso27001"
 )
 
@@ -58,10 +58,10 @@ const (
 type EvidenceType string
 
 const (
-	EvidenceWorkflowFile     EvidenceType = "workflow_file"
-	EvidenceRunURL           EvidenceType = "run_url"
-	EvidencePRURL            EvidenceType = "pr_url"
-	EvidenceAPIResponse      EvidenceType = "api_response"
+	EvidenceWorkflowFile      EvidenceType = "workflow_file"
+	EvidenceRunURL            EvidenceType = "run_url"
+	EvidencePRURL             EvidenceType = "pr_url"
+	EvidenceAPIResponse       EvidenceType = "api_response"
 	EvidenceEnvironmentConfig EvidenceType = "environment_config"
 )
 
@@ -103,10 +103,10 @@ type Period struct {
 
 // ReportSummary contains aggregate counts for an audit.
 type ReportSummary struct {
-	TotalFindings    int            `json:"total_findings"`
-	CountByStatus    map[Status]int `json:"count_by_status"`
-	CountBySeverity  map[Severity]int `json:"count_by_severity"`
-	ControlStatus    map[ControlID]Status `json:"control_status"`
+	TotalFindings   int                  `json:"total_findings"`
+	CountByStatus   map[Status]int       `json:"count_by_status"`
+	CountBySeverity map[Severity]int     `json:"count_by_severity"`
+	ControlStatus   map[ControlID]Status `json:"control_status"`
 }
 
 // AuditReport is the top-level output of a compliance audit.

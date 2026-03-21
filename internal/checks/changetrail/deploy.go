@@ -19,11 +19,15 @@ type DeployApproval struct {
 	ProdEnvironments []string
 }
 
-func (c *DeployApproval) ID() string          { return "changetrail.deploy_approval" }
-func (c *DeployApproval) Title() string        { return "Deploy Approval Gate" }
-func (c *DeployApproval) Description() string  { return "Verifies production deploy jobs have environment protection rules" }
-func (c *DeployApproval) Controls() []models.ControlID { return []models.ControlID{"SOC2-CC8.1", "ISO27001-A.12.1"} }
-func (c *DeployApproval) Severity() models.Severity    { return models.SeverityCritical }
+func (c *DeployApproval) ID() string    { return "changetrail.deploy_approval" }
+func (c *DeployApproval) Title() string { return "Deploy Approval Gate" }
+func (c *DeployApproval) Description() string {
+	return "Verifies production deploy jobs have environment protection rules"
+}
+func (c *DeployApproval) Controls() []models.ControlID {
+	return []models.ControlID{"SOC2-CC8.1", "ISO27001-A.12.1"}
+}
+func (c *DeployApproval) Severity() models.Severity { return models.SeverityCritical }
 
 func (c *DeployApproval) prodEnvs() []string {
 	if c.ProdEnvironments != nil {

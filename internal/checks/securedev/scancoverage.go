@@ -13,11 +13,11 @@ import (
 var DefaultKnownScanners = map[string]string{
 	"github/codeql-action/analyze": "SAST (CodeQL)",
 	"github/codeql-action/init":    "SAST (CodeQL)",
-	"aquasecurity/trivy-action":     "SCA/Container (Trivy)",
-	"snyk/actions":                  "SCA (Snyk)",
-	"semgrep/semgrep-action":        "SAST (Semgrep)",
-	"gitleaks/gitleaks-action":      "Secrets (Gitleaks)",
-	"trufflesecurity/trufflehog":    "Secrets (TruffleHog)",
+	"aquasecurity/trivy-action":    "SCA/Container (Trivy)",
+	"snyk/actions":                 "SCA (Snyk)",
+	"semgrep/semgrep-action":       "SAST (Semgrep)",
+	"gitleaks/gitleaks-action":     "Secrets (Gitleaks)",
+	"trufflesecurity/trufflehog":   "Secrets (TruffleHog)",
 }
 
 // ScanCoverage checks that PR workflows include security scanning.
@@ -25,11 +25,15 @@ type ScanCoverage struct {
 	KnownScanners map[string]string
 }
 
-func (c *ScanCoverage) ID() string          { return "securedev.scan_coverage" }
-func (c *ScanCoverage) Title() string        { return "Security Scan Coverage" }
-func (c *ScanCoverage) Description() string  { return "Ensures PR workflows include security scanning steps" }
-func (c *ScanCoverage) Controls() []models.ControlID { return []models.ControlID{"ISO27001-A.14.2", "SOC2-CC7.2"} }
-func (c *ScanCoverage) Severity() models.Severity    { return models.SeverityHigh }
+func (c *ScanCoverage) ID() string    { return "securedev.scan_coverage" }
+func (c *ScanCoverage) Title() string { return "Security Scan Coverage" }
+func (c *ScanCoverage) Description() string {
+	return "Ensures PR workflows include security scanning steps"
+}
+func (c *ScanCoverage) Controls() []models.ControlID {
+	return []models.ControlID{"ISO27001-A.14.2", "SOC2-CC7.2"}
+}
+func (c *ScanCoverage) Severity() models.Severity { return models.SeverityHigh }
 
 func (c *ScanCoverage) scanners() map[string]string {
 	if c.KnownScanners != nil {

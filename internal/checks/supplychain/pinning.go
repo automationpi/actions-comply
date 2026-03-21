@@ -10,11 +10,15 @@ import (
 // UnpinnedActions checks that all third-party actions are pinned to a full SHA.
 type UnpinnedActions struct{}
 
-func (c *UnpinnedActions) ID() string          { return "supplychain.unpinned_actions" }
-func (c *UnpinnedActions) Title() string        { return "Unpinned Action References" }
-func (c *UnpinnedActions) Description() string  { return "Detects third-party actions pinned to mutable tags instead of full SHA" }
-func (c *UnpinnedActions) Controls() []models.ControlID { return []models.ControlID{"SOC2-CC9.2", "ISO27001-A.15.1", "ISO27001-A.14.2"} }
-func (c *UnpinnedActions) Severity() models.Severity    { return models.SeverityHigh }
+func (c *UnpinnedActions) ID() string    { return "supplychain.unpinned_actions" }
+func (c *UnpinnedActions) Title() string { return "Unpinned Action References" }
+func (c *UnpinnedActions) Description() string {
+	return "Detects third-party actions pinned to mutable tags instead of full SHA"
+}
+func (c *UnpinnedActions) Controls() []models.ControlID {
+	return []models.ControlID{"SOC2-CC9.2", "ISO27001-A.15.1", "ISO27001-A.14.2"}
+}
+func (c *UnpinnedActions) Severity() models.Severity { return models.SeverityHigh }
 
 func (c *UnpinnedActions) Run(ctx *models.CheckContext) (*models.CheckResult, error) {
 	result := &models.CheckResult{CheckID: c.ID()}

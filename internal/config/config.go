@@ -10,11 +10,11 @@ import (
 
 // Config represents the actions-comply configuration file.
 type Config struct {
-	Version         int               `json:"version"`
-	StepUsageMap    map[string][]string `json:"step_usage_map"`
-	Scanners        map[string]string  `json:"scanners"`
-	ProdEnvironments []string          `json:"prod_environments"`
-	Exclude         ExcludeConfig      `json:"exclude"`
+	Version          int                 `json:"version"`
+	StepUsageMap     map[string][]string `json:"step_usage_map"`
+	Scanners         map[string]string   `json:"scanners"`
+	ProdEnvironments []string            `json:"prod_environments"`
+	Exclude          ExcludeConfig       `json:"exclude"`
 }
 
 // ExcludeConfig defines repos and workflows to exclude from checks.
