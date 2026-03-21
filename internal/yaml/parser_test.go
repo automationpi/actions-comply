@@ -229,6 +229,60 @@ func TestParseEnvironmentMap(t *testing.T) {
 	}
 }
 
+func TestParseFourSpaceIndent(t *testing.T) {
+	content := readFixture(t, "four-space-indent.yml")
+	wf, err := Parse(".github/workflows/four-space-indent.yml", content)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if wf.Name != "Four Space Indent CI" {
+		t.Errorf("name: got %q", wf.Name)
+	}
+
+	assertContains(t, wf.Triggers, "pull_request")
+	assertContains(t, wf.Triggers, "push")
+
+	if wf.Permissions == nil {
+		t.Fatal("expected top-level permissions")
+	}
+	if wf.Permissions.Scopes["contents"] != "read" {
+		t.Errorf("permissions.contents: got %q", wf.Permissions.Scopes["contents"])
+	}
+
+	if len(wf.Jobs) != 2 {
+		t.Fatalf("expected 2 jobs, got %d", len(wf.Jobs))
+	}
+
+	testJob := wf.Jobs["test"]
+	if testJob == nil {
+		t.Fatal("expected job 'test'")
+	}
+	if testJob.Name != "Run Tests" {
+		t.Errorf("test job name: got %q", testJob.Name)
+	}
+	if len(testJob.Steps) != 3 {
+		t.Fatalf("expected 3 steps in test job, got %d", len(testJob.Steps))
+	}
+	if testJob.Steps[0].Uses != "actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29" {
+		t.Errorf("step 0 uses: got %q", testJob.Steps[0].Uses)
+	}
+
+	scanJob := wf.Jobs["scan"]
+	if scanJob == nil {
+		t.Fatal("expected job 'scan'")
+	}
+	if scanJob.Permissions == nil || scanJob.Permissions.Scopes["security-events"] != "write" {
+		t.Error("expected job-level security-events: write")
+	}
+	if scanJob.Environment != "production" {
+		t.Errorf("environment: got %q", scanJob.Environment)
+	}
+	if len(scanJob.Steps) != 2 {
+		t.Fatalf("expected 2 steps in scan job, got %d", len(scanJob.Steps))
+	}
+}
+
 func TestParseCompactSteps(t *testing.T) {
 	content := readFixture(t, "compact-steps.yml")
 	wf, err := Parse(".github/workflows/compact-steps.yml", content)

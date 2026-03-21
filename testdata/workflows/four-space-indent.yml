@@ -1,0 +1,32 @@
+name: Four Space Indent CI
+on:
+    pull_request:
+        branches: [main]
+    push:
+        branches: [main]
+
+permissions:
+    contents: read
+    pull-requests: write
+
+jobs:
+    test:
+        name: Run Tests
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+            - name: Setup
+              uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88eb36e1752db003d
+            - name: Test
+              run: go test ./...
+
+    scan:
+        name: CodeQL
+        runs-on: ubuntu-latest
+        permissions:
+            security-events: write
+        environment: production
+        steps:
+            - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29
+            - uses: github/codeql-action/analyze@b611370bb5703a7efb587f9d136a52ea24c5c38c

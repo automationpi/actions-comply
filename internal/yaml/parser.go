@@ -1,5 +1,6 @@
 // Package yaml provides a stdlib-only parser for GitHub Actions workflow files.
 // It uses a line-by-line state machine rather than a full YAML parser.
+// Supports any consistent indentation (2-space, 4-space, tabs).
 package yaml
 
 import (
@@ -48,6 +49,13 @@ type parser struct {
 	curJob   *models.Job
 	curJobID string
 	curStep  *models.Step
+
+	// Dynamic indent tracking — set when we first see each level
+	jobsIndent    int // indent of jobs: key (always 0)
+	jobIDIndent   int // indent of job IDs under jobs:
+	jobBodyIndent int // indent of job body keys (name, steps, etc.)
+	stepsIndent   int // indent of steps: key
+	stepItemIndent int // indent of step list items (- uses:)
 }
 
 func (p *parser) parse() {
@@ -55,7 +63,6 @@ func (p *parser) parse() {
 		line := p.scanner.Text()
 		p.processLine(line)
 	}
-	// Flush final step/job
 	p.flushStep()
 	p.flushJob()
 }
@@ -63,7 +70,6 @@ func (p *parser) parse() {
 func (p *parser) processLine(line string) {
 	trimmed := strings.TrimSpace(line)
 
-	// Skip empty lines and comments
 	if trimmed == "" || strings.HasPrefix(trimmed, "#") {
 		return
 	}
@@ -96,6 +102,8 @@ func (p *parser) processLine(line string) {
 				}
 			case "jobs":
 				p.state = stateJobs
+				p.jobsIndent = 0
+				p.jobIDIndent = 0 // will be set on first job ID
 			}
 		}
 		return
@@ -125,7 +133,6 @@ func (p *parser) processOn(trimmed string, indent int) {
 	if indent <= 0 {
 		return
 	}
-	// Each line at indent 2 under on: is a trigger event
 	key, _ := splitKV(trimmed)
 	if key != "" {
 		p.wf.Triggers = append(p.wf.Triggers, key)
@@ -146,24 +153,23 @@ func (p *parser) processPermissions(trimmed string, indent int) {
 }
 
 func (p *parser) processJobs(trimmed string, indent int) {
-	if indent == 2 {
+	if indent > p.jobsIndent {
 		p.flushStep()
 		p.flushJob()
-		// This is a job ID
 		key, _ := splitKV(trimmed)
 		if key != "" {
+			p.jobIDIndent = indent
+			p.jobBodyIndent = 0 // will detect on first body key
 			p.curJobID = key
-			p.curJob = &models.Job{
-				ID: key,
-			}
+			p.curJob = &models.Job{ID: key}
 			p.state = stateJob
 		}
 	}
 }
 
 func (p *parser) processJob(trimmed string, indent int) {
-	if indent == 2 {
-		// New job
+	// New job at same level as current job ID
+	if p.jobIDIndent > 0 && indent == p.jobIDIndent {
 		p.flushStep()
 		p.flushJob()
 		key, _ := splitKV(trimmed)
@@ -174,53 +180,63 @@ func (p *parser) processJob(trimmed string, indent int) {
 		return
 	}
 
-	if indent < 2 {
+	// Back to jobs level or root
+	if indent <= p.jobsIndent {
+		return
+	}
+
+	// Detect job body indent on first body key
+	if p.jobBodyIndent == 0 && indent > p.jobIDIndent {
+		p.jobBodyIndent = indent
+	}
+
+	// Only process at job body level
+	if indent != p.jobBodyIndent {
 		return
 	}
 
 	key, val := splitKV(trimmed)
-	if indent == 4 {
-		switch key {
-		case "name":
-			if p.curJob != nil {
-				p.curJob.Name = unquote(val)
-			}
-		case "runs-on":
-			if p.curJob != nil {
-				p.curJob.RunsOn = unquote(val)
-			}
-		case "environment":
-			if p.curJob != nil {
-				if val != "" {
-					p.curJob.Environment = unquote(val)
-				} else {
-					p.state = stateJobEnvironment
-				}
-			}
-		case "permissions":
-			if p.curJob != nil {
-				if val != "" {
-					p.curJob.Permissions = &models.PermissionBlock{All: val}
-				} else {
-					p.curJob.Permissions = &models.PermissionBlock{
-						Scopes: make(map[string]string),
-					}
-				}
-				p.state = stateJobPermissions
-			}
-		case "needs":
-			if p.curJob != nil {
-				p.curJob.Needs = parseList(val)
-			}
-		case "steps":
-			p.state = stateJobSteps
+	switch key {
+	case "name":
+		if p.curJob != nil {
+			p.curJob.Name = unquote(val)
 		}
+	case "runs-on":
+		if p.curJob != nil {
+			p.curJob.RunsOn = unquote(val)
+		}
+	case "environment":
+		if p.curJob != nil {
+			if val != "" {
+				p.curJob.Environment = unquote(val)
+			} else {
+				p.state = stateJobEnvironment
+			}
+		}
+	case "permissions":
+		if p.curJob != nil {
+			if val != "" {
+				p.curJob.Permissions = &models.PermissionBlock{All: val}
+			} else {
+				p.curJob.Permissions = &models.PermissionBlock{
+					Scopes: make(map[string]string),
+				}
+			}
+			p.state = stateJobPermissions
+		}
+	case "needs":
+		if p.curJob != nil {
+			p.curJob.Needs = parseList(val)
+		}
+	case "steps":
+		p.stepsIndent = indent
+		p.stepItemIndent = 0 // will detect on first step item
+		p.state = stateJobSteps
 	}
 }
 
 func (p *parser) processJobPermissions(trimmed string, indent int) {
-	if indent <= 4 {
-		// Back to job level
+	if indent <= p.jobBodyIndent {
 		p.state = stateJob
 		p.processJob(trimmed, indent)
 		return
@@ -234,12 +250,11 @@ func (p *parser) processJobPermissions(trimmed string, indent int) {
 }
 
 func (p *parser) processJobEnvironment(trimmed string, indent int) {
-	if indent <= 4 {
+	if indent <= p.jobBodyIndent {
 		p.state = stateJob
 		p.processJob(trimmed, indent)
 		return
 	}
-	// Look for name: field within environment map
 	key, val := splitKV(trimmed)
 	if key == "name" && p.curJob != nil {
 		p.curJob.Environment = unquote(val)
@@ -247,15 +262,15 @@ func (p *parser) processJobEnvironment(trimmed string, indent int) {
 }
 
 func (p *parser) processJobSteps(trimmed string, indent int) {
-	// Step list items can appear at indent 4 (compact) or indent 6+ (standard).
-	// At indent 4, a "- " prefix means a step item; anything else is a job key.
-	if indent <= 4 && !strings.HasPrefix(trimmed, "- ") {
+	// If we've gone back to job body level or above, exit steps
+	if indent <= p.jobBodyIndent && !strings.HasPrefix(trimmed, "- ") {
 		p.flushStep()
 		p.state = stateJob
 		p.processJob(trimmed, indent)
 		return
 	}
-	if indent < 4 {
+	// Back to job ID level or above
+	if indent <= p.jobIDIndent {
 		p.flushStep()
 		p.state = stateJob
 		p.processJob(trimmed, indent)
@@ -265,8 +280,10 @@ func (p *parser) processJobSteps(trimmed string, indent int) {
 	// Step list item starts with -
 	if strings.HasPrefix(trimmed, "- ") {
 		p.flushStep()
+		if p.stepItemIndent == 0 {
+			p.stepItemIndent = indent
+		}
 		p.curStep = &models.Step{}
-		// Parse inline key on same line as dash
 		rest := strings.TrimPrefix(trimmed, "- ")
 		key, val := splitKV(rest)
 		p.applyStepField(key, val)
@@ -281,14 +298,16 @@ func (p *parser) processJobSteps(trimmed string, indent int) {
 }
 
 func (p *parser) processStepFields(trimmed string, indent int) {
-	if indent < 4 {
+	// Back to job ID level or root
+	if indent <= p.jobIDIndent {
 		p.flushStep()
 		p.state = stateJob
 		p.processJob(trimmed, indent)
 		return
 	}
-	// At indent 4, non-dash non-step-field lines are job keys
-	if indent == 4 && !strings.HasPrefix(trimmed, "- ") {
+
+	// At job body level, check if it's a job key
+	if indent == p.jobBodyIndent && !strings.HasPrefix(trimmed, "- ") {
 		key, _ := splitKV(trimmed)
 		if isJobKey(key) {
 			p.flushStep()
@@ -298,6 +317,7 @@ func (p *parser) processStepFields(trimmed string, indent int) {
 		}
 	}
 
+	// New step item
 	if strings.HasPrefix(trimmed, "- ") {
 		p.flushStep()
 		p.curStep = &models.Step{}
@@ -358,21 +378,20 @@ func (p *parser) flushJob() {
 func countIndent(line string) int {
 	count := 0
 	for _, ch := range line {
-		if ch == ' ' {
+		switch {
+		case ch == ' ':
 			count++
-		} else if ch == '\t' {
-			count += 2
-		} else {
-			break
+		case ch == '\t':
+			count += 4
+		default:
+			return count
 		}
 	}
 	return count
 }
 
 // splitKV splits "key: value" into key and value.
-// Returns key="" if line doesn't look like a KV pair.
 func splitKV(s string) (string, string) {
-	// Handle lines that are just a value (like "- item")
 	idx := strings.Index(s, ":")
 	if idx < 0 {
 		return s, ""
@@ -394,7 +413,6 @@ func unquote(s string) string {
 }
 
 // parseTriggerValue parses inline trigger values.
-// Handles: "push", "[push, pull_request]", "push, pull_request"
 func parseTriggerValue(val string) []string {
 	val = strings.Trim(val, "[]")
 	parts := strings.Split(val, ",")
