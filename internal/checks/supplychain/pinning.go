@@ -51,14 +51,14 @@ func (c *UnpinnedActions) Run(ctx *models.CheckContext) (*models.CheckResult, er
 						Status:      models.StatusPass,
 						Severity:    models.SeverityInfo,
 						Target:      target,
-						Message:     fmt.Sprintf("Action %s/%s pinned to SHA", ref.Owner, ref.Name),
+						Message:     fmt.Sprintf("Securely pinned — %s/%s uses immutable SHA reference", ref.Owner, ref.Name),
 						Evidence:    []models.Evidence{evidence},
 						EvaluatedAt: now,
 					})
 				} else {
-					msg := fmt.Sprintf("Action %s/%s pinned to mutable tag '%s'", ref.Owner, ref.Name, ref.Version)
+					msg := fmt.Sprintf("Action %s/%s uses tag '%s' — can be silently changed by the owner", ref.Owner, ref.Name, ref.Version)
 					if ref.Version == "" {
-						msg = fmt.Sprintf("Action %s/%s has no version specified", ref.Owner, ref.Name)
+						msg = fmt.Sprintf("Action %s/%s has no version at all — always pulls latest code", ref.Owner, ref.Name)
 					}
 					result.Findings = append(result.Findings, models.Finding{
 						CheckID:     c.ID(),
@@ -68,7 +68,7 @@ func (c *UnpinnedActions) Run(ctx *models.CheckContext) (*models.CheckResult, er
 						Severity:    models.SeverityHigh,
 						Target:      target,
 						Message:     msg,
-						Detail:      fmt.Sprintf("Pin %s/%s to a full 40-character commit SHA instead of tag '%s'. Mutable tags can be moved to point to different code.", ref.Owner, ref.Name, ref.Version),
+						Detail:      fmt.Sprintf("Replace '%s@%s' with '%s@<full-sha>'. Tags like '%s' can be moved by the action owner to point to different code without your knowledge. Use 'gh api repos/%s/git/ref/tags/%s' to find the current SHA.", ref.Owner+"/"+ref.Name, ref.Version, ref.Owner+"/"+ref.Name, ref.Version, ref.Owner+"/"+ref.Name, ref.Version),
 						Evidence:    []models.Evidence{evidence},
 						EvaluatedAt: now,
 					})

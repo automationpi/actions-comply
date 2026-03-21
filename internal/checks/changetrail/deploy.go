@@ -71,8 +71,8 @@ func (c *DeployApproval) Run(ctx *models.CheckContext) (*models.CheckResult, err
 					Status:      models.StatusFail,
 					Severity:    models.SeverityCritical,
 					Target:      target,
-					Message:     fmt.Sprintf("Production job '%s' has no environment: key", jobID),
-					Detail:      "Add an 'environment:' key with required reviewers configured in GitHub repository settings. This ensures deployments require approval.",
+					Message:     fmt.Sprintf("No approval gate — production job '%s' can deploy without review", jobID),
+					Detail:      "Add 'environment: production' to this job and configure required reviewers in GitHub repo Settings > Environments. Without this, any push can trigger a production deploy with no human approval.",
 					Evidence:    []models.Evidence{evidence},
 					EvaluatedAt: now,
 				})
@@ -84,7 +84,7 @@ func (c *DeployApproval) Run(ctx *models.CheckContext) (*models.CheckResult, err
 					Status:      models.StatusPass,
 					Severity:    models.SeverityInfo,
 					Target:      target,
-					Message:     fmt.Sprintf("Production job '%s' has environment: %s", jobID, job.Environment),
+					Message:     fmt.Sprintf("Approval gate configured — job '%s' uses environment '%s'", jobID, job.Environment),
 					Evidence:    []models.Evidence{evidence},
 					EvaluatedAt: now,
 				})
@@ -99,8 +99,8 @@ func (c *DeployApproval) Run(ctx *models.CheckContext) (*models.CheckResult, err
 					Status:      models.StatusWarn,
 					Severity:    models.SeverityHigh,
 					Target:      target,
-					Message:     "Workflow triggers on push without pull_request — deploys may bypass PR review",
-					Detail:      "Add a pull_request trigger or ensure branch protection requires PR review before merge.",
+					Message:     "No PR requirement — push to branch triggers deploy without code review",
+					Detail:      "This workflow deploys on push without requiring a pull request. A direct push to the branch skips code review entirely. Add branch protection rules requiring PR approval, or add a pull_request trigger.",
 					Evidence:    []models.Evidence{evidence},
 					EvaluatedAt: now,
 				})

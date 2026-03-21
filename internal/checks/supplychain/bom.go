@@ -50,7 +50,7 @@ func (c *ActionBOM) Run(ctx *models.CheckContext) (*models.CheckResult, error) {
 					Status:     models.StatusPass,
 					Severity:   models.SeverityInfo,
 					Target:     actionKey,
-					Message:    fmt.Sprintf("Third-party action: %s@%s", actionKey, ref.Version),
+					Message:    fmt.Sprintf("Uses third-party action %s (version: %s)", actionKey, ref.Version),
 					Evidence: []models.Evidence{
 						{
 							Type:        models.EvidenceWorkflowFile,

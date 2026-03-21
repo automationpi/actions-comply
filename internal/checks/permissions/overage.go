@@ -66,8 +66,8 @@ func (c *WorkflowOverage) Run(ctx *models.CheckContext) (*models.CheckResult, er
 				Status:      models.StatusWarn,
 				Severity:    models.SeverityMedium,
 				Target:      target,
-				Message:     "No explicit permissions block — GitHub defaults apply",
-				Detail:      "Add an explicit permissions block to follow the principle of least privilege. Without it, workflows may receive broader permissions than needed.",
+				Message:     "Missing permissions block — workflow runs with broad default token permissions",
+				Detail:      "Add a 'permissions:' block at the top of this workflow with only the scopes you need. Without it, the GITHUB_TOKEN gets default permissions which may be wider than necessary.",
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})
@@ -82,8 +82,8 @@ func (c *WorkflowOverage) Run(ctx *models.CheckContext) (*models.CheckResult, er
 				Status:      models.StatusFail,
 				Severity:    models.SeverityCritical,
 				Target:      target,
-				Message:     "Workflow declares permissions: write-all",
-				Detail:      "Replace 'permissions: write-all' with explicit per-scope permissions. write-all grants every token scope at write level, violating least privilege.",
+				Message:     "Token has full write access to everything — 'permissions: write-all' is set",
+				Detail:      "This is the most dangerous permission setting. Replace 'permissions: write-all' with specific scopes like 'contents: read'. write-all gives the workflow token write access to code, packages, issues, deployments, and more.",
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})
@@ -98,7 +98,7 @@ func (c *WorkflowOverage) Run(ctx *models.CheckContext) (*models.CheckResult, er
 				Status:      models.StatusPass,
 				Severity:    models.SeverityInfo,
 				Target:      target,
-				Message:     "Workflow declares permissions: read-all",
+				Message:     "Permissions set to read-only — good least-privilege configuration",
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})
@@ -141,8 +141,8 @@ func (c *WorkflowOverage) checkScopes(ctx *models.CheckContext, wf *models.Workf
 				Status:      models.StatusFail,
 				Severity:    models.SeverityHigh,
 				Target:      target,
-				Message:     fmt.Sprintf("Write scope '%s: write' declared but no step requires it", scope),
-				Detail:      fmt.Sprintf("Remove or downgrade '%s: write' to '%s: read' unless a step genuinely needs write access.", scope, scope),
+				Message:     fmt.Sprintf("Unnecessary write access — '%s: write' granted but no step needs it", scope),
+				Detail:      fmt.Sprintf("The workflow declares '%s: write' but none of the actions in this workflow require write access to %s. Change it to '%s: read' or remove it.", scope, scope, scope),
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})
@@ -157,7 +157,7 @@ func (c *WorkflowOverage) checkScopes(ctx *models.CheckContext, wf *models.Workf
 			Status:      models.StatusPass,
 			Severity:    models.SeverityInfo,
 			Target:      target,
-			Message:     "Explicit permissions block with no over-provisioned write scopes",
+			Message:     "Permissions correctly scoped — no unnecessary write access",
 			Evidence:    []models.Evidence{evidence},
 			EvaluatedAt: now,
 		})
@@ -187,7 +187,7 @@ func (c *WorkflowOverage) checkJobPermissions(ctx *models.CheckContext, wf *mode
 			Status:      models.StatusFail,
 			Severity:    models.SeverityCritical,
 			Target:      target,
-			Message:     fmt.Sprintf("Job '%s' declares permissions: write-all", job.ID),
+			Message:     fmt.Sprintf("Job '%s' has full write access — 'permissions: write-all' at job level", job.ID),
 			Evidence:    []models.Evidence{evidence},
 			EvaluatedAt: now,
 		})
@@ -209,7 +209,7 @@ func (c *WorkflowOverage) checkJobPermissions(ctx *models.CheckContext, wf *mode
 				Status:      models.StatusWarn,
 				Severity:    models.SeverityMedium,
 				Target:      target,
-				Message:     fmt.Sprintf("Job '%s' has write scope '%s: write' with no matching step need", job.ID, scope),
+				Message:     fmt.Sprintf("Job '%s' has unnecessary '%s: write' — no step needs it", job.ID, scope),
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})

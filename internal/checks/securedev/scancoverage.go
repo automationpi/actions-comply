@@ -62,8 +62,8 @@ func (c *ScanCoverage) Run(ctx *models.CheckContext) (*models.CheckResult, error
 			Status:     models.StatusWarn,
 			Severity:   models.SeverityMedium,
 			Target:     fmt.Sprintf("%s/%s", ctx.Org, ctx.Repo),
-			Message:    "No pull_request triggered workflows found",
-			Detail:     "Add a workflow triggered on pull_request that includes a security scanner (CodeQL, Trivy, Semgrep, etc.)",
+			Message:    "No PR workflows found — code changes are not scanned before merge",
+			Detail:     "There are no workflows triggered by pull_request events, which means no automated security checks run before code is merged. Add a PR workflow with CodeQL, Trivy, or Semgrep.",
 			Evidence: []models.Evidence{
 				{
 					Type:        models.EvidenceWorkflowFile,
@@ -119,7 +119,7 @@ func (c *ScanCoverage) Run(ctx *models.CheckContext) (*models.CheckResult, error
 				Status:      models.StatusPass,
 				Severity:    models.SeverityInfo,
 				Target:      target,
-				Message:     fmt.Sprintf("Scanner(s) found: %s", strings.Join(found, ", ")),
+				Message:     fmt.Sprintf("Security scanning active — %s", strings.Join(found, ", ")),
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})
@@ -131,8 +131,8 @@ func (c *ScanCoverage) Run(ctx *models.CheckContext) (*models.CheckResult, error
 				Status:      models.StatusFail,
 				Severity:    models.SeverityHigh,
 				Target:      target,
-				Message:     "PR workflow contains no security scanning step",
-				Detail:      "Add a security scanner (CodeQL, Trivy, Semgrep, Gitleaks, etc.) to this PR workflow.",
+				Message:     "No security scanner in PR workflow — vulnerabilities can reach main undetected",
+				Detail:      "This PR workflow runs on pull requests but does not include any security scanner. Add CodeQL (free SAST), Trivy (container scanning), Gitleaks (secrets), or Semgrep to catch issues before merge.",
 				Evidence:    []models.Evidence{evidence},
 				EvaluatedAt: now,
 			})
