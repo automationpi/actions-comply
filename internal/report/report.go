@@ -248,12 +248,12 @@ func RenderSummary(w io.Writer, report *models.AuditReport) error {
 func statusEmoji(s models.Status) string {
 	switch s {
 	case models.StatusPass:
-		return "\\u2705"
+		return "\u2705"
 	case models.StatusFail:
-		return "\\u274C"
+		return "\u274C"
 	case models.StatusWarn:
-		return "\\u26A0\\uFE0F"
+		return "\u26A0\uFE0F"
 	default:
-		return "\\u2796"
+		return "\u2796"
 	}
 }
