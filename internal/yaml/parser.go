@@ -350,13 +350,22 @@ func (p *parser) applyStepField(key, val string) {
 	case "name":
 		p.curStep.Name = unquote(val)
 	case "uses":
-		p.curStep.Uses = unquote(val)
+		p.curStep.Uses = stripInlineComment(unquote(val))
 		p.curStep.ActionRef = ParseActionRef(p.curStep.Uses)
 	case "run":
 		p.curStep.Run = unquote(val)
 	case "if":
 		p.curStep.If = val
 	}
+}
+
+// stripInlineComment removes trailing YAML inline comments (# ...).
+// Handles: "actions/checkout@abc123 # v4" → "actions/checkout@abc123"
+func stripInlineComment(s string) string {
+	if idx := strings.Index(s, " #"); idx >= 0 {
+		return strings.TrimSpace(s[:idx])
+	}
+	return s
 }
 
 func (p *parser) flushStep() {
