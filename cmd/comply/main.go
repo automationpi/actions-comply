@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
+	"io"
 	"os"
 	"strings"
 	"time"
@@ -16,6 +17,7 @@ import (
 	"github.com/automationpi/actions-comply/internal/config"
 	"github.com/automationpi/actions-comply/internal/engine"
 	"github.com/automationpi/actions-comply/internal/report"
+	"github.com/automationpi/actions-comply/internal/scorecard"
 	"github.com/automationpi/actions-comply/pkg/models"
 )
 
@@ -36,6 +38,8 @@ func run(args []string) int {
 		return runAudit(args[1:])
 	case "bom":
 		return runBOM(args[1:])
+	case "scorecard":
+		return runScorecard(args[1:])
 	case "version":
 		fmt.Printf("actions-comply %s\n", version)
 		return 0
@@ -239,14 +243,105 @@ func runBOM(args []string) int {
 	return 0
 }
 
+func runScorecard(args []string) int {
+	fs := flag.NewFlagSet("scorecard", flag.ContinueOnError)
+	input := fs.String("input", "", "Path to Scorecard JSON file (or - for stdin)")
+	org := fs.String("org", envOrDefault("GITHUB_REPOSITORY_OWNER", ""), "GitHub organisation")
+	repo := fs.String("repos", "", "Repository name")
+	output := fs.String("output", "text", "Output format: text|json|summary|pdf")
+	outFile := fs.String("out", "", "Write report to file")
+	failOn := fs.String("fail-on", "critical", "Exit 1 if finding >= severity")
+
+	if err := fs.Parse(args); err != nil {
+		return 2
+	}
+
+	// Read scorecard JSON
+	var r io.Reader
+	if *input == "" || *input == "-" {
+		r = os.Stdin
+	} else {
+		f, err := os.Open(*input)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Error opening %s: %v\n", *input, err)
+			return 2
+		}
+		defer f.Close()
+		r = f
+	}
+
+	sc, err := scorecard.Parse(r)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error parsing scorecard JSON: %v\n", err)
+		return 2
+	}
+
+	// Derive org/repo from scorecard data if not provided
+	if *org == "" || *repo == "" {
+		parts := strings.Split(sc.Repo.Name, "/")
+		if len(parts) >= 3 {
+			if *org == "" {
+				*org = parts[1]
+			}
+			if *repo == "" {
+				*repo = parts[2]
+			}
+		}
+	}
+
+	auditReport := scorecard.ToAuditReport(sc, *org, *repo)
+
+	// Render
+	var buf bytes.Buffer
+	switch *output {
+	case "json":
+		if err := report.RenderJSON(&buf, auditReport); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			return 2
+		}
+	case "summary":
+		if err := report.RenderSummary(&buf, auditReport); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			return 2
+		}
+	case "pdf":
+		if err := report.RenderPDF(&buf, auditReport); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			return 2
+		}
+	default:
+		if err := report.RenderText(&buf, auditReport); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			return 2
+		}
+	}
+
+	if *outFile != "" {
+		if err := os.WriteFile(*outFile, buf.Bytes(), 0644); err != nil {
+			fmt.Fprintf(os.Stderr, "Error writing to %s: %v\n", *outFile, err)
+			return 2
+		}
+		fmt.Fprintf(os.Stderr, "Report written to %s\n", *outFile)
+	} else {
+		fmt.Print(buf.String())
+	}
+
+	threshold := models.Severity(*failOn)
+	if engine.HasFindingsAtOrAbove(auditReport, threshold) {
+		return 1
+	}
+	return 0
+}
+
 func printUsage() {
 	fmt.Println(`actions-comply — GitHub Actions Compliance Auditor
 
 Usage:
-  comply audit [flags]    Run a compliance audit
-  comply bom [flags]      Print action BOM as CSV
-  comply version          Print version
-  comply help             Show this help
+  comply audit [flags]      Run a compliance audit on workflow files
+  comply scorecard [flags]  Map Scorecard JSON results to compliance controls
+  comply bom [flags]        Print action BOM as CSV
+  comply version            Print version
+  comply help               Show this help
 
 Audit flags:
   --org string            GitHub organisation
@@ -258,7 +353,15 @@ Audit flags:
   --fail-on string        Exit 1 if finding >= severity (default: critical)
   --workflow-dir string   Local dir of .yml files (offline mode)
   --config string         Path to actions-comply.yml config file
-  --evidence-dir string   Generate evidence package in this directory`)
+  --evidence-dir string   Generate evidence package in this directory
+
+Scorecard flags:
+  --input string          Path to Scorecard JSON file (or - for stdin)
+  --org string            GitHub organisation
+  --repos string          Repository name
+  --output string         Format: text|json|summary|pdf (default: text)
+  --out string            Write report to file
+  --fail-on string        Exit 1 if finding >= severity (default: critical)`)
 }
 
 func envOrDefault(key, def string) string {
