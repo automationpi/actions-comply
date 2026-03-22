@@ -17,3 +17,7 @@ coverage.out
 # Build
 /bin/
 /dist/
+
+# Project docs (internal only)
+CLAUDE.md
+REQUIREMENTS.md
