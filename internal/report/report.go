@@ -110,7 +110,7 @@ func RenderText(w io.Writer, report *models.AuditReport) error {
 				skip++
 			}
 		}
-		fmt.Fprintf(w, "  %-40s %5d %5d %5d %5d\n", cr.CheckID, fail, warn, pass, skip)
+		fmt.Fprintf(w, "  %-40s %5d %5d %5d %5d\n", checkDisplayName(cr.CheckID), fail, warn, pass, skip)
 	}
 	fmt.Fprintln(w)
 

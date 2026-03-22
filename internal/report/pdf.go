@@ -271,7 +271,7 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 		if i%2 == 0 {
 			p1.rect(ml, y-2, cw, 14, colGrayBg.r, colGrayBg.g, colGrayBg.b)
 		}
-		p1.text(ml+8, y+1, "/F3", 7, truncStr(cr.CheckID, 55))
+		p1.text(ml+8, y+1, "/F1", 8, truncStr(checkDisplayName(cr.CheckID), 50))
 		nums := []int{fail, warn, pass, skip}
 		numCols := []rgb{colRed, colAmber, colGreen, colGrayText}
 		for j, n := range nums {

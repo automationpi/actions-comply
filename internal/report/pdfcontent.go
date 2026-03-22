@@ -213,6 +213,39 @@ func whatsWorkingWell(passCount int, totalCount int, checkPasses map[string][]st
 	return lines
 }
 
+// checkDisplayName returns a human-friendly name for a check ID.
+func checkDisplayName(checkID string) string {
+	// Workflow check explainers
+	if exp, ok := checkExplainers[checkID]; ok {
+		return exp.Title
+	}
+	// Scorecard check names
+	scorecardNames := map[string]string{
+		"scorecard.pinned_dependencies": "Pinned Dependencies",
+		"scorecard.token_permissions":   "Token Permissions",
+		"scorecard.branch_protection":   "Branch Protection",
+		"scorecard.code_review":         "Code Review",
+		"scorecard.sast":                "Static Analysis (SAST)",
+		"scorecard.dangerous_workflow":  "Dangerous Workflow Patterns",
+		"scorecard.vulnerabilities":     "Known Vulnerabilities",
+		"scorecard.dependency_updates":  "Dependency Update Tool",
+		"scorecard.security_policy":     "Security Policy",
+		"scorecard.license":             "License",
+		"scorecard.binary_artifacts":    "Binary Artifacts",
+		"scorecard.fuzzing":             "Fuzz Testing",
+		"scorecard.maintained":          "Project Maintenance",
+		"scorecard.ci_tests":            "CI Tests",
+		"scorecard.signed_releases":     "Signed Releases",
+		"scorecard.contributors":        "Contributor Diversity",
+		"scorecard.packaging":           "Release Packaging",
+		"scorecard.best_practices":      "OpenSSF Best Practices",
+	}
+	if name, ok := scorecardNames[checkID]; ok {
+		return name
+	}
+	return checkID
+}
+
 func joinStrings(ss []string) string {
 	return fmt.Sprintf("%s", strings.Join(ss, ", "))
 }
