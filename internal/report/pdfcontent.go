@@ -553,13 +553,13 @@ func buildTestsOfControls(report *models.AuditReport) []tocRow {
 
 // capRow represents a row in the Corrective Action Plan.
 type capRow struct {
-	Finding     string
-	Severity    models.Severity
-	Controls    string
-	Action      string
-	Owner       string // blank — to be filled by org
-	TargetDate  string // blank — to be filled by org
-	Status      string // "Open"
+	Finding    string
+	Severity   models.Severity
+	Controls   string
+	Action     string
+	Owner      string // blank — to be filled by org
+	TargetDate string // blank — to be filled by org
+	Status     string // "Open"
 }
 
 // buildCorrectiveActionPlan extracts failing/warning findings into remediation rows.
