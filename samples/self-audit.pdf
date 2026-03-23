@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R] /Count 4 >>
+<< /Type /Pages /Kids [8 0 R 11 0 R 14 0 R 17 0 R 20 0 R 23 0 R 26 0 R 29 0 R] /Count 8 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -16,51 +16,51 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Courier >>
 endobj
 6 0 obj
-<< /Length 7055 >>
+<< /Length 7025 >>
 stream
 0.11 0.11 0.16 rg 0.0 662.0 612.0 130.0 re f
 0.18 0.42 0.78 rg 0.0 659.0 612.0 3.0 re f
 BT 1.00 1.00 1.00 rg /F2 26 Tf 1 0 0 1 45.0 737.0 Tm (actions-comply) Tj ET
 BT 0.75 0.75 0.80 rg /F1 12 Tf 1 0 0 1 45.0 714.0 Tm (Compliance Audit Report) Tj ET
-BT 0.60 0.60 0.65 rg /F1 9 Tf 1 0 0 1 407.0 737.0 Tm (21 March 2026) Tj ET
-BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774092436) Tj ET
+BT 0.60 0.60 0.65 rg /F1 9 Tf 1 0 0 1 407.0 737.0 Tm (22 March 2026) Tj ET
+BT 0.60 0.60 0.65 rg /F1 8 Tf 1 0 0 1 407.0 722.0 Tm (Report audit-1774220087) Tj ET
 0.96 0.96 0.97 rg 45.0 617.0 522.0 22.0 re f
 BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 623.0 Tm (Org:) Tj ET
-BT 0 0 0 rg /F1 7 Tf 1 0 0 1 73.0 623.0 Tm (automationpi) Tj ET
-BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 141.0 623.0 Tm (Repos:) Tj ET
-BT 0 0 0 rg /F1 7 Tf 1 0 0 1 169.0 623.0 Tm (actions-comply) Tj ET
-BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 245.0 623.0 Tm (Frameworks:) Tj ET
-BT 0 0 0 rg /F1 7 Tf 1 0 0 1 293.0 623.0 Tm (SOC2, ISO27001) Tj ET
-BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 369.0 623.0 Tm (Period:) Tj ET
-BT 0 0 0 rg /F1 7 Tf 1 0 0 1 401.0 623.0 Tm (2025-12-21 to 2026-03-21) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 73.0 623.0 Tm (test-org) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 125.0 623.0 Tm (Repos:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 153.0 623.0 Tm (test-repo) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 209.0 623.0 Tm (Frameworks:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 257.0 623.0 Tm (SOC2, ISO27001) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 333.0 623.0 Tm (Period:) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 365.0 623.0 Tm (2025-12-22 to 2026-03-22) Tj ET
 BT 0 0 0 rg /F2 13 Tf 1 0 0 1 45.0 602.0 Tm (Scorecard) Tj ET
 0.96 0.96 0.97 rg 45.0 532.0 100.4 52.0 re f
 0.11 0.11 0.16 rg 45.0 532.0 3.0 52.0 re f
-BT 0.11 0.11 0.16 rg /F2 22 Tf 1 0 0 1 59.0 564.0 Tm (17) Tj ET
+BT 0.11 0.11 0.16 rg /F2 22 Tf 1 0 0 1 59.0 564.0 Tm (51) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 59.0 546.0 Tm (TOTAL) Tj ET
 0.96 0.96 0.97 rg 150.4 532.0 100.4 52.0 re f
 0.15 0.62 0.28 rg 150.4 532.0 3.0 52.0 re f
-BT 0.15 0.62 0.28 rg /F2 22 Tf 1 0 0 1 164.4 564.0 Tm (17) Tj ET
+BT 0.15 0.62 0.28 rg /F2 22 Tf 1 0 0 1 164.4 564.0 Tm (30) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 164.4 546.0 Tm (PASS) Tj ET
 0.96 0.96 0.97 rg 255.8 532.0 100.4 52.0 re f
 0.85 0.18 0.18 rg 255.8 532.0 3.0 52.0 re f
-BT 0.85 0.18 0.18 rg /F2 22 Tf 1 0 0 1 269.8 564.0 Tm (0) Tj ET
+BT 0.85 0.18 0.18 rg /F2 22 Tf 1 0 0 1 269.8 564.0 Tm (14) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 269.8 546.0 Tm (FAIL) Tj ET
 0.96 0.96 0.97 rg 361.2 532.0 100.4 52.0 re f
 0.85 0.60 0.00 rg 361.2 532.0 3.0 52.0 re f
-BT 0.85 0.60 0.00 rg /F2 22 Tf 1 0 0 1 375.2 564.0 Tm (0) Tj ET
+BT 0.85 0.60 0.00 rg /F2 22 Tf 1 0 0 1 375.2 564.0 Tm (6) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 375.2 546.0 Tm (WARN) Tj ET
 0.96 0.96 0.97 rg 466.6 532.0 100.4 52.0 re f
 0.85 0.18 0.18 rg 466.6 532.0 3.0 52.0 re f
-BT 0.85 0.18 0.18 rg /F2 22 Tf 1 0 0 1 480.6 564.0 Tm (0) Tj ET
+BT 0.85 0.18 0.18 rg /F2 22 Tf 1 0 0 1 480.6 564.0 Tm (2) Tj ET
 BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 480.6 546.0 Tm (CRITICAL) Tj ET
 0.96 0.96 0.97 rg 45.0 492.0 100.4 32.0 re f
 0.90 0.35 0.08 rg 45.0 492.0 3.0 32.0 re f
-BT 0.90 0.35 0.08 rg /F2 14 Tf 1 0 0 1 59.0 510.0 Tm (0) Tj ET
+BT 0.90 0.35 0.08 rg /F2 14 Tf 1 0 0 1 59.0 510.0 Tm (15) Tj ET
 BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 59.0 498.0 Tm (HIGH) Tj ET
 0.96 0.96 0.97 rg 150.4 492.0 100.4 32.0 re f
 0.85 0.60 0.00 rg 150.4 492.0 3.0 32.0 re f
-BT 0.85 0.60 0.00 rg /F2 14 Tf 1 0 0 1 164.4 510.0 Tm (0) Tj ET
+BT 0.85 0.60 0.00 rg /F2 14 Tf 1 0 0 1 164.4 510.0 Tm (3) Tj ET
 BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 164.4 498.0 Tm (MEDIUM) Tj ET
 0.96 0.96 0.97 rg 255.8 492.0 100.4 32.0 re f
 0.45 0.45 0.45 rg 255.8 492.0 3.0 32.0 re f
@@ -68,38 +68,38 @@ BT 0.45 0.45 0.45 rg /F2 14 Tf 1 0 0 1 269.8 510.0 Tm (0) Tj ET
 BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 269.8 498.0 Tm (LOW) Tj ET
 0.96 0.96 0.97 rg 361.2 492.0 100.4 32.0 re f
 0.18 0.42 0.78 rg 361.2 492.0 3.0 32.0 re f
-BT 0.18 0.42 0.78 rg /F2 14 Tf 1 0 0 1 375.2 510.0 Tm (17) Tj ET
+BT 0.18 0.42 0.78 rg /F2 14 Tf 1 0 0 1 375.2 510.0 Tm (31) Tj ET
 BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 375.2 498.0 Tm (INFO) Tj ET
 0.96 0.96 0.97 rg 466.6 492.0 100.4 32.0 re f
 0.45 0.45 0.45 rg 466.6 492.0 3.0 32.0 re f
-BT 0.45 0.45 0.45 rg /F2 14 Tf 1 0 0 1 480.6 510.0 Tm (0) Tj ET
+BT 0.45 0.45 0.45 rg /F2 14 Tf 1 0 0 1 480.6 510.0 Tm (1) Tj ET
 BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 480.6 498.0 Tm (SKIPPED) Tj ET
 BT 0 0 0 rg /F2 12 Tf 1 0 0 1 45.0 472.0 Tm (Control Status) Tj ET
 0.88 0.88 0.88 RG 0.5 w 45.0 467.0 m 567.0 467.0 l S
-0.15 0.62 0.28 rg 47.0 452.0 6.0 6.0 re f
+0.85 0.18 0.18 rg 47.0 452.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 453.0 Tm (ISO27001-A.12.1) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 453.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 308.0 452.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 261.0 453.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 308.0 452.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 453.0 Tm (ISO27001-A.14.2) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 453.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 47.0 438.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 522.0 453.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 47.0 438.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 439.0 Tm (ISO27001-A.15.1) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 439.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 308.0 438.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 261.0 439.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 308.0 438.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 439.0 Tm (ISO27001-A.9.4) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 439.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 47.0 424.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 522.0 439.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 47.0 424.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 425.0 Tm (SOC2-CC6.1) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 425.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 308.0 424.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 261.0 425.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 308.0 424.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 425.0 Tm (SOC2-CC7.2) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 425.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 47.0 410.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 522.0 425.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 47.0 410.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 411.0 Tm (SOC2-CC8.1) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 261.0 411.0 Tm (PASS) Tj ET
-0.15 0.62 0.28 rg 308.0 410.0 6.0 6.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 261.0 411.0 Tm (FAIL) Tj ET
+0.85 0.18 0.18 rg 308.0 410.0 6.0 6.0 re f
 BT 0 0 0 rg /F1 8 Tf 1 0 0 1 320.0 411.0 Tm (SOC2-CC9.2) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 522.0 411.0 Tm (PASS) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 522.0 411.0 Tm (FAIL) Tj ET
 BT 0 0 0 rg /F2 12 Tf 1 0 0 1 45.0 385.0 Tm (Check Summary) Tj ET
 0.88 0.88 0.88 RG 0.5 w 45.0 380.0 m 567.0 380.0 l S
 0.11 0.11 0.16 rg 45.0 362.0 522.0 14.0 re f
@@ -109,39 +109,39 @@ BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 405.0 365.0 Tm (WARN) Tj ET
 BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 455.0 365.0 Tm (PASS) Tj ET
 BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 505.0 365.0 Tm (SKIP) Tj ET
 0.96 0.96 0.97 rg 45.0 346.0 522.0 14.0 re f
-BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 349.0 Tm (permissions.workflow_overage) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 349.0 Tm (0) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 349.0 Tm (0) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 349.0 Tm (1) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 53.0 349.0 Tm (Workflow Permissions) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 355.0 349.0 Tm (3) Tj ET
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 405.0 349.0 Tm (3) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 349.0 Tm (4) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 349.0 Tm (0) Tj ET
-BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 335.0 Tm (supplychain.action_bom) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 53.0 335.0 Tm (Action Bill of Materials) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 335.0 Tm (0) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 335.0 Tm (0) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 335.0 Tm (3) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 335.0 Tm (7) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 335.0 Tm (0) Tj ET
 0.96 0.96 0.97 rg 45.0 318.0 522.0 14.0 re f
-BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 321.0 Tm (supplychain.unpinned_actions) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 321.0 Tm (0) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 53.0 321.0 Tm (Action SHA Pinning) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 355.0 321.0 Tm (8) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 321.0 Tm (0) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 321.0 Tm (11) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 321.0 Tm (14) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 321.0 Tm (0) Tj ET
-BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 307.0 Tm (securedev.scan_coverage) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 307.0 Tm (0) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 53.0 307.0 Tm (Security Scan Coverage) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 355.0 307.0 Tm (2) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 307.0 Tm (0) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 307.0 Tm (1) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 307.0 Tm (0) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 307.0 Tm (2) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 505.0 307.0 Tm (1) Tj ET
 0.96 0.96 0.97 rg 45.0 290.0 522.0 14.0 re f
-BT 0 0 0 rg /F3 7 Tf 1 0 0 1 53.0 293.0 Tm (changetrail.deploy_approval) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 355.0 293.0 Tm (0) Tj ET
-BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 405.0 293.0 Tm (0) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 293.0 Tm (1) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 53.0 293.0 Tm (Deploy Approval Gates) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 355.0 293.0 Tm (1) Tj ET
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 405.0 293.0 Tm (3) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 455.0 293.0 Tm (3) Tj ET
 BT 0.78 0.78 0.78 rg /F1 8 Tf 1 0 0 1 505.0 293.0 Tm (0) Tj ET
 endstream
 endobj
 7 0 obj
 << /Length 190 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 4) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 1 of 8) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -150,65 +150,65 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [6 0 R 7 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 9 0 obj
-<< /Length 5282 >>
+<< /Length 5259 >>
 stream
-BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 747.0 Tm (Executive Summary) Tj ET
+BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 747.0 Tm (Scope and Methodology) Tj ET
 0.88 0.88 0.88 RG 0.5 w 45.0 741.0 m 567.0 741.0 l S
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 725.0 Tm (Your GitHub Actions workflows passed all compliance checks. No issues were) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 712.0 Tm (found that would require remediation before an audit. Continue to run this) Tj ET
-BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 699.0 Tm (audit regularly to maintain compliance posture.) Tj ET
-BT 0 0 0 rg /F2 14 Tf 1 0 0 1 45.0 666.0 Tm (What These Checks Mean) Tj ET
-0.88 0.88 0.88 RG 0.5 w 45.0 660.0 m 567.0 660.0 l S
-BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 646.0 Tm (Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.) Tj ET
-0.18 0.42 0.78 rg 45.0 628.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 630.0 Tm (Workflow Permissions) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 618.0 Tm (permissions.workflow_overage) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 604.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 593.0 Tm (GitHub Actions workflows run with a token that has access to your repository. If the token has more permissions than needed) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 583.0 Tm (\(e.g., write access to packages when it only reads code\), a compromised action or script injection can do far more damage) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 573.0 Tm (than necessary.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 559.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 548.0 Tm (Over-permissioned tokens violate least-privilege and expand the blast radius of supply-chain attacks. Auditors flag this) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 538.0 Tm (under access control \(SOC2 CC6.1\).) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 524.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 513.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 503.0 Tm (that a step actually needs.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 491.0 Tm (SOC2 CC6.1 \(Logical Access\)  |  ISO 27001 A.9.4 \(System Access Control\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 479.0 m 557.0 479.0 l S
-0.18 0.42 0.78 rg 45.0 465.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 467.0 Tm (Action SHA Pinning) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 455.0 Tm (supplychain.unpinned_actions) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 441.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 430.0 Tm (When you reference an action with a tag like '@v4', the tag owner can push new code to that tag at any time. Your workflow) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 420.0 Tm (silently picks up the change on the next run — you have no review, no diff, no approval.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 406.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 395.0 Tm (This is the #1 GitHub Actions supply-chain risk. An attacker who compromises an action repo can push malicious code to an) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 385.0 Tm (existing tag and it will run in every workflow that references it. Pinning to a full SHA prevents this.) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 371.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 360.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 350.0 Tm (Dependabot or Renovate to get PRs when new versions are released.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 338.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1, A.14.2 \(Supply Chain, Secure Dev\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 326.0 m 557.0 326.0 l S
-0.18 0.42 0.78 rg 45.0 312.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 314.0 Tm (Security Scan Coverage) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 302.0 Tm (securedev.scan_coverage) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 288.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 277.0 Tm (Pull request workflows are the last gate before code merges. If no security scanner \(SAST, SCA, secrets detection\) runs on) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 267.0 Tm (PRs, vulnerabilities and leaked credentials can reach your default branch undetected.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 253.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 242.0 Tm (Missing scan coverage means you cannot demonstrate to auditors that code is reviewed for security issues before deployment.) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 232.0 Tm (This is a core secure development requirement.) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 218.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 207.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 197.0 Tm (Semgrep \(custom rules\).) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 185.0 Tm (SOC2 CC7.2 \(Security Monitoring\)  |  ISO 27001 A.14.2 \(Secure Development\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 173.0 m 557.0 173.0 l S
+BT 0.11 0.11 0.16 rg /F2 9 Tf 1 0 0 1 50.0 721.0 Tm (SCOPE) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 702.0 Tm (This audit covers the CI/CD pipeline configuration for test-org across 1) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 691.0 Tm (repository\(ies\): test-repo.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 680.0 Tm (A total of 33 GitHub Actions workflow files were analysed.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 664.0 Tm (The audit evaluates compliance against the following frameworks:) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 653.0 Tm (  SOC2, ISO27001) Tj ET
+BT 0.11 0.11 0.16 rg /F2 9 Tf 1 0 0 1 50.0 633.0 Tm (METHODOLOGY) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 614.0 Tm (All checks are deterministic and rule-based -- no AI or probabilistic analysis is used.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 603.0 Tm (Each finding is backed by a direct reference to a workflow file, job, or step. The audit) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 592.0 Tm (covers five control areas:) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 576.0 Tm (  1. Permissions -- Least-privilege analysis of GITHUB_TOKEN scopes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 565.0 Tm (  2. Supply Chain -- Inventory and SHA-pinning status of third-party actions) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 554.0 Tm (  3. Secure Development -- Security scanner presence in PR workflows) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 543.0 Tm (  4. Change Trail -- Deployment approval gates and environment protection) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 532.0 Tm (  5. Action BOM -- Complete bill of materials for third-party dependencies) Tj ET
+BT 0.11 0.11 0.16 rg /F2 9 Tf 1 0 0 1 50.0 512.0 Tm (LIMITATIONS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 493.0 Tm (This audit covers workflow file configuration only. It does not assess:) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 482.0 Tm (  - Branch protection rules \(evaluated at the GitHub API level, not in YAML\)) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 471.0 Tm (  - Runtime behavior of actions or scripts) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 460.0 Tm (  - Network controls, data encryption, or HR processes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 449.0 Tm (  - GitHub Enterprise Server-specific configurations) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 50.0 438.0 Tm (  - Repository-level secrets management) Tj ET
+BT 0 0 0 rg /F2 16 Tf 1 0 0 1 45.0 412.0 Tm (Executive Summary) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 406.0 m 567.0 406.0 l S
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 390.0 Tm (This audit found 14 compliance issues, including 2 critical findings) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 377.0 Tm (that should be addressed before your next audit review. Critical findings) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 364.0 Tm (represent missing controls that auditors will flag as exceptions.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 345.0 Tm (Priority areas to address:) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 326.0 Tm (  1. Deploy Approval Gates \(1 issues\) -- Production jobs without) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 313.0 Tm (     environment protection. This is the most auditor-visible gap.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 300.0 Tm (  2. SHA Pinning \(8 issues\) -- Actions using mutable tags instead) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 287.0 Tm (     of commit SHAs. High supply-chain risk, easy to fix.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 274.0 Tm (  3. Scan Coverage \(2 issues\) -- PR workflows without security) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 261.0 Tm (     scanners. Add CodeQL or Trivy to close this gap.) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 248.0 Tm (  4. Permissions \(3 issues\) -- Over-provisioned or missing) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 235.0 Tm (     permission blocks. Quick wins for least-privilege.) Tj ET
+0.93 0.98 0.93 rg 45.0 204.0 522.0 18.0 re f
+0.15 0.62 0.28 rg 45.0 204.0 4.0 18.0 re f
+BT 0 0 0 rg /F2 13 Tf 1 0 0 1 57.0 207.0 Tm (What's Working Well) Tj ET
+BT 0 0 0 rg /F1 9 Tf 1 0 0 1 50.0 183.0 Tm (30 of 51 checks passed \(58%\). The following areas are well-configured:) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 166.0 Tm (Workflow Permissions -- 4 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 154.0 Tm (test-org/test-repo:.github/workflows/clean-ci.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 142.0 Tm (test-org/test-repo:.github/workflows/deploy-no-env.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 130.0 Tm (test-org/test-repo:.github/workflows/no-scanner.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 118.0 Tm (+ 1 more) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 106.0 Tm (Action SHA Pinning -- 14 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 94.0 Tm (test-org/test-repo:.github/workflows/clean-ci.yml -> actions/checkout@a5ac7e51b41...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 82.0 Tm (test-org/test-repo:.github/workflows/clean-ci.yml -> actions/checkout@a5ac7e51b41...) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 70.0 Tm (test-org/test-repo:.github/workflows/clean-ci.yml -> github/codeql-action/init@b6...) Tj ET
 endstream
 endobj
 10 0 obj
 << /Length 190 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 4) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 2 of 8) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -217,41 +217,94 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [9 0 R 10 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 12 0 obj
-<< /Length 2873 >>
+<< /Length 6531 >>
 stream
-0.18 0.42 0.78 rg 45.0 745.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 747.0 Tm (Deploy Approval Gates) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 735.0 Tm (changetrail.deploy_approval) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 721.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 710.0 Tm (Production deployments without an approval gate mean any push to main can go straight to production. There is no human) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 700.0 Tm (review, no separation of duties, and no audit trail linking a deployment to a specific change and approver.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 686.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 675.0 Tm (This is a critical control for SOC2 — auditors need to see that every production change was reviewed and approved by) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 665.0 Tm (someone other than the author. Without environment protection rules, you cannot demonstrate this.) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 651.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 640.0 Tm (Add 'environment: production' to deploy jobs and configure required reviewers in GitHub repository Settings > Environments.) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 630.0 Tm (This creates an approval gate with a full audit trail.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 618.0 Tm (SOC2 CC8.1 \(Change Management\)  |  ISO 27001 A.12.1 \(Operations Security\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 606.0 m 557.0 606.0 l S
-0.18 0.42 0.78 rg 45.0 592.0 3.0 12.0 re f
-BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 594.0 Tm (Action Bill of Materials) Tj ET
-BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 582.0 Tm (supplychain.action_bom) Tj ET
-BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 568.0 Tm (WHY IT MATTERS) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 557.0 Tm (Every third-party GitHub Action you use is code that runs inside your CI/CD pipeline with access to your secrets and source) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 547.0 Tm (code. Knowing exactly which actions you depend on is step one of supply-chain security.) Tj ET
-BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 533.0 Tm (RISK) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 522.0 Tm (Without an inventory, you cannot track which actions are maintained, which have known vulnerabilities, or which have been) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 512.0 Tm (silently replaced.) Tj ET
-BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 498.0 Tm (HOW TO FIX) Tj ET
-BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 487.0 Tm (This is an informational check — review the BOM periodically and remove actions that are no longer maintained or needed.) Tj ET
-BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 475.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1 \(Supplier Relationships\)) Tj ET
-0.92 0.92 0.92 RG 0.3 w 55.0 463.0 m 557.0 463.0 l S
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 747.0 Tm (+ 11 more) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 735.0 Tm (Security Scan Coverage -- 2 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 723.0 Tm (test-org/test-repo:.github/workflows/compact-steps.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 711.0 Tm (test-org/test-repo:.github/workflows/four-space-indent.yml) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 699.0 Tm (Deploy Approval Gates -- 3 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 687.0 Tm (test-org/test-repo:.github/workflows/deploy-with-env.yml/jobs/deploy-prod) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 675.0 Tm (test-org/test-repo:.github/workflows/env-map.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 663.0 Tm (test-org/test-repo:.github/workflows/four-space-indent.yml/jobs/scan) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 651.0 Tm (Action Inventory -- 7 workflows compliant) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 639.0 Tm (actions/checkout) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 627.0 Tm (github/codeql-action) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 615.0 Tm (actions/setup-go) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 60.0 603.0 Tm (+ 4 more) Tj ET
+0.92 0.93 0.98 rg 45.0 568.0 522.0 18.0 re f
+0.18 0.42 0.78 rg 45.0 568.0 4.0 18.0 re f
+BT 0 0 0 rg /F2 13 Tf 1 0 0 1 57.0 571.0 Tm (Statement of Applicability \(ISO 27001\)) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 547.0 Tm (Annex A controls in scope with applicability status and evidence references.) Tj ET
+0.11 0.11 0.16 rg 45.0 527.0 522.0 18.0 re f
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 53.0 531.0 Tm (CONTROL) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 113.0 531.0 Tm (NAME) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 315.0 531.0 Tm (STATUS) Tj ET
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 440.0 531.0 Tm (EVIDENCE) Tj ET
+0.96 0.96 0.97 rg 45.0 505.0 522.0 20.0 re f
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 53.0 509.0 Tm (A.12.1) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 113.0 509.0 Tm (Operational Procedures and Respo...) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 315.0 509.0 Tm (Not Implemented) Tj ET
+BT 0 0 0 rg /F3 6 Tf 1 0 0 1 440.0 509.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 53.0 489.0 Tm (A.14.2) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 113.0 489.0 Tm (Security in Development and Support) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 315.0 489.0 Tm (Not Implemented) Tj ET
+BT 0 0 0 rg /F3 6 Tf 1 0 0 1 440.0 489.0 Tm (supplychain.unpinned_actions, se...) Tj ET
+0.96 0.96 0.97 rg 45.0 465.0 522.0 20.0 re f
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 53.0 469.0 Tm (A.15.1) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 113.0 469.0 Tm (Information Security in Supplier...) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 315.0 469.0 Tm (Not Implemented) Tj ET
+BT 0 0 0 rg /F3 6 Tf 1 0 0 1 440.0 469.0 Tm (supplychain.action_bom, supplych...) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 53.0 449.0 Tm (A.9.4) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 113.0 449.0 Tm (System Access Control) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 315.0 449.0 Tm (Not Implemented) Tj ET
+BT 0 0 0 rg /F3 6 Tf 1 0 0 1 440.0 449.0 Tm (permissions.workflow_overage) Tj ET
+0.98 0.95 0.90 rg 45.0 414.0 522.0 18.0 re f
+0.90 0.35 0.08 rg 45.0 414.0 4.0 18.0 re f
+BT 0 0 0 rg /F2 13 Tf 1 0 0 1 57.0 417.0 Tm (Tests of Controls \(SOC2\)) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 393.0 Tm (Trust Services Criteria tested with control activities, test procedures, and results.) Tj ET
+0.11 0.11 0.16 rg 45.0 375.0 522.0 14.0 re f
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 53.0 378.0 Tm (CC6.1 -- Logical Access Controls) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 487.0 378.0 Tm (Fail \(3\)) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 359.0 Tm (CONTROL ACTIVITY) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 349.0 Tm (Workflow tokens scoped to least-privilege; access controlled) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 338.0 Tm (TEST PERFORMED) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 328.0 Tm (Analysed GITHUB_TOKEN permissions in all workflows for least-privilege) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 53.0 317.0 Tm (Evidence: permissions.workflow_overage) Tj ET
+0.92 0.92 0.92 RG 0.3 w 53.0 305.0 m 559.0 305.0 l S
+0.11 0.11 0.16 rg 45.0 295.0 522.0 14.0 re f
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 53.0 298.0 Tm (CC7.2 -- Security Monitoring) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 487.0 298.0 Tm (Fail \(2\)) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 279.0 Tm (CONTROL ACTIVITY) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 269.0 Tm (Security scanners run on PRs; vulnerabilities tracked) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 258.0 Tm (TEST PERFORMED) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 248.0 Tm (Verified security scanners \(SAST, SCA, secrets\) present in PR workflows) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 53.0 237.0 Tm (Evidence: securedev.scan_coverage) Tj ET
+0.92 0.92 0.92 RG 0.3 w 53.0 225.0 m 559.0 225.0 l S
+0.11 0.11 0.16 rg 45.0 215.0 522.0 14.0 re f
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 53.0 218.0 Tm (CC8.1 -- Change Management) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 487.0 218.0 Tm (Fail \(1\)) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 199.0 Tm (CONTROL ACTIVITY) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 189.0 Tm (Production deploys require environment approval; changes reviewed) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 178.0 Tm (TEST PERFORMED) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 168.0 Tm (Checked deploy jobs for environment protection rules and code review) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 53.0 157.0 Tm (Evidence: changetrail.deploy_approval) Tj ET
+0.92 0.92 0.92 RG 0.3 w 53.0 145.0 m 559.0 145.0 l S
+0.11 0.11 0.16 rg 45.0 135.0 522.0 14.0 re f
+BT 1.00 1.00 1.00 rg /F2 8 Tf 1 0 0 1 53.0 138.0 Tm (CC9.2 -- Risk Assessment) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 487.0 138.0 Tm (Fail \(8\)) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 119.0 Tm (CONTROL ACTIVITY) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 109.0 Tm (Third-party actions inventoried, pinned, and monitored) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 53.0 98.0 Tm (TEST PERFORMED) Tj ET
+BT 0 0 0 rg /F1 7 Tf 1 0 0 1 53.0 88.0 Tm (Verified actions are SHA-pinned; generated bill of materials) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 53.0 77.0 Tm (Evidence: supplychain.action_bom, supplychain.unpinned_actions) Tj ET
+0.92 0.92 0.92 RG 0.3 w 53.0 65.0 m 559.0 65.0 l S
 endstream
 endobj
 13 0 obj
 << /Length 190 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 4) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 3 of 8) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -260,14 +313,118 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [12 0 R 13 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
 15 0 obj
-<< /Length 0 >>
+<< /Length 8846 >>
 stream
+0.95 0.88 0.88 rg 45.0 744.0 522.0 18.0 re f
+0.85 0.18 0.18 rg 45.0 744.0 4.0 18.0 re f
+BT 0 0 0 rg /F2 13 Tf 1 0 0 1 57.0 747.0 Tm (Corrective Action Plan) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 723.0 Tm (Findings requiring remediation. Fill in Owner and Target Date to track resolution.) Tj ET
+0.98 0.96 0.88 rg 49.0 651.0 514.0 68.0 re f
+0.85 0.60 0.00 rg 49.0 651.0 3.0 68.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 707.0 Tm (1.  MEDIUM) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 707.0 Tm (ISO27001-A.9.4, SOC2-CC6.1) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 694.0 Tm (Missing permissions block -- workflow runs with broad default token permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 681.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 671.0 Tm (Add a 'permissions:' block at the top of this workflow with only the scopes you need. Without it, the GITHUB_TOKEN gets) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 661.0 Tm (default permissions which may be wider than necessary.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 648.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 648.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 648.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 648.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 648.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 648.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 568.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 568.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 624.0 Tm (2.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 624.0 Tm (ISO27001-A.9.4, SOC2-CC6.1) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 611.0 Tm (Unnecessary write access -- 'deployments: write' granted but no step needs it) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 598.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 588.0 Tm (The workflow declares 'deployments: write' but none of the actions in this workflow require write access to deployments.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 578.0 Tm (Change it to 'deployments: read' or remove it.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 565.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 565.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 565.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 565.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 565.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 565.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 485.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 485.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 541.0 Tm (3.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 541.0 Tm (ISO27001-A.9.4, SOC2-CC6.1) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 528.0 Tm (Unnecessary write access -- 'pull-requests: write' granted but no step needs it) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 515.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 505.0 Tm (The workflow declares 'pull-requests: write' but none of the actions in this workflow require write access to pull-requests.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 495.0 Tm (Change it to 'pull-requests: read' or remove it.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 482.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 482.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 482.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 482.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 482.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 482.0 Tm (Open) Tj ET
+0.95 0.88 0.88 rg 49.0 402.0 514.0 68.0 re f
+0.85 0.18 0.18 rg 49.0 402.0 3.0 68.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 458.0 Tm (4.  CRITICAL) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 458.0 Tm (ISO27001-A.9.4, SOC2-CC6.1) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 445.0 Tm (Token has full write access to everything -- 'permissions: write-all' is set) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 432.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 422.0 Tm (This is the most dangerous permission setting. Replace 'permissions: write-all' with specific scopes like 'contents: read'.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 412.0 Tm (write-all gives the workflow token write access to code, packages, issues, deployments, and more.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 399.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 399.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 399.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 399.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 399.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 399.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 319.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 319.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 375.0 Tm (5.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 375.0 Tm (ISO27001-A.14.2, ISO27001-A.15.1, SOC...) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 362.0 Tm (Action actions/checkout uses tag 'v4' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 349.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 339.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-sha>'. Tags like 'v4' can be moved by the action owner to point to) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 329.0 Tm (different code without your knowledge. Use 'gh api repos/actions/checkout/git/ref/tags/v4' to find the current SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 316.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 316.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 316.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 316.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 316.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 316.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 226.0 514.0 78.0 re f
+0.90 0.35 0.08 rg 49.0 226.0 3.0 78.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 292.0 Tm (6.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 292.0 Tm (ISO27001-A.14.2, ISO27001-A.15.1, SOC...) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 279.0 Tm (Action docker/build-push-action uses tag 'v5' -- can be silently changed by ...) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 266.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 256.0 Tm (Replace 'docker/build-push-action@v5' with 'docker/build-push-action@<full-sha>'. Tags like 'v5' can be moved by the action) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 246.0 Tm (owner to point to different code without your knowledge. Use 'gh api repos/docker/build-push-action/git/ref/tags/v5' to find) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 236.0 Tm (the current SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 223.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 223.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 223.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 223.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 223.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 223.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 133.0 514.0 78.0 re f
+0.90 0.35 0.08 rg 49.0 133.0 3.0 78.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 199.0 Tm (7.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 199.0 Tm (ISO27001-A.14.2, ISO27001-A.15.1, SOC...) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 186.0 Tm (Action actions/setup-node uses tag 'v3' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 173.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 163.0 Tm (Replace 'actions/setup-node@v3' with 'actions/setup-node@<full-sha>'. Tags like 'v3' can be moved by the action owner to) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 153.0 Tm (point to different code without your knowledge. Use 'gh api repos/actions/setup-node/git/ref/tags/v3' to find the current) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 143.0 Tm (SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 130.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 130.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 130.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 130.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 130.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 130.0 Tm (Open) Tj ET
 endstream
 endobj
 16 0 obj
 << /Length 190 >>
 stream
-BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 4) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 4 of 8) Tj ET
 BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
 0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
 endstream
@@ -275,28 +432,374 @@ endobj
 17 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [15 0 R 16 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
 endobj
+18 0 obj
+<< /Length 8024 >>
+stream
+0.98 0.93 0.88 rg 49.0 681.0 514.0 78.0 re f
+0.90 0.35 0.08 rg 49.0 681.0 3.0 78.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (8.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 747.0 Tm (ISO27001-A.14.2, ISO27001-A.15.1, SOC...) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 734.0 Tm (Action actions/upload-artifact uses tag 'main' -- can be silently changed by...) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 721.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 711.0 Tm (Replace 'actions/upload-artifact@main' with 'actions/upload-artifact@<full-sha>'. Tags like 'main' can be moved by the action) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 701.0 Tm (owner to point to different code without your knowledge. Use 'gh api repos/actions/upload-artifact/git/ref/tags/main' to find) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 691.0 Tm (the current SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 678.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 678.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 678.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 678.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 678.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 678.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 588.0 514.0 78.0 re f
+0.90 0.35 0.08 rg 49.0 588.0 3.0 78.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 654.0 Tm (9.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 654.0 Tm (ISO27001-A.14.2, ISO27001-A.15.1, SOC...) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 641.0 Tm (Action softprops/action-gh-release uses tag 'latest' -- can be silently chan...) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 628.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 618.0 Tm (Replace 'softprops/action-gh-release@latest' with 'softprops/action-gh-release@<full-sha>'. Tags like 'latest' can be moved) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 608.0 Tm (by the action owner to point to different code without your knowledge. Use 'gh api) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 598.0 Tm (repos/softprops/action-gh-release/git/ref/tags/latest' to find the current SHA.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 585.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 585.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 585.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 585.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 585.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 585.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 505.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 505.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 561.0 Tm (10.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 561.0 Tm (ISO27001-A.14.2, SOC2-CC7.2) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 548.0 Tm (No security scanner in PR workflow -- vulnerabilities can reach main undetected) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 535.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 525.0 Tm (This PR workflow runs on pull requests but does not include any security scanner. Add CodeQL \(free SAST\), Trivy \(container) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 515.0 Tm (scanning\), Gitleaks \(secrets\), or Semgrep to catch issues before merge.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 502.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 502.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 502.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 502.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 502.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 502.0 Tm (Open) Tj ET
+0.95 0.88 0.88 rg 49.0 422.0 514.0 68.0 re f
+0.85 0.18 0.18 rg 49.0 422.0 3.0 68.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 478.0 Tm (11.  CRITICAL) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 478.0 Tm (ISO27001-A.12.1, SOC2-CC8.1) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 465.0 Tm (No approval gate -- production job 'deploy-prod' can deploy without review) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 452.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 442.0 Tm (Add 'environment: production' to this job and configure required reviewers in GitHub repo Settings > Environments. Without) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 432.0 Tm (this, any push can trigger a production deploy with no human approval.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 419.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 419.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 419.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 419.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 419.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 419.0 Tm (Open) Tj ET
+0.98 0.93 0.88 rg 49.0 339.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 339.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 395.0 Tm (12.  HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 387.0 395.0 Tm (ISO27001-A.12.1, SOC2-CC8.1) Tj ET
+BT 0 0 0 rg /F2 8 Tf 1 0 0 1 59.0 382.0 Tm (No PR requirement -- push to branch triggers deploy without code review) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 369.0 Tm (RECOMMENDED ACTION) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 359.0 Tm (This workflow deploys on push without requiring a pull request. A direct push to the branch skips code review entirely. Add) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 59.0 349.0 Tm (branch protection rules requiring PR approval, or add a pull_request trigger.) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 59.0 336.0 Tm (Owner:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 95.0 336.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 225.0 336.0 Tm (Target Date:) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 285.0 336.0 Tm (_______________) Tj ET
+BT 0.45 0.45 0.45 rg /F2 7 Tf 1 0 0 1 425.0 336.0 Tm (Status:) Tj ET
+BT 0.85 0.18 0.18 rg /F1 7 Tf 1 0 0 1 461.0 336.0 Tm (Open) Tj ET
+BT 0 0 0 rg /F2 14 Tf 1 0 0 1 45.0 292.0 Tm (What These Checks Mean) Tj ET
+0.88 0.88 0.88 RG 0.5 w 45.0 286.0 m 567.0 286.0 l S
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 50.0 272.0 Tm (Each check maps to specific SOC2 and ISO 27001 controls. Here is what they look for and why.) Tj ET
+0.90 0.35 0.08 rg 45.0 254.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 256.0 Tm (Workflow Permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 244.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 230.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 219.0 Tm (GitHub Actions workflows run with a token that has access to your repository. If the token has more permissions than needed) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 209.0 Tm (\(e.g., write access to packages when it only reads code\), a compromised action or script injection can do far more damage) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 199.0 Tm (than necessary.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 185.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 174.0 Tm (Over-permissioned tokens violate least-privilege and expand the blast radius of supply-chain attacks. Auditors flag this) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 164.0 Tm (under access control \(SOC2 CC6.1\).) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 150.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 139.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 129.0 Tm (that a step actually needs.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 117.0 Tm (SOC2 CC6.1 \(Logical Access\)  |  ISO 27001 A.9.4 \(System Access Control\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 105.0 m 557.0 105.0 l S
+endstream
+endobj
+19 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 5 of 8) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [18 0 R 19 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+21 0 obj
+<< /Length 5864 >>
+stream
+0.90 0.35 0.08 rg 45.0 745.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 747.0 Tm (Action SHA Pinning) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 735.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 721.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 710.0 Tm (When you reference an action with a tag like '@v4', the tag owner can push new code to that tag at any time. Your workflow) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 700.0 Tm (silently picks up the change on the next run -- you have no review, no diff, no approval.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 686.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 675.0 Tm (This is the #1 GitHub Actions supply-chain risk. An attacker who compromises an action repo can push malicious code to an) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 665.0 Tm (existing tag and it will run in every workflow that references it. Pinning to a full SHA prevents this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 651.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 640.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 630.0 Tm (Dependabot or Renovate to get PRs when new versions are released.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 618.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1, A.14.2 \(Supply Chain, Secure Dev\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 606.0 m 557.0 606.0 l S
+0.90 0.35 0.08 rg 45.0 592.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 594.0 Tm (Security Scan Coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 582.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 568.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 557.0 Tm (Pull request workflows are the last gate before code merges. If no security scanner \(SAST, SCA, secrets detection\) runs on) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 547.0 Tm (PRs, vulnerabilities and leaked credentials can reach your default branch undetected.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 533.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 522.0 Tm (Missing scan coverage means you cannot demonstrate to auditors that code is reviewed for security issues before deployment.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 512.0 Tm (This is a core secure development requirement.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 498.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 487.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 477.0 Tm (Semgrep \(custom rules\).) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 465.0 Tm (SOC2 CC7.2 \(Security Monitoring\)  |  ISO 27001 A.14.2 \(Secure Development\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 453.0 m 557.0 453.0 l S
+0.90 0.35 0.08 rg 45.0 439.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 441.0 Tm (Deploy Approval Gates) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 429.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 415.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 404.0 Tm (Production deployments without an approval gate mean any push to main can go straight to production. There is no human) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 394.0 Tm (review, no separation of duties, and no audit trail linking a deployment to a specific change and approver.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 380.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 369.0 Tm (This is a critical control for SOC2 -- auditors need to see that every production change was reviewed and approved by) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 359.0 Tm (someone other than the author. Without environment protection rules, you cannot demonstrate this.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 345.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 334.0 Tm (Add 'environment: production' to deploy jobs and configure required reviewers in GitHub repository Settings > Environments.) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 324.0 Tm (This creates an approval gate with a full audit trail.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 312.0 Tm (SOC2 CC8.1 \(Change Management\)  |  ISO 27001 A.12.1 \(Operations Security\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 300.0 m 557.0 300.0 l S
+0.18 0.42 0.78 rg 45.0 286.0 3.0 12.0 re f
+BT 0 0 0 rg /F2 10 Tf 1 0 0 1 55.0 288.0 Tm (Action Bill of Materials) Tj ET
+BT 0.45 0.45 0.45 rg /F3 7 Tf 1 0 0 1 55.0 276.0 Tm (supplychain.action_bom) Tj ET
+BT 0.45 0.45 0.45 rg /F2 8 Tf 1 0 0 1 55.0 262.0 Tm (WHY IT MATTERS) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 251.0 Tm (Every third-party GitHub Action you use is code that runs inside your CI/CD pipeline with access to your secrets and source) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 241.0 Tm (code. Knowing exactly which actions you depend on is step one of supply-chain security.) Tj ET
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 55.0 227.0 Tm (RISK) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 216.0 Tm (Without an inventory, you cannot track which actions are maintained, which have known vulnerabilities, or which have been) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 206.0 Tm (silently replaced.) Tj ET
+BT 0.15 0.62 0.28 rg /F2 8 Tf 1 0 0 1 55.0 192.0 Tm (HOW TO FIX) Tj ET
+BT 0 0 0 rg /F1 8 Tf 1 0 0 1 55.0 181.0 Tm (This is an informational check -- review the BOM periodically and remove actions that are no longer maintained or needed.) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 55.0 169.0 Tm (SOC2 CC9.2 \(Risk Assessment\)  |  ISO 27001 A.15.1 \(Supplier Relationships\)) Tj ET
+0.92 0.92 0.92 RG 0.3 w 55.0 157.0 m 557.0 157.0 l S
+endstream
+endobj
+22 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 6 of 8) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [21 0 R 22 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+24 0 obj
+<< /Length 8045 >>
+stream
+0.11 0.11 0.16 rg 45.0 743.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 743.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 747.0 Tm (Workflow Permissions) Tj ET
+BT 0.55 0.55 0.60 rg /F3 7 Tf 1 0 0 1 387.0 748.0 Tm (permissions.workflow_overage) Tj ET
+BT 0.60 0.60 0.65 rg /F1 7 Tf 1 0 0 1 522.0 748.0 Tm (4 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 723.0 Tm (Add an explicit 'permissions:' block at the top of every workflow. Start with 'contents: read' and only add write scopes that a step) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 713.0 Tm (actually needs.) Tj ET
+0.98 0.96 0.88 rg 49.0 634.0 514.0 77.0 re f
+0.85 0.60 0.00 rg 49.0 634.0 3.0 77.0 re f
+BT 0.85 0.60 0.00 rg /F2 8 Tf 1 0 0 1 59.0 699.0 Tm (WARN / MEDIUM) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 699.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 686.0 Tm (Missing permissions block -- workflow runs with broad default token permissions) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 674.0 Tm (test-org/test-repo:.github/workflows/compact-steps.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 665.0 Tm (test-org/test-repo:.github/workflows/env-map.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 656.0 Tm (test-org/test-repo:.github/workflows/job-permissions.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 644.0 Tm (Add a 'permissions:' block at the top of this workflow with only the scopes you need. Without it, the GITHUB_TOKEN gets default) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 635.0 Tm (permissions which may be wider than necessary.) Tj ET
+0.98 0.93 0.88 rg 49.0 571.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 571.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 618.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 605.0 Tm (Unnecessary write access -- 'deployments: write' granted but no step needs it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 593.0 Tm (test-org/test-repo:.github/workflows/deploy-with-env.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 581.0 Tm (The workflow declares 'deployments: write' but none of the actions in this workflow require write access to deployments. Change it to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 572.0 Tm ('deployments: read' or remove it.) Tj ET
+0.98 0.93 0.88 rg 49.0 508.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 508.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 555.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 542.0 Tm (Unnecessary write access -- 'pull-requests: write' granted but no step needs it) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 530.0 Tm (test-org/test-repo:.github/workflows/four-space-indent.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 518.0 Tm (The workflow declares 'pull-requests: write' but none of the actions in this workflow require write access to pull-requests. Change it) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 509.0 Tm (to 'pull-requests: read' or remove it.) Tj ET
+0.95 0.88 0.88 rg 49.0 445.0 514.0 59.0 re f
+0.85 0.18 0.18 rg 49.0 445.0 3.0 59.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 492.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 479.0 Tm (Token has full write access to everything -- 'permissions: write-all' is set) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 467.0 Tm (test-org/test-repo:.github/workflows/write-all.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 455.0 Tm (This is the most dangerous permission setting. Replace 'permissions: write-all' with specific scopes like 'contents: read'. write-all) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 446.0 Tm (gives the workflow token write access to code, packages, issues, deployments, and more.) Tj ET
+0.11 0.11 0.16 rg 45.0 419.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 419.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 423.0 Tm (Action SHA Pinning) Tj ET
+BT 0.55 0.55 0.60 rg /F3 7 Tf 1 0 0 1 387.0 424.0 Tm (supplychain.unpinned_actions) Tj ET
+BT 0.60 0.60 0.65 rg /F1 7 Tf 1 0 0 1 522.0 424.0 Tm (14 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 399.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-40-char-sha>'. Add a comment with the tag for readability. Use Dependabot) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 389.0 Tm (or Renovate to get PRs when new versions are released.) Tj ET
+0.98 0.93 0.88 rg 49.0 301.0 514.0 86.0 re f
+0.90 0.35 0.08 rg 49.0 301.0 3.0 86.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 375.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 375.0 Tm (4 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 362.0 Tm (Action actions/checkout uses tag 'v4' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 350.0 Tm (test-org/test-repo:.github/workflows/job-permissions.yml -> actions/checkout@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 341.0 Tm (test-org/test-repo:.github/workflows/job-permissions.yml -> actions/checkout@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 332.0 Tm (test-org/test-repo:.github/workflows/unpinned.yml -> actions/checkout@v4) Tj ET
+BT 0.45 0.45 0.45 rg /F1 6 Tf 1 0 0 1 63.0 323.0 Tm (+ 1 more) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 311.0 Tm (Replace 'actions/checkout@v4' with 'actions/checkout@<full-sha>'. Tags like 'v4' can be moved by the action owner to point to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 302.0 Tm (different code without your knowledge. Use 'gh api repos/actions/checkout/git/ref/tags/v4' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 238.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 238.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 285.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 272.0 Tm (Action docker/build-push-action uses tag 'v5' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 260.0 Tm (test-org/test-repo:.github/workflows/job-permissions.yml -> docker/build-push-action@v5) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 248.0 Tm (Replace 'docker/build-push-action@v5' with 'docker/build-push-action@<full-sha>'. Tags like 'v5' can be moved by the action owner to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 239.0 Tm (point to different code without your knowledge. Use 'gh api repos/docker/build-push-action/git/ref/tags/v5' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 175.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 175.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 222.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 209.0 Tm (Action actions/setup-node uses tag 'v3' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 197.0 Tm (test-org/test-repo:.github/workflows/unpinned.yml -> actions/setup-node@v3) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 185.0 Tm (Replace 'actions/setup-node@v3' with 'actions/setup-node@<full-sha>'. Tags like 'v3' can be moved by the action owner to point to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 176.0 Tm (different code without your knowledge. Use 'gh api repos/actions/setup-node/git/ref/tags/v3' to find the current SHA.) Tj ET
+0.98 0.93 0.88 rg 49.0 112.0 514.0 59.0 re f
+0.90 0.35 0.08 rg 49.0 112.0 3.0 59.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 159.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 146.0 Tm (Action actions/upload-artifact uses tag 'main' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 134.0 Tm (test-org/test-repo:.github/workflows/unpinned.yml -> actions/upload-artifact@main) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 122.0 Tm (Replace 'actions/upload-artifact@main' with 'actions/upload-artifact@<full-sha>'. Tags like 'main' can be moved by the action owner to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 113.0 Tm (point to different code without your knowledge. Use 'gh api repos/actions/upload-artifact/git/ref/tags/main' to find the current SHA.) Tj ET
+endstream
+endobj
+25 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 7 of 8) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [24 0 R 25 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
+27 0 obj
+<< /Length 4865 >>
+stream
+0.98 0.93 0.88 rg 49.0 691.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 691.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 747.0 Tm (FAIL / HIGH) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 734.0 Tm (Action softprops/action-gh-release uses tag 'latest' -- can be silently changed by the owner) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 722.0 Tm (test-org/test-repo:.github/workflows/unpinned.yml -> softprops/action-gh-release@latest) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 710.0 Tm (Replace 'softprops/action-gh-release@latest' with 'softprops/action-gh-release@<full-sha>'. Tags like 'latest' can be moved by the) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 701.0 Tm (action owner to point to different code without your knowledge. Use 'gh api repos/softprops/action-gh-release/git/ref/tags/latest' to) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 692.0 Tm (find the current SHA.) Tj ET
+0.11 0.11 0.16 rg 45.0 665.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 665.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 669.0 Tm (Security Scan Coverage) Tj ET
+BT 0.55 0.55 0.60 rg /F3 7 Tf 1 0 0 1 387.0 670.0 Tm (securedev.scan_coverage) Tj ET
+BT 0.60 0.60 0.65 rg /F1 7 Tf 1 0 0 1 522.0 670.0 Tm (2 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 645.0 Tm (Add at least one scanner to your PR workflow: GitHub CodeQL \(free SAST\), Trivy \(container/SCA\), Gitleaks \(secrets\), or Semgrep) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 635.0 Tm (\(custom rules\).) Tj ET
+0.98 0.93 0.88 rg 49.0 565.0 514.0 68.0 re f
+0.90 0.35 0.08 rg 49.0 565.0 3.0 68.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 621.0 Tm (FAIL / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 621.0 Tm (2 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 608.0 Tm (No security scanner in PR workflow -- vulnerabilities can reach main undetected) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 596.0 Tm (test-org/test-repo:.github/workflows/job-permissions.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 587.0 Tm (test-org/test-repo:.github/workflows/no-scanner.yml) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 575.0 Tm (This PR workflow runs on pull requests but does not include any security scanner. Add CodeQL \(free SAST\), Trivy \(container scanning\),) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 566.0 Tm (Gitleaks \(secrets\), or Semgrep to catch issues before merge.) Tj ET
+0.11 0.11 0.16 rg 45.0 539.0 522.0 20.0 re f
+0.18 0.42 0.78 rg 45.0 539.0 4.0 20.0 re f
+BT 1.00 1.00 1.00 rg /F2 10 Tf 1 0 0 1 57.0 543.0 Tm (Deploy Approval Gates) Tj ET
+BT 0.55 0.55 0.60 rg /F3 7 Tf 1 0 0 1 387.0 544.0 Tm (changetrail.deploy_approval) Tj ET
+BT 0.60 0.60 0.65 rg /F1 7 Tf 1 0 0 1 522.0 544.0 Tm (3 passed) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 519.0 Tm (Add 'environment: production' to deploy jobs and configure required reviewers in GitHub repository Settings > Environments. This) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 53.0 509.0 Tm (creates an approval gate with a full audit trail.) Tj ET
+0.95 0.88 0.88 rg 49.0 448.0 514.0 59.0 re f
+0.85 0.18 0.18 rg 49.0 448.0 3.0 59.0 re f
+BT 0.85 0.18 0.18 rg /F2 8 Tf 1 0 0 1 59.0 495.0 Tm (FAIL / CRITICAL) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 482.0 Tm (No approval gate -- production job 'deploy-prod' can deploy without review) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 470.0 Tm (test-org/test-repo:.github/workflows/deploy-no-env.yml/jobs/deploy-prod) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 458.0 Tm (Add 'environment: production' to this job and configure required reviewers in GitHub repo Settings > Environments. Without this, any) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 449.0 Tm (push can trigger a production deploy with no human approval.) Tj ET
+0.98 0.93 0.88 rg 49.0 367.0 514.0 77.0 re f
+0.90 0.35 0.08 rg 49.0 367.0 3.0 77.0 re f
+BT 0.90 0.35 0.08 rg /F2 8 Tf 1 0 0 1 59.0 432.0 Tm (WARN / HIGH) Tj ET
+BT 0.45 0.45 0.45 rg /F1 8 Tf 1 0 0 1 175.0 432.0 Tm (3 occurrences) Tj ET
+BT 0 0 0 rg /F2 9 Tf 1 0 0 1 59.0 419.0 Tm (No PR requirement -- push to branch triggers deploy without code review) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 407.0 Tm (test-org/test-repo:.github/workflows/deploy-no-env.yml/jobs/deploy-prod) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 398.0 Tm (test-org/test-repo:.github/workflows/deploy-with-env.yml/jobs/deploy-prod) Tj ET
+BT 0.45 0.45 0.45 rg /F3 6 Tf 1 0 0 1 63.0 389.0 Tm (test-org/test-repo:.github/workflows/env-map.yml/jobs/deploy) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 377.0 Tm (This workflow deploys on push without requiring a pull request. A direct push to the branch skips code review entirely. Add branch) Tj ET
+BT 0.45 0.45 0.45 rg /F1 7 Tf 1 0 0 1 63.0 368.0 Tm (protection rules requiring PR approval, or add a pull_request trigger.) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Length 190 >>
+stream
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 286.0 28.0 Tm (Page 8 of 8) Tj ET
+BT 0.6 0.6 0.6 rg /F1 7 Tf 1 0 0 1 45.0 28.0 Tm (actions-comply) Tj ET
+0.88 0.88 0.88 RG 0.4 w 45.0 42.0 m 567.0 42.0 l S
+endstream
+endobj
+29 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents [27 0 R 28 0 R] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> >>
+endobj
 xref
-0 18
+0 30
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000142 00000 n 
-0000000212 00000 n 
-0000000287 00000 n 
-0000000355 00000 n 
-0000007461 00000 n 
-0000007702 00000 n 
-0000007856 00000 n 
-0000013189 00000 n 
-0000013431 00000 n 
-0000013587 00000 n 
-0000016512 00000 n 
-0000016754 00000 n 
-0000016911 00000 n 
-0000016960 00000 n 
-0000017202 00000 n 
+0000000170 00000 n 
+0000000240 00000 n 
+0000000315 00000 n 
+0000000383 00000 n 
+0000007459 00000 n 
+0000007700 00000 n 
+0000007854 00000 n 
+0000013164 00000 n 
+0000013406 00000 n 
+0000013562 00000 n 
+0000020145 00000 n 
+0000020387 00000 n 
+0000020544 00000 n 
+0000029442 00000 n 
+0000029684 00000 n 
+0000029841 00000 n 
+0000037917 00000 n 
+0000038159 00000 n 
+0000038316 00000 n 
+0000044232 00000 n 
+0000044474 00000 n 
+0000044631 00000 n 
+0000052728 00000 n 
+0000052970 00000 n 
+0000053127 00000 n 
+0000058044 00000 n 
+0000058286 00000 n 
 trailer
-<< /Size 18 /Root 1 0 R >>
+<< /Size 30 /Root 1 0 R >>
 startxref
-17359
+58443
 %%EOF

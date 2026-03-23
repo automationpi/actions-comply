@@ -431,6 +431,201 @@ func RenderPDF(w io.Writer, report *models.AuditReport) error {
 
 	y -= 20
 
+	// ── Statement of Applicability (ISO 27001) ──
+	soaRows := buildSoA(report)
+	if len(soaRows) > 0 {
+		if y < mb+120 {
+			allPages = append(allPages, p2.content())
+			p2 = &pdfPage{}
+			y = ph - mt
+		}
+
+		p2.rect(ml, y-3, cw, 18, 0.92, 0.93, 0.98) // light blue bg
+		p2.rect(ml, y-3, 4, 18, colBlue.r, colBlue.g, colBlue.b)
+		p2.text(ml+12, y, "/F2", 13, "Statement of Applicability (ISO 27001)")
+		y -= 24
+
+		p2.textC(ml+5, y, "/F1", 8, colGrayText.r, colGrayText.g, colGrayText.b,
+			"Annex A controls in scope with applicability status and evidence references.")
+		y -= 16
+
+		// Table header — 4 columns: Control, Name, Status, Evidence
+		soaCols := []float64{ml + 8, ml + 68, ml + 270, ml + 395}
+		soaHeaders := []string{"CONTROL", "NAME", "STATUS", "EVIDENCE"}
+		p2.rect(ml, y-4, cw, 18, colDark.r, colDark.g, colDark.b)
+		for i, h := range soaHeaders {
+			p2.textC(soaCols[i], y, "/F2", 7.5, 1, 1, 1, h)
+		}
+		y -= 22
+
+		for i, row := range soaRows {
+			if y < mb+20 {
+				allPages = append(allPages, p2.content())
+				p2 = &pdfPage{}
+				y = ph - mt
+			}
+			if i%2 == 0 {
+				p2.rect(ml, y-4, cw, 20, colGrayBg.r, colGrayBg.g, colGrayBg.b)
+			}
+
+			// Short ID: "A.9.4" from "ISO27001-A.9.4"
+			shortID := strings.TrimPrefix(string(row.ControlID), "ISO27001-")
+			p2.text(soaCols[0], y, "/F2", 7.5, shortID)
+			p2.text(soaCols[1], y, "/F1", 7.5, truncStr(row.ControlName, 35))
+
+			sc := colGreen
+			switch row.Status {
+			case "Not Implemented":
+				sc = colRed
+			case "Partially Implemented":
+				sc = colAmber
+			case "Not Assessed":
+				sc = colGrayText
+			}
+			p2.textC(soaCols[2], y, "/F2", 7.5, sc.r, sc.g, sc.b, row.Status)
+			p2.text(soaCols[3], y, "/F3", 6.5, truncStr(row.Evidence, 35))
+			y -= 20
+		}
+		y -= 12
+	}
+
+	// ── Tests of Controls (SOC2) ──
+	tocRows := buildTestsOfControls(report)
+	if len(tocRows) > 0 {
+		if y < mb+120 {
+			allPages = append(allPages, p2.content())
+			p2 = &pdfPage{}
+			y = ph - mt
+		}
+
+		p2.rect(ml, y-3, cw, 18, 0.98, 0.95, 0.90) // light orange bg
+		p2.rect(ml, y-3, 4, 18, colOrange.r, colOrange.g, colOrange.b)
+		p2.text(ml+12, y, "/F2", 13, "Tests of Controls (SOC2)")
+		y -= 24
+
+		p2.textC(ml+5, y, "/F1", 8, colGrayText.r, colGrayText.g, colGrayText.b,
+			"Trust Services Criteria tested with control activities, test procedures, and results.")
+		y -= 16
+
+		for _, row := range tocRows {
+			// Each TOC entry needs ~60px
+			if y < mb+70 {
+				allPages = append(allPages, p2.content())
+				p2 = &pdfPage{}
+				y = ph - mt
+			}
+
+			// Control objective header bar
+			p2.rect(ml, y-2, cw, 14, colDark.r, colDark.g, colDark.b)
+			p2.textC(ml+8, y+1, "/F2", 8, 1, 1, 1, row.ControlObjective)
+			p2.textC(pw-mr-80, y+1, "/F2", 8,
+				row.ResultColor.r, row.ResultColor.g, row.ResultColor.b,
+				row.TestResult)
+			y -= 18
+
+			// Control activity
+			p2.textC(ml+8, y, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, "CONTROL ACTIVITY")
+			y -= 10
+			for _, ln := range wrapText(row.ControlActivity, cw-30, 7) {
+				p2.text(ml+8, y, "/F1", 7, ln)
+				y -= 9
+			}
+			y -= 2
+
+			// Test performed
+			p2.textC(ml+8, y, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, "TEST PERFORMED")
+			y -= 10
+			for _, ln := range wrapText(row.TestPerformed, cw-30, 7) {
+				p2.text(ml+8, y, "/F1", 7, ln)
+				y -= 9
+			}
+
+			// Evidence ref
+			p2.textC(ml+8, y-2, "/F3", 6, colGrayText.r, colGrayText.g, colGrayText.b,
+				"Evidence: "+truncStr(row.EvidenceRef, 80))
+			y -= 14
+
+			// Separator
+			p2.line(ml+8, y, pw-mr-8, y, 0.92, 0.92, 0.92, 0.3)
+			y -= 8
+		}
+		y -= 8
+	}
+
+	// ── Corrective Action Plan ──
+	capRows := buildCorrectiveActionPlan(report)
+	if len(capRows) > 0 {
+		if y < mb+120 {
+			allPages = append(allPages, p2.content())
+			p2 = &pdfPage{}
+			y = ph - mt
+		}
+
+		p2.rect(ml, y-3, cw, 18, 0.95, 0.88, 0.88) // light red bg
+		p2.rect(ml, y-3, 4, 18, colRed.r, colRed.g, colRed.b)
+		p2.text(ml+12, y, "/F2", 13, "Corrective Action Plan")
+		y -= 24
+
+		p2.textC(ml+5, y, "/F1", 8, colGrayText.r, colGrayText.g, colGrayText.b,
+			"Findings requiring remediation. Fill in Owner and Target Date to track resolution.")
+		y -= 16
+
+		for i, row := range capRows {
+			// Each card needs ~70px
+			if y < mb+80 {
+				allPages = append(allPages, p2.content())
+				p2 = &pdfPage{}
+				y = ph - mt
+			}
+
+			sc := sevColor(row.Severity)
+			bg := sevBg(row.Severity)
+
+			// Card background
+			cardLines := wrapText(row.Action, cw-50, 7.5)
+			cardH := 48.0 + float64(len(cardLines))*10.0
+			p2.rect(ml+4, y-cardH+12, cw-8, cardH, bg.r, bg.g, bg.b)
+			p2.rect(ml+4, y-cardH+12, 3, cardH, sc.r, sc.g, sc.b)
+
+			// Item number + severity tag
+			tag := fmt.Sprintf("%d.  %s", i+1, strings.ToUpper(string(row.Severity)))
+			p2.textC(ml+14, y, "/F2", 8, sc.r, sc.g, sc.b, tag)
+
+			// Controls on right
+			p2.textC(pw-mr-180, y, "/F3", 7, colGrayText.r, colGrayText.g, colGrayText.b,
+				truncStr(row.Controls, 40))
+			y -= 13
+
+			// Finding message — full width, wrapped
+			for _, ln := range wrapText(row.Finding, cw-40, 8.5) {
+				p2.text(ml+14, y, "/F2", 8.5, ln)
+				y -= 11
+			}
+			y -= 2
+
+			// Recommended action
+			p2.textC(ml+14, y, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, "RECOMMENDED ACTION")
+			y -= 10
+			for _, ln := range cardLines {
+				p2.text(ml+14, y, "/F1", 7.5, ln)
+				y -= 10
+			}
+			y -= 3
+
+			// Owner / Target Date / Status row
+			p2.textC(ml+14, y, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, "Owner:")
+			p2.textC(ml+50, y, "/F1", 7, colGrayText.r, colGrayText.g, colGrayText.b, "_______________")
+			p2.textC(ml+180, y, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, "Target Date:")
+			p2.textC(ml+240, y, "/F1", 7, colGrayText.r, colGrayText.g, colGrayText.b, "_______________")
+			p2.textC(ml+380, y, "/F2", 7, colGrayText.r, colGrayText.g, colGrayText.b, "Status:")
+			p2.textC(ml+416, y, "/F1", 7, colRed.r, colRed.g, colRed.b, "Open")
+			y -= 24
+		}
+		y -= 8
+	}
+
+	y -= 12
+
 	// ── What These Checks Mean ──
 	if y < mb+120 {
 		allPages = append(allPages, p2.content())
@@ -753,6 +948,28 @@ func (d *pdfDoc) writePDF(w io.Writer) error {
 }
 
 func pdfEsc(s string) string {
+	// Replace non-ASCII characters with ASCII equivalents.
+	// Type1 fonts (Helvetica) only support WinAnsiEncoding.
+	s = strings.ReplaceAll(s, "\u2014", "--")  // em dash
+	s = strings.ReplaceAll(s, "\u2013", "-")   // en dash
+	s = strings.ReplaceAll(s, "\u2018", "'")   // left single quote
+	s = strings.ReplaceAll(s, "\u2019", "'")   // right single quote
+	s = strings.ReplaceAll(s, "\u201C", "\"")  // left double quote
+	s = strings.ReplaceAll(s, "\u201D", "\"")  // right double quote
+	s = strings.ReplaceAll(s, "\u2026", "...") // ellipsis
+	s = strings.ReplaceAll(s, "\u00A0", " ")   // non-breaking space
+	s = strings.ReplaceAll(s, "\u2192", "->")  // right arrow
+	s = strings.ReplaceAll(s, "\u2190", "<-")  // left arrow
+	// Strip any remaining non-ASCII bytes
+	var buf strings.Builder
+	for _, r := range s {
+		if r < 128 {
+			buf.WriteRune(r)
+		} else {
+			buf.WriteRune('?')
+		}
+	}
+	s = buf.String()
 	s = strings.ReplaceAll(s, "\\", "\\\\")
 	s = strings.ReplaceAll(s, "(", "\\(")
 	s = strings.ReplaceAll(s, ")", "\\)")

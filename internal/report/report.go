@@ -114,6 +114,51 @@ func RenderText(w io.Writer, report *models.AuditReport) error {
 	}
 	fmt.Fprintln(w)
 
+	// Statement of Applicability (ISO 27001)
+	soaRows := buildSoA(report)
+	if len(soaRows) > 0 {
+		fmt.Fprintf(w, "STATEMENT OF APPLICABILITY (ISO 27001)\n")
+		fmt.Fprintf(w, "─────────────────────────────────────────────────────────────────\n")
+		fmt.Fprintf(w, "  %-14s %-26s %-22s %-18s %s\n", "Control", "Name", "Status", "Evidence", "Justification")
+		fmt.Fprintf(w, "  %-14s %-26s %-22s %-18s %s\n", "───────", "────", "──────", "────────", "─────────────")
+		for _, row := range soaRows {
+			shortID := strings.TrimPrefix(string(row.ControlID), "ISO27001-")
+			fmt.Fprintf(w, "  %-14s %-26s %-22s %-18s %s\n",
+				shortID,
+				truncForText(row.ControlName, 24),
+				row.Status,
+				truncForText(row.Evidence, 16),
+				truncForText(row.Justification, 40))
+		}
+		fmt.Fprintln(w)
+	}
+
+	// Tests of Controls (SOC2)
+	tocRows := buildTestsOfControls(report)
+	if len(tocRows) > 0 {
+		fmt.Fprintf(w, "TESTS OF CONTROLS (SOC2)\n")
+		fmt.Fprintf(w, "─────────────────────────────────────────────────────────────────\n")
+		for _, row := range tocRows {
+			fmt.Fprintf(w, "  %s  [%s]\n", row.ControlObjective, row.TestResult)
+			fmt.Fprintf(w, "    Activity: %s\n", truncForText(row.ControlActivity, 75))
+			fmt.Fprintf(w, "    Test:     %s\n", truncForText(row.TestPerformed, 75))
+			fmt.Fprintf(w, "    Evidence: %s\n\n", row.EvidenceRef)
+		}
+	}
+
+	// Corrective Action Plan
+	capRows := buildCorrectiveActionPlan(report)
+	if len(capRows) > 0 {
+		fmt.Fprintf(w, "CORRECTIVE ACTION PLAN\n")
+		fmt.Fprintf(w, "─────────────────────────────────────────────────────────────────\n")
+		for i, row := range capRows {
+			fmt.Fprintf(w, "  %d. [%s] %s\n", i+1, strings.ToUpper(string(row.Severity)), row.Finding)
+			fmt.Fprintf(w, "     Control: %s\n", row.Controls)
+			fmt.Fprintf(w, "     Action:  %s\n", truncForText(row.Action, 75))
+			fmt.Fprintf(w, "     Owner:   ___________  Target Date: ___________  Status: Open\n\n")
+		}
+	}
+
 	// Grouped findings detail
 	for _, cr := range report.CheckResults {
 		groups := groupFindings(cr)

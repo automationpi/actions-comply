@@ -2,7 +2,10 @@ package report
 
 import (
 	"fmt"
+	"sort"
 	"strings"
+
+	"github.com/automationpi/actions-comply/pkg/models"
 )
 
 // checkExplainer provides human-friendly context for each check group.
@@ -244,6 +247,367 @@ func checkDisplayName(checkID string) string {
 		return name
 	}
 	return checkID
+}
+
+// ── Control Descriptions ─────────────────────────────────────────────────
+
+// controlDescription provides the human-readable name and description for a control.
+type controlDescription struct {
+	Name        string
+	Description string
+	Framework   string // "SOC2" or "ISO27001"
+}
+
+// controlDescriptions maps ControlID to its human-readable details.
+var controlDescriptions = map[models.ControlID]controlDescription{
+	// SOC2 Trust Services Criteria
+	"SOC2-CC1.1": {
+		Name:        "Control Environment",
+		Description: "The entity demonstrates a commitment to integrity and ethical values.",
+		Framework:   "SOC2",
+	},
+	"SOC2-CC2.2": {
+		Name:        "Communication and Information",
+		Description: "The entity internally and externally communicates information necessary to achieve objectives.",
+		Framework:   "SOC2",
+	},
+	"SOC2-CC6.1": {
+		Name:        "Logical Access Controls",
+		Description: "The entity implements logical access security software, infrastructure, and architectures to protect information assets from unauthorized access.",
+		Framework:   "SOC2",
+	},
+	"SOC2-CC7.2": {
+		Name:        "Security Monitoring",
+		Description: "The entity monitors system components and the operation of those components for anomalies and security events.",
+		Framework:   "SOC2",
+	},
+	"SOC2-CC8.1": {
+		Name:        "Change Management",
+		Description: "Changes to infrastructure and software are authorized, designed, developed, tested, and approved before implementation.",
+		Framework:   "SOC2",
+	},
+	"SOC2-CC9.2": {
+		Name:        "Risk Assessment",
+		Description: "The entity identifies, assesses, and manages risks to the achievement of its objectives, including supply-chain risks.",
+		Framework:   "SOC2",
+	},
+	// ISO 27001 Annex A
+	"ISO27001-A.9.4": {
+		Name:        "System Access Control",
+		Description: "Prevent unauthorized access to systems and applications through technical controls and policy enforcement.",
+		Framework:   "ISO27001",
+	},
+	"ISO27001-A.12.1": {
+		Name:        "Operational Procedures and Responsibilities",
+		Description: "Ensure correct and secure operations of information processing facilities through documented procedures.",
+		Framework:   "ISO27001",
+	},
+	"ISO27001-A.12.6": {
+		Name:        "Technical Vulnerability Management",
+		Description: "Prevent exploitation of technical vulnerabilities through timely identification and remediation.",
+		Framework:   "ISO27001",
+	},
+	"ISO27001-A.14.2": {
+		Name:        "Security in Development and Support",
+		Description: "Ensure that information security is designed and implemented within the development lifecycle.",
+		Framework:   "ISO27001",
+	},
+	"ISO27001-A.15.1": {
+		Name:        "Information Security in Supplier Relationships",
+		Description: "Ensure protection of the organization's assets that are accessible by suppliers.",
+		Framework:   "ISO27001",
+	},
+	"ISO27001-A.16.1": {
+		Name:        "Management of Information Security Incidents",
+		Description: "Ensure a consistent and effective approach to the management of information security incidents.",
+		Framework:   "ISO27001",
+	},
+	"ISO27001-A.18.1": {
+		Name:        "Compliance with Legal and Contractual Requirements",
+		Description: "Avoid breaches of legal, statutory, regulatory, or contractual obligations related to information security.",
+		Framework:   "ISO27001",
+	},
+}
+
+// ── Statement of Applicability (ISO 27001) ──────────────────────────────
+
+// soaRow represents a single row in the Statement of Applicability.
+type soaRow struct {
+	ControlID     models.ControlID
+	ControlName   string
+	Applicable    string // "Yes" or "No"
+	Status        string // "Implemented", "Partially Implemented", "Not Implemented"
+	Evidence      string // check ID that tested it
+	Justification string
+}
+
+// buildSoA generates Statement of Applicability rows from report data.
+func buildSoA(report *models.AuditReport) []soaRow {
+	// Collect all ISO controls from findings
+	isoControls := make(map[models.ControlID]bool)
+	controlToChecks := make(map[models.ControlID][]string)
+	for _, cr := range report.CheckResults {
+		for _, f := range cr.Findings {
+			for _, ctrl := range f.Controls {
+				if strings.HasPrefix(string(ctrl), "ISO27001") {
+					isoControls[ctrl] = true
+					// Deduplicate check IDs
+					found := false
+					for _, c := range controlToChecks[ctrl] {
+						if c == cr.CheckID {
+							found = true
+							break
+						}
+					}
+					if !found {
+						controlToChecks[ctrl] = append(controlToChecks[ctrl], cr.CheckID)
+					}
+				}
+			}
+		}
+	}
+
+	// Also include ISO controls from controlDescriptions that are in scope
+	for ctrl := range controlDescriptions {
+		if strings.HasPrefix(string(ctrl), "ISO27001") {
+			if _, inReport := report.Summary.ControlStatus[ctrl]; inReport {
+				isoControls[ctrl] = true
+			}
+		}
+	}
+
+	// Sort controls
+	var sorted []models.ControlID
+	for ctrl := range isoControls {
+		sorted = append(sorted, ctrl)
+	}
+	sort.Slice(sorted, func(i, j int) bool { return string(sorted[i]) < string(sorted[j]) })
+
+	var rows []soaRow
+	for _, ctrl := range sorted {
+		desc := controlDescriptions[ctrl]
+		status := report.Summary.ControlStatus[ctrl]
+
+		implStatus := "Implemented"
+		justification := "Verified by automated compliance checks"
+		switch status {
+		case models.StatusFail:
+			implStatus = "Not Implemented"
+			justification = "Automated checks identified gaps requiring remediation"
+		case models.StatusWarn:
+			implStatus = "Partially Implemented"
+			justification = "Controls are partially in place; improvements recommended"
+		case models.StatusPass:
+			implStatus = "Implemented"
+			justification = "All automated checks passed for this control"
+		default:
+			implStatus = "Not Assessed"
+			justification = "Control not evaluated in this audit scope"
+		}
+
+		evidence := strings.Join(controlToChecks[ctrl], ", ")
+		if evidence == "" {
+			evidence = "-"
+		}
+
+		rows = append(rows, soaRow{
+			ControlID:     ctrl,
+			ControlName:   desc.Name,
+			Applicable:    "Yes",
+			Status:        implStatus,
+			Evidence:      evidence,
+			Justification: justification,
+		})
+	}
+	return rows
+}
+
+// ── Tests of Controls (SOC2) ────────────────────────────────────────────
+
+// tocRow represents a row in the SOC2 Tests of Controls table.
+type tocRow struct {
+	ControlObjective string // e.g., "CC8.1 — Change Management"
+	ControlActivity  string // what the org does
+	TestPerformed    string // what actions-comply checked
+	TestResult       string // "Pass", "Fail", "Warn" with count
+	ResultColor      rgb
+	EvidenceRef      string // check IDs
+}
+
+// buildTestsOfControls generates SOC2 test-of-controls rows from report data.
+func buildTestsOfControls(report *models.AuditReport) []tocRow {
+	// Map SOC2 controls to their check results
+	type controlData struct {
+		checks []string
+		pass   int
+		fail   int
+		warn   int
+	}
+	soc2Controls := make(map[models.ControlID]*controlData)
+
+	for _, cr := range report.CheckResults {
+		for _, f := range cr.Findings {
+			for _, ctrl := range f.Controls {
+				if !strings.HasPrefix(string(ctrl), "SOC2") {
+					continue
+				}
+				cd, ok := soc2Controls[ctrl]
+				if !ok {
+					cd = &controlData{}
+					soc2Controls[ctrl] = cd
+				}
+				// Deduplicate
+				found := false
+				for _, c := range cd.checks {
+					if c == cr.CheckID {
+						found = true
+						break
+					}
+				}
+				if !found {
+					cd.checks = append(cd.checks, cr.CheckID)
+				}
+				switch f.Status {
+				case models.StatusPass:
+					cd.pass++
+				case models.StatusFail:
+					cd.fail++
+				case models.StatusWarn:
+					cd.warn++
+				}
+			}
+		}
+	}
+
+	// Sort controls
+	var sorted []models.ControlID
+	for ctrl := range soc2Controls {
+		sorted = append(sorted, ctrl)
+	}
+	sort.Slice(sorted, func(i, j int) bool { return string(sorted[i]) < string(sorted[j]) })
+
+	// controlActivity maps SOC2 controls to what the org does
+	controlActivities := map[models.ControlID]string{
+		"SOC2-CC1.1": "Organization follows OpenSSF security best practices",
+		"SOC2-CC2.2": "Security policy published for vulnerability disclosure",
+		"SOC2-CC6.1": "Workflow tokens scoped to least-privilege; access controlled",
+		"SOC2-CC7.2": "Security scanners run on PRs; vulnerabilities tracked",
+		"SOC2-CC8.1": "Production deploys require environment approval; changes reviewed",
+		"SOC2-CC9.2": "Third-party actions inventoried, pinned, and monitored",
+	}
+
+	// testDescriptions maps SOC2 controls to what was tested
+	testDescriptions := map[models.ControlID]string{
+		"SOC2-CC1.1": "Checked for OpenSSF Best Practices badge",
+		"SOC2-CC2.2": "Verified SECURITY.md or equivalent disclosure policy exists",
+		"SOC2-CC6.1": "Analysed GITHUB_TOKEN permissions in all workflows for least-privilege",
+		"SOC2-CC7.2": "Verified security scanners (SAST, SCA, secrets) present in PR workflows",
+		"SOC2-CC8.1": "Checked deploy jobs for environment protection rules and code review",
+		"SOC2-CC9.2": "Verified actions are SHA-pinned; generated bill of materials",
+	}
+
+	var rows []tocRow
+	for _, ctrl := range sorted {
+		cd := soc2Controls[ctrl]
+		desc := controlDescriptions[ctrl]
+
+		// Short control ID for display (e.g., "CC8.1")
+		shortID := strings.TrimPrefix(string(ctrl), "SOC2-")
+		objective := fmt.Sprintf("%s — %s", shortID, desc.Name)
+
+		activity := controlActivities[ctrl]
+		if activity == "" {
+			activity = desc.Description
+		}
+		test := testDescriptions[ctrl]
+		if test == "" {
+			test = "Automated compliance check"
+		}
+
+		var result string
+		var resultCol rgb
+		if cd.fail > 0 {
+			result = fmt.Sprintf("Fail (%d)", cd.fail)
+			resultCol = colRed
+		} else if cd.warn > 0 {
+			result = fmt.Sprintf("Warn (%d)", cd.warn)
+			resultCol = colAmber
+		} else {
+			result = fmt.Sprintf("Pass (%d)", cd.pass)
+			resultCol = colGreen
+		}
+
+		rows = append(rows, tocRow{
+			ControlObjective: objective,
+			ControlActivity:  activity,
+			TestPerformed:    test,
+			TestResult:       result,
+			ResultColor:      resultCol,
+			EvidenceRef:      strings.Join(cd.checks, ", "),
+		})
+	}
+	return rows
+}
+
+// ── Corrective Action Plan ──────────────────────────────────────────────
+
+// capRow represents a row in the Corrective Action Plan.
+type capRow struct {
+	Finding     string
+	Severity    models.Severity
+	Controls    string
+	Action      string
+	Owner       string // blank — to be filled by org
+	TargetDate  string // blank — to be filled by org
+	Status      string // "Open"
+}
+
+// buildCorrectiveActionPlan extracts failing/warning findings into remediation rows.
+func buildCorrectiveActionPlan(report *models.AuditReport) []capRow {
+	var rows []capRow
+	for _, cr := range report.CheckResults {
+		for _, g := range groupFindings(cr) {
+			if g.Status != models.StatusFail && g.Status != models.StatusWarn {
+				continue
+			}
+
+			// Collect controls from findings
+			ctrlSet := make(map[models.ControlID]bool)
+			for _, f := range cr.Findings {
+				if f.Message == g.Message {
+					for _, c := range f.Controls {
+						ctrlSet[c] = true
+					}
+				}
+			}
+			var ctrlStrs []string
+			for c := range ctrlSet {
+				ctrlStrs = append(ctrlStrs, string(c))
+			}
+			sort.Strings(ctrlStrs)
+
+			action := g.Detail
+			if action == "" {
+				if exp, ok := checkExplainers[cr.CheckID]; ok {
+					action = exp.FixHint
+				}
+			}
+			if action == "" {
+				action = "Review and remediate finding"
+			}
+
+			rows = append(rows, capRow{
+				Finding:    truncStr(g.Message, 80),
+				Severity:   g.Severity,
+				Controls:   strings.Join(ctrlStrs, ", "),
+				Action:     action,
+				Owner:      "",
+				TargetDate: "",
+				Status:     "Open",
+			})
+		}
+	}
+	return rows
 }
 
 func joinStrings(ss []string) string {
