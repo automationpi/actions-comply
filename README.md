@@ -38,6 +38,11 @@ actions-comply runs **5 compliance checks** that map directly to SOC2 and ISO 27
 | **Deploy Approval Gates** | Production deploy jobs without environment protection rules or PR requirements | SOC2 CC8.1, ISO 27001 A.12.1 |
 | **Action Bill of Materials** | Complete inventory of every third-party action across all workflows | SOC2 CC9.2, ISO 27001 A.15.1 |
 
+
+<img width="819" height="713" alt="image" src="https://github.com/user-attachments/assets/e5a7a2af-5932-4613-abba-2e91c46d225a" />
+
+
+
 Every finding is **backed by evidence** — a direct link to the workflow file, job, or step that triggered it. No inference, no AI, no guessing.
 
 ## Quick Start
